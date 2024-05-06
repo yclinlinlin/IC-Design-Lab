@@ -1,0 +1,151 @@
+ ****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: p8.sp                                                             
+  Command line options: /eda/synopsys/hspice/2017.12/hspice/linux64/hspice -i p8.sp -o p8
+ lic:  
+ lic: FLEXlm: SDK_11.6.8.3 
+ lic: USER:   user                 HOSTNAME: centos 
+ lic: HOSTID: 00505631ddcc         PID:      4221 
+ lic: Using FLEXlm license file: 
+ lic: 27000@centos 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2101/2100.2100 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@centos 
+ lic:   
+  **warning** (p8.sp:8) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+ ******  
+ pratice8 dynamic from lab7-1 (loading c=0.5p)
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xcomp.                          comp               1.00 
+        2 xe1.                            inv                1.00 
+        3 xe2.                            inv                1.00 
+        4 xe3.                            inv                1.00 
+        5 xe4.                            inv                1.00 
+        6 xe5.                            inv                1.00 
+        7 xe6.                            inv                1.00 
+        8 xe7.                            inv                1.00 
+        9 xe8.                            inv                1.00 
+       10 xg1.                            inv                1.00 
+       11 xg2.                            inv                1.00 
+       12 xg3.                            inv                1.00 
+       13 xg4.                            inv                1.00 
+       14 xl1.                            inv                1.00 
+       15 xl2.                            inv                1.00 
+       16 xl3.                            inv                1.00 
+       17 xl4.                            inv                1.00 
+       18 xcomp.xinva.                    inv                1.00 
+       19 xcomp.xinvb.                    inv                1.00 
+       20 xcomp.xnanda.                   nand               1.00 
+       21 xcomp.xinv1.                    inv                1.00 
+       22 xcomp.xnandb.                   nand               1.00 
+       23 xcomp.xinv2.                    inv                1.00 
+       24 xcomp.xnor.                     nor                1.00 
+  **info** (p8.sp:76) DC voltage reset to initial transient source value in source 0:va. new dc=0.1800D+01
+  **warning** (p8.sp:73) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=p8.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ pratice8 dynamic from lab7-1 (loading c=0.5p)
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a       =   1.8000   0:b       =   1.8000   0:clk     =   1.8000 
+ + 0:eq      =   1.8000   0:eq1     = 861.6535m  0:eq2     = 288.6613m
+ + 0:eq3     =   1.7998   0:eq4     =   6.7636n  0:eq5     =   1.8000 
+ + 0:eq6     =   6.7424n  0:eq7     =   1.8000   0:eq8     =   6.7424n
+ + 0:gt      =   6.7424n  0:gt1     =   1.7487m  0:gt2     =   1.8000 
+ + 0:gt3     =   6.7424n  0:gt4     =   1.8000   0:lt      =   6.7424n
+ + 0:lt1     =   1.7489m  0:lt2     =   1.8000   0:lt3     =   6.7424n
+ + 0:lt4     =   1.8000   0:vdd     =   1.8000   1:inva    =   6.7423n
+ + 1:invb    =   6.7423n  1:out1    =   1.2858   1:out2    =   1.2858 
+ +20:net1    =   1.2858  20:net2    =   1.5524n 22:net1    =   1.2858 
+ +22:net2    =   1.5524n 24:n1      =   2.3641n
+
+ ******
+ pratice8 dynamic from lab7-1 (loading c=0.5p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delay10= 956.3745p  targ= 152.2064n   trig= 151.2500n
+ delay01= 969.3421p  targ= 252.2193n   trig= 251.2500n
+
+          ***** job concluded
+ ******  
+ pratice8 dynamic from lab7-1 (loading c=0.5p)
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
+ cpu MHz	: 2207.191
+  
+ OS:
+ Linux version 3.10.0-693.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ) #1 SMP Tue Aug 22 21:09:27 UTC 2017
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =     137 # elements   =      59
+  # resistors   =       0 # capacitors =       3 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      52 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          34
+  transient          0.08        4001         889         295 rev=        16
+  readin             0.01
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        290.95 megabytes
+           total cpu time            0.09 seconds
+           total elapsed time        0.06 seconds
+           job started at     23:31:36 05/06/2024
+           job ended   at     23:31:36 05/06/2024
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.01(s)
