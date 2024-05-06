@@ -10,7 +10,7 @@
  lic:  
  lic: FLEXlm: SDK_11.6.8.3 
  lic: USER:   user                 HOSTNAME: centos 
- lic: HOSTID: 00505631ddcc         PID:      3366 
+ lic: HOSTID: 00505631ddcc         PID:      25453 
  lic: Using FLEXlm license file: 
  lic: 27000@centos 
  lic: Checkout 1 hspice 
@@ -28,27 +28,12 @@
         0 main circuit
         1 xadder.                         fulladder          1.00 
         2 xadder.xinvc1.                  inv                1.00 
-        3 xadder.xinvc2.                  inv                1.00 
-        4 xadder.xinvc3.                  inv                1.00 
-        5 xadder.xinvs.                   inv                1.00 
+        3 xadder.xinvs.                   inv                1.00 
   **info** (p5.sp:55) DC voltage reset to initial transient source value in source 0:va. new dc=0.1800D+01
   **warning** (p5.sp:8) Both nodes of element vgnd are connected together; Line ignored.
  
 
   
-
-  **warning** the following singular supplies were terminated to 1 meg resistor 
-          supply       node1            node2
-(p5.sp:58)vclk                    0:clk              defined in subckt 0                     0:0                defined in subckt 0               
-             
- Warning:'No DC path nodes' occurs 1 times
- No DC path from the following nodes,connected with gdcpath:
- -----------------------
- |Node      |Subckt    |
- |----------+----------|
- |xadder.clk|fulladder |
- -----------------------
-              
       
  **info** set option symb=1 internally to help for convergence.
  *****************************************************************
@@ -67,22 +52,25 @@
     node    =voltage      node    =voltage      node    =voltage
 
  +0:a       =   1.8000  0:b       =   1.8000  0:cin     =   1.8000 
- +0:clk     =   0.      0:cout    =  24.6556n 0:sum     =   1.8000 
- +0:vdd     =   1.8000  1:clk     =   0.      1:cout1   =  24.6556n
- +1:cout2   =   1.8000  1:n3      =   0.      1:n4      =   0.     
- +1:n5      =   0.      1:n6      =   0.      1:n7      =   0.     
- +1:net2    =   1.5666  1:net3    =   1.5743  1:net4    =   1.5549 
- +1:netc0   =   1.8000 
+ +0:clk     =   1.8000  0:cout    =   1.8000  0:sum     =   1.8000 
+ +0:vdd     =   1.8000  1:n3      =  18.8685n 1:n4      =   3.7619n
+ +1:n5      =  13.8330n 1:n6      =   8.7975n 1:n7      =   3.7619n
+ +1:net2    =   2.8075n 1:net3    =   3.1195n 1:net4    =   2.1836n
+ +1:netc0   =   4.0553n
 
  ******
  pratice5 from lab6-1 1-bit full adder (loading c=1p)
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
-  **warning** (p5.sp:60) .MEASURE  delayn1 never reached the target value, Measurement failed! 
-   delayn1= failed       targ= not found    trig=   21.2500n
-   delayn2= failed       targ= not found    trig=   51.6500n
-   delayn3= failed       targ= not found    trig=   41.2500n
- pw=   1.6961u  from=   0.             to= 320.0000n
+ delay100= 971.1738p  targ=  32.2212n   trig=  31.2500n
+ delay010= 986.0235p  targ=  52.2360n   trig=  51.2500n
+ delay001= 987.4309p  targ=  92.2374n   trig=  91.2500n
+ delay111= 998.5750p  targ= 152.2486n   trig= 151.2500n
+ delayc110= 995.7618p  targ=  72.2458n   trig=  71.2500n
+ delayc101= 980.0582p  targ= 112.2301n   trig= 111.2500n
+ delayc011= 983.4998p  targ= 132.2335n   trig= 131.2500n
+ delayc111= 971.2120p  targ= 152.2212n   trig= 151.2500n
+ pw= 183.6700u  from=   0.             to= 160.0000n
 
           ***** job concluded
  ******  
@@ -94,7 +82,7 @@
  ******  Machine Information  ******
  CPU:
  model name	: Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
- cpu MHz	: 2207.217
+ cpu MHz	: 2207.480
   
  OS:
  Linux version 3.10.0-693.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ) #1 SMP Tue Aug 22 21:09:27 UTC 2017
@@ -111,12 +99,12 @@
   Voltage Sources :       1
 
   ******  Circuit Statistics  ******
-  # nodes       =      68 # elements   =      32
-  # resistors   =       1 # capacitors =       2 # inductors   =       0
+  # nodes       =      57 # elements   =      27
+  # resistors   =       0 # capacitors =       2 # inductors   =       0
   # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
   # cccs        =       0 # ccvs       =       0 # volt_srcs   =       5
   # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
-  # jfets       =       0 # mosfets    =      24 # U elements  =       0
+  # jfets       =       0 # mosfets    =      20 # U elements  =       0
   # T elements  =       0 # W elements =       0 # B elements  =       0
   # S elements  =       0 # P elements =       0 # va device   =       0
   # vector_srcs =       0 # N elements =       0
@@ -125,20 +113,20 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.00           1          37
-  transient          0.05        3201        1239         554 rev=        49
-  readin             0.06
-  errchk             0.01
+  op point           0.00           1           4
+  transient          0.06        1601        1196         383 rev=        19
+  readin             0.01
+  errchk             0.00
   setup              0.00
   output             0.00
 
 
            peak memory used        290.91 megabytes
-           total cpu time            0.12 seconds
-           total elapsed time        0.20 seconds
-           job started at     09:28:20 05/06/2024
-           job ended   at     09:28:20 05/06/2024
+           total cpu time            0.07 seconds
+           total elapsed time        0.07 seconds
+           job started at     16:00:56 05/06/2024
+           job ended   at     16:00:56 05/06/2024
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.06(s)
+ lic: total license checkout elapse time:        0.02(s)
