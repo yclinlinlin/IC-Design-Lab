@@ -37,9 +37,7 @@ mn11 n7  cout     nnn  gnd  N_18  l=0.18u w=3.5u
 mn12 nnn clk 0 gnd  N_18  l=0.18u w=10u
 .ends
 
-xxor3 a b c clk out1 xor
-x1 out1 out2 inv 
-x2 out2 out inv
+xxor3 a b c clk out xor
 
 c1 out gnd 1p
 
@@ -48,9 +46,9 @@ vgnd gnd  0  0
 
 *VCLK    CLK  GND    PULSE(VL  VH  delay  trise  tfall  pulse_width  period)
 va       a       0     pulse(1.8 0    1n   0.5n    0.5n    7.5n        16n)
-vb       b       0     pulse(1.8 0    1n   0.5n    0.5n    15.5n  32n)
-vc   	  c       0     pulse(1.8 0    1n   0.5n    0.5n    31.5n 64n)
-vclk 	  clk     0     pulse(1.8 0    1n   0.5n    0.5n    3.5n  8n)
+vb       b       0     pulse(1.8 0    1n   0.5n    0.5n    15.5n       32n)
+vc   	  c       0     pulse(1.8 0    1n   0.5n    0.5n    31.5n       64n)
+vclk 	  clk     0     pulse(1.8 0    1n   0.5n    0.5n    3.5n        8n)
 
 
 .meas tran delay000 trig v(clk)      val=0.9  rise=1

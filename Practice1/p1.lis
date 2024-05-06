@@ -1,0 +1,128 @@
+ ****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: p1.sp                                                             
+  Command line options: /eda/synopsys/hspice/2017.12/hspice/linux64/hspice -i p1.sp -o p1
+ lic:  
+ lic: FLEXlm: SDK_11.6.8.3 
+ lic: USER:   user                 HOSTNAME: centos 
+ lic: HOSTID: 00505631ddcc         PID:      4505 
+ lic: Using FLEXlm license file: 
+ lic: 27000@centos 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2101/2100.2100 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@centos 
+ lic:   
+1****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+ ******  
+ pratice 1 from lab5-1 dynamic 3-input xor (loading c=1p)
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xxor3.                          xor                1.00 
+        2 xxor3.xinva.                    inv                1.00 
+        3 xxor3.xinvb.                    inv                1.00 
+        4 xxor3.xinvc.                    inv                1.00 
+  **info** (p1.sp:48) DC voltage reset to initial transient source value in source 0:va. new dc=0.1800D+01
+  **warning** (p1.sp:45) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=p1.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ pratice 1 from lab5-1 dynamic 3-input xor (loading c=1p)
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:a       =   1.8000  0:b       =   1.8000  0:c       =   1.8000 
+ +0:clk     =   1.8000  0:out     = 156.0366m 0:vdd     =   1.8000 
+ +1:aout    =   4.0118n 1:bout    =   4.0118n 1:cout    =   4.0118n
+ +1:n0      =   3.5431n 1:n1      =   2.4326n 1:n2      = 156.0366m
+ +1:n3      =   2.4326n 1:n4      = 156.0366m 1:n5      = 156.0366m
+ +1:n6      =  34.2467m 1:n7      =  12.5440m 1:nnn     =   1.3221n
+
+ ******
+ pratice 1 from lab5-1 dynamic 3-input xor (loading c=1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delay000= 967.4100p  targ=   6.2174n   trig=   5.2500n
+ delay110= 960.3996p  targ=  30.2104n   trig=  29.2500n
+ delay101= 971.3167p  targ=  46.2213n   trig=  45.2500n
+ delay011= 959.1437p  targ=  54.2091n   trig=  53.2500n
+ pw= 260.4524u  from=   0.             to=  64.0000n
+
+          ***** job concluded
+ ******  
+ pratice 1 from lab5-1 dynamic 3-input xor (loading c=1p)
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
+ cpu MHz	: 2207.355
+  
+ OS:
+ Linux version 3.10.0-693.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ) #1 SMP Tue Aug 22 21:09:27 UTC 2017
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      59 # elements   =      26
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       5
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      20 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.02           1          38
+  transient          0.04         641         969         311 rev=        20
+  readin             0.01
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        290.91 megabytes
+           total cpu time            0.06 seconds
+           total elapsed time        0.06 seconds
+           job started at     20:44:49 05/06/2024
+           job ended   at     20:44:49 05/06/2024
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.02(s)
