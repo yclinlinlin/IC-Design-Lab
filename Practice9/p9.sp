@@ -5,7 +5,7 @@ pratice9  pass_reansistor (loading c=2p)
 .unprot
 .global vdd gnd
 
-.subckt  inv  in  out vdd gnd  wp=10u wn=3.5u
+.subckt  inv  in  out vdd gnd  wp=9.5u wn=3.35u
 mp		out		in		vdd		vdd		P_18		l=0.18u	w=wp
 mn		out		in		gnd		gnd		N_18		l=0.18u	w=wn
 .ends
@@ -22,8 +22,8 @@ xinva a aout vdd gnd inv
 xinvb b bout vdd gnd inv
 
 *MP0    Drain   Gate    Source  Body  Model-name     Length     Width
-mn0		out		bout  aout   	0		N_18		l=0.18u  	w=11u 
-mn1		out		b	  0		    0		N_18		l=0.18u  	w=11u 
+mn0		out		bout  aout   	0		N_18		l=0.18u  	w=10u 
+mn1		out		b	  0		    0		N_18		l=0.18u  	w=10u 
 .ends
 
 .subckt comp a b gt lt eq vdd gnd 
@@ -32,27 +32,24 @@ xinvb b    invb vdd gnd inv
 
 xand1 b   inva  lt vdd gnd and 
 
-xand2 a   invb gt vdd gnd and wp=8u
+xand2 a   invb gt vdd gnd and wp=4.5u
 
 xnor  lt gt  eq vdd gnd nor 
 
 .ends
 
 xcomp a b  gt1 lt1 eq1 vdd gnd  comp
-xe1  eq1       eq2   vdd gnd inv wp=9u
-xe2  eq2       eq3    vdd gnd inv wp=9u
-xe3  eq3       eq4   vdd gnd inv wp=9u
-xe4  eq4       eq    vdd gnd inv *wp=9u
+xe1  eq1       eq2   vdd gnd inv wp=10u
+xe2  eq2       eq    vdd gnd inv wp=10u
+
 
 xg1  gt1       gt2   vdd gnd inv wp=9u
-xg2  gt2       gt3    vdd gnd inv wp=9u
-xg3  gt3       gt4   vdd gnd inv wp=9u
-xg4 gt4      gt    vdd gnd inv wp=9u
+xg2  gt2       gt    vdd gnd inv wp=9u
+
 
 xl1  lt1       lt2   vdd gnd inv wp=9u
-xl2  lt2       lt3  vdd gnd inv wp=9u
-xl3  lt3       lt4   vdd gnd inv wp=9u
-xl4  lt4       lt   vdd gnd inv wp=9u
+xl2  lt2       lt  vdd gnd inv wp=9u
+
 
 
 cload1 gt gnd 2p

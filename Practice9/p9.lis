@@ -1,0 +1,138 @@
+ ****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: p9.sp                                                             
+  Command line options: /eda/synopsys/hspice/2017.12/hspice/linux64/hspice -i p9.sp -o p9
+ lic:  
+ lic: FLEXlm: SDK_11.6.8.3 
+ lic: USER:   user                 HOSTNAME: centos 
+ lic: HOSTID: 00505631ddcc         PID:      4700 
+ lic: Using FLEXlm license file: 
+ lic: 27000@centos 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2101/2100.2100 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@centos 
+ lic:   
+  **warning** (p9.sp:8) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+ ******  
+ pratice9 pass_reansistor (loading c=2p)
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xcomp.                          comp               1.00 
+        2 xe1.                            inv                1.00 
+        3 xe2.                            inv                1.00 
+        4 xg1.                            inv                1.00 
+        5 xg2.                            inv                1.00 
+        6 xl1.                            inv                1.00 
+        7 xl2.                            inv                1.00 
+        8 xcomp.xinva.                    inv                1.00 
+        9 xcomp.xinvb.                    inv                1.00 
+       10 xcomp.xand1.                    and                1.00 
+       11 xcomp.xand2.                    and                1.00 
+       12 xcomp.xnor.                     nor                1.00 
+       13 xcomp.xand1.xinvb.              inv                1.00 
+       14 xcomp.xand2.xinvb.              inv                1.00 
+       15 xcomp.xnor.xinva.               inv                1.00 
+       16 xcomp.xnor.xinvb.               inv                1.00 
+  **info** (p9.sp:63) DC voltage reset to initial transient source value in source 0:va. new dc=0.1800D+01
+  **warning** (p9.sp:60) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=p9.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ pratice9 pass_reansistor (loading c=2p)
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a       =   1.8000   0:b       =   1.8000   0:eq      =   1.8000 
+ + 0:eq1     =   1.5647   0:eq2     =   6.5712u  0:gt      =  12.1912n
+ + 0:gt1     =   4.2953n  0:gt2     =   1.8000   0:lt      =  12.1912n
+ + 0:lt1     =   4.2953n  0:lt2     =   1.8000   0:vdd     =   1.8000 
+ + 1:inva    =  13.1037n  1:invb    =  13.1037n 10:bout    =   1.8000 
+ +11:bout    =   1.8000  12:aout    =   1.8000  12:bout    =   1.8000 
+
+ ******
+ pratice9 pass_reansistor (loading c=2p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delay10=   1.0210n  targ= 102.2710n   trig= 101.2500n
+ delay11=   1.0496n  targ= 302.2996n   trig= 301.2500n
+
+          ***** job concluded
+ ******  
+ pratice9 pass_reansistor (loading c=2p)
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
+ cpu MHz	: 2207.449
+  
+ OS:
+ Linux version 3.10.0-693.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ) #1 SMP Tue Aug 22 21:09:27 UTC 2017
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      79 # elements   =      36
+  # resistors   =       0 # capacitors =       3 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      30 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          22
+  transient          0.03        4001         410         139 rev=         4
+  readin             0.01
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        290.45 megabytes
+           total cpu time            0.05 seconds
+           total elapsed time        0.04 seconds
+           job started at     00:48:04 05/07/2024
+           job ended   at     00:48:04 05/07/2024
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.01(s)
