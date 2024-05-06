@@ -5,7 +5,7 @@ pratice10  pass_reansistor (loading c=2p)
 .unprot
 .global vdd gnd
 
-.subckt  inv  in  out vdd gnd  wp=10u wn=4u
+.subckt  inv  in  out vdd gnd  wp=10u wn=3.8u
 mp		out		in		vdd		vdd		P_18		l=0.18u	w=wp
 mn		out		in		gnd		gnd		N_18		l=0.18u	w=wn
 .ends
@@ -38,7 +38,9 @@ mn1		out		   s	   n2	0		N_18		l=0.18u  	w=10u
 x1 a b s out1 vdd gnd multiplexer
 
 xbuffer1  out1       out2  vdd gnd inv wp=10u
-xbuffer2  out2       out   vdd gnd inv wp=10u
+xbuffer2  out2       out3   vdd gnd inv wp=10u
+xbuffer3  out3       out4  vdd gnd inv wp=10u
+xbuffer4  out4       out   vdd gnd inv wp=10u
 
 cload1 out gnd 2p
 
@@ -65,3 +67,4 @@ vs s    gnd   pulse(1.8 0  1n   0.5n  0.5n 199.5n 400n)
 
 .tran 0.1n 400n
 .end
+
