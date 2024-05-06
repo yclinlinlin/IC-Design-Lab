@@ -26,6 +26,7 @@ m6 n2   bout c    gnd n_18   w=1.18u l=0.18u
 .ends
 
 xxor a b c out1 vdd gnd xor3
+*加緩衝器
 x1 out1 out2 vdd gnd inv wp=10u wn=1.82u
 x2 out2 out  vdd gnd inv wp=10u wn=1.82u
 
