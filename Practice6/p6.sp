@@ -5,16 +5,16 @@ pratice6 A*B+C*(B*D+A*E)(loading c=0.5p)
 .unprot
 .global vdd gnd
 
-.subckt  inv  in  out vdd gnd wp=2.2u wn=1u 
+.subckt  inv  in  out vdd gnd wp=2.5u wn=1u 
 mp0  out  in  vdd  vdd  P_18  l=0.18u  w=wp 
 mn0  out  in  gnd  gnd  N_18  l=0.18u  w=wn 
 .ends
 
-.subckt  and  a b  out vdd gnd wn=5u
+.subckt  and  a b  out vdd gnd wn1=5u wn2=5u
 xinvb b bout vdd gnd inv 
 
-mn0		out		bout	gnd	0	N_18	l=0.18u   w=wn 
-mn1		out	    b	    a	0	N_18	l=0.18u   w=wn 
+mn0		out		bout	gnd	0	N_18	l=0.18u   w=wn1
+mn1		out	    b	    a	0	N_18	l=0.18u   w=wn2 
 .ends
 
 .subckt  or  a b  out  vdd gnd
@@ -32,15 +32,19 @@ xBD b d  n3 vdd gnd and
 
 xAEBD n2 n3  n4  vdd gnd or
 
-xCAEBD n4 c n5 vdd gnd and wn=4.3u
+xCAEBD n4 c n5 vdd gnd and 
 
 xABCAEBD n1 n5  out  vdd gnd or
 .ends
 
 xout a b c d e out1 vdd gnd logic
 
-x1  out1      out2   vdd gnd inv *wp=10u
-x2  out2      out    vdd gnd inv *wp=10u
+xbuffer1  out1      out2   vdd gnd inv *wp=10u
+xbuffer2  out2      out3   vdd gnd inv *wp=10u
+xbuffer3  out3      out4   vdd gnd inv *wp=10u
+xbuffer4  out4      out5   vdd gnd inv *wp=10u
+xbuffer5  out5      out6   vdd gnd inv *wp=10u
+xbuffer6  out6      out    vdd gnd inv *wp=10u
 
 
 cload  out  gnd   0.5p
@@ -75,4 +79,3 @@ vina   a    gnd   pulse(1.8 0  1n   0.5n  0.5n 24.5n  50n)
 
 .tran 0.1n 200n
 .end
-
