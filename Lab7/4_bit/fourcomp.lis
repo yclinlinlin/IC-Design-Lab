@@ -1,0 +1,192 @@
+ ****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: fourcomp.sp                                                       
+  Command line options: /eda/synopsys/hspice/2017.12/hspice/linux64/hspice -i fourcomp.sp -o fourcomp
+ lic:  
+ lic: FLEXlm: SDK_11.6.8.3 
+ lic: USER:   user                 HOSTNAME: centos 
+ lic: HOSTID: 00505631ddcc         PID:      13517 
+ lic: Using FLEXlm license file: 
+ lic: 27000@centos 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2101/2100.2100 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@centos 
+ lic:   
+  **warning** (fourcomp.sp:29) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+ ******  
+ 4-bit comparator (loading c=0.1p)
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xcomp1.                         comp2              1.00 
+        2 xcomp2.                         comp2              1.00 
+        3 xnf1.                           nand               1.00 
+        4 xf1.                            inv                1.00 
+        5 xnf2.                           nand               1.00 
+        6 xf2.                            inv                1.00 
+        7 xnf3.                           nor                1.00 
+        8 xf3.                            inv                1.00 
+        9 xnf4.                           nand               1.00 
+       10 xf4.                            inv                1.00 
+       11 xnf5.                           nor                1.00 
+       12 xf5.                            inv                1.00 
+       13 xcomp1.xinva1.                  inv                1.00 
+       14 xcomp1.xinva0.                  inv                1.00 
+       15 xcomp1.xc1.                     nor                1.00 
+       16 xcomp1.xc2.                     nand               1.00 
+       17 xcomp1.xc3.                     nand               1.00 
+       18 xcomp1.xnc4.                    nor                1.00 
+       19 xcomp1.xc4.                     inv                1.00 
+       20 xcomp1.xc5.                     nand               1.00 
+       21 xcomp1.xinvb1.                  inv                1.00 
+       22 xcomp1.xinvb0.                  inv                1.00 
+       23 xcomp1.xd2.                     nand               1.00 
+       24 xcomp1.xd3.                     nand               1.00 
+       25 xcomp1.xd1.                     nor                1.00 
+       26 xcomp1.xnd4.                    nor                1.00 
+       27 xcomp1.xd4.                     inv                1.00 
+       28 xcomp1.xd5.                     nand               1.00 
+       29 xcomp1.xe1.                     nor                1.00 
+       30 xcomp2.xinva1.                  inv                1.00 
+       31 xcomp2.xinva0.                  inv                1.00 
+       32 xcomp2.xc1.                     nor                1.00 
+       33 xcomp2.xc2.                     nand               1.00 
+       34 xcomp2.xc3.                     nand               1.00 
+       35 xcomp2.xnc4.                    nor                1.00 
+       36 xcomp2.xc4.                     inv                1.00 
+       37 xcomp2.xc5.                     nand               1.00 
+       38 xcomp2.xinvb1.                  inv                1.00 
+       39 xcomp2.xinvb0.                  inv                1.00 
+       40 xcomp2.xd2.                     nand               1.00 
+       41 xcomp2.xd3.                     nand               1.00 
+       42 xcomp2.xd1.                     nor                1.00 
+       43 xcomp2.xnd4.                    nor                1.00 
+       44 xcomp2.xd4.                     inv                1.00 
+       45 xcomp2.xd5.                     nand               1.00 
+       46 xcomp2.xe1.                     nor                1.00 
+  **info** (fourcomp.sp:79) DC voltage reset to initial transient source value in source 0:va0. new dc=0.1800D+01
+  **warning** (fourcomp.sp:73) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=fourcomp.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ 4-bit comparator (loading c=0.1p)
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.8000   0:a1      =   1.8000   0:a2      =   1.8000 
+ + 0:a3      =   1.8000   0:b0      =   1.8000   0:b1      =   1.8000 
+ + 0:b2      =   1.8000   0:b3      =   1.8000   0:eq      =   1.8000 
+ + 0:f1      =  17.6169n  0:f2      =  17.6169n  0:gt      =  17.6169n
+ + 0:lt      =  17.6169n  0:net0    =  30.4122n  0:net1    =   1.8000 
+ + 0:net2    =  30.4122n  0:net3    =  30.4122n  0:net4    =   1.8000 
+ + 0:net5    =  30.4122n  0:netf1   =   1.8000   0:netf2   =   1.8000 
+ + 0:netf3   =   1.8000   0:netf4   =  30.4122n  0:netf5   =   1.8000 
+ + 0:vdd     =   1.8000   1:c1      =   7.6030n  1:c2      =   1.8000 
+ + 1:c3      =   1.8000   1:c4      =   1.8000   1:d1      =   7.6030n
+ + 1:d2      =   1.8000   1:d3      =   1.8000   1:d4      =   1.8000 
+ + 1:inva0   =  17.6169n  1:inva1   =  17.6169n  1:invb0   =  17.6169n
+ + 1:invb1   =  17.6169n  1:netc4   =   7.6030n  1:netd4   =   7.2741n
+ + 2:c1      =   7.6030n  2:c2      =   1.8000   2:c3      =   1.8000 
+ + 2:c4      =   1.8000   2:d1      =   7.6030n  2:d2      =   1.8000 
+ + 2:d3      =   1.8000   2:d4      =   1.8000   2:inva0   =  17.6169n
+ + 2:inva1   =  17.6169n  2:invb0   =  17.6169n  2:invb1   =  17.6169n
+ + 2:netc4   =   7.6030n  2:netd4   =   7.2741n  3:net     =   1.5613 
+ + 5:net     =   1.5613   7:net0    =   1.8000   9:net     =  15.2061n
+ +11:net0    =   1.8000  15:net0    =   1.8000  16:net     =   4.5842n
+ +17:net     =   1.5613  18:net0    =   1.8000  20:net     =  15.2061n
+ +23:net     =   1.5613  24:net     =   1.5613  25:net0    =   1.8000 
+ +26:net0    = 396.8603m 28:net     =  15.2061n 29:net0    =   1.8000 
+ +32:net0    =   1.8000  33:net     =   4.5842n 34:net     =   1.5613 
+ +35:net0    =   1.8000  37:net     =  15.2061n 40:net     =   1.5613 
+ +41:net     =   1.5613  42:net0    =   1.8000  43:net0    = 396.8604m
+ +45:net     =  15.2061n 46:net0    =   1.8000 
+
+ ******
+ 4-bit comparator (loading c=0.1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn1= 340.3668p  targ=  80.4904n   trig=  80.1500n
+ delayn2= 267.8409p  targ=  25.4178n   trig=  25.1500n
+ delay_eq= 423.6778p  targ=   8.0737n   trig=   7.6500n
+ delay_gt= 476.9649p  targ=  15.6270n   trig=  15.1500n
+ pw= 373.3164u  from=   0.             to= 640.0000n
+
+          ***** job concluded
+ ******  
+ 4-bit comparator (loading c=0.1p)
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
+ cpu MHz	: 2206.678
+  
+ OS:
+ Linux version 3.10.0-693.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ) #1 SMP Tue Aug 22 21:09:27 UTC 2017
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =     365 # elements   =     154
+  # resistors   =       0 # capacitors =       3 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       9
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =     142 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          23
+  transient          3.06        1281       26412        8527 rev=        79
+  readin             0.01
+  errchk             0.01
+  setup              0.01
+  output             0.00
+
+
+           peak memory used        311.36 megabytes
+           total cpu time            3.10 seconds
+           total elapsed time        2.55 seconds
+           job started at     20:12:33 04/21/2024
+           job ended   at     20:12:36 04/21/2024
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.01(s)

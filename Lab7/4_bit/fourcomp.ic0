@@ -1,0 +1,93 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12 linux64"
+* "format" "HSP"
+* "rundate" "20:12:33 04/21/2024 "
+* "netlist" "fourcomp.sp "
+* "runtitle" "4-bit comparator (loading c=0.1p)"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a0 =   1.8000        
++ a1 =   1.8000        
++ a2 =   1.8000        
++ a3 =   1.8000        
++ b0 =   1.8000        
++ b1 =   1.8000        
++ b2 =   1.8000        
++ b3 =   1.8000        
++ eq =   1.8000        
++ f1 =  17.6169n       
++ f2 =  17.6169n       
++ gt =  17.6169n       
++ lt =  17.6169n       
++ net0 =  30.4122n       
++ net1 =   1.8000        
++ net2 =  30.4122n       
++ net3 =  30.4122n       
++ net4 =   1.8000        
++ net5 =  30.4122n       
++ netf1 =   1.8000        
++ netf2 =   1.8000        
++ netf3 =   1.8000        
++ netf4 =  30.4122n       
++ netf5 =   1.8000        
++ vdd =   1.8000        
++ xcomp1.c1 =   7.6030n       
++ xcomp1.c2 =   1.8000        
++ xcomp1.c3 =   1.8000        
++ xcomp1.c4 =   1.8000        
++ xcomp1.d1 =   7.6030n       
++ xcomp1.d2 =   1.8000        
++ xcomp1.d3 =   1.8000        
++ xcomp1.d4 =   1.8000        
++ xcomp1.inva0 =  17.6169n       
++ xcomp1.inva1 =  17.6169n       
++ xcomp1.invb0 =  17.6169n       
++ xcomp1.invb1 =  17.6169n       
++ xcomp1.netc4 =   7.6030n       
++ xcomp1.netd4 =   7.2741n       
++ xcomp2.c1 =   7.6030n       
++ xcomp2.c2 =   1.8000        
++ xcomp2.c3 =   1.8000        
++ xcomp2.c4 =   1.8000        
++ xcomp2.d1 =   7.6030n       
++ xcomp2.d2 =   1.8000        
++ xcomp2.d3 =   1.8000        
++ xcomp2.d4 =   1.8000        
++ xcomp2.inva0 =  17.6169n       
++ xcomp2.inva1 =  17.6169n       
++ xcomp2.invb0 =  17.6169n       
++ xcomp2.invb1 =  17.6169n       
++ xcomp2.netc4 =   7.6030n       
++ xcomp2.netd4 =   7.2741n       
++ xnf1.net =   1.5613        
++ xnf2.net =   1.5613        
++ xnf3.net0 =   1.8000        
++ xnf4.net =  15.2061n       
++ xnf5.net0 =   1.8000        
++ xcomp1.xc1.net0 =   1.8000        
++ xcomp1.xc2.net =   4.5842n       
++ xcomp1.xc3.net =   1.5613        
++ xcomp1.xnc4.net0 =   1.8000        
++ xcomp1.xc5.net =  15.2061n       
++ xcomp1.xd2.net =   1.5613        
++ xcomp1.xd3.net =   1.5613        
++ xcomp1.xd1.net0 =   1.8000        
++ xcomp1.xnd4.net0 = 396.8603m       
++ xcomp1.xd5.net =  15.2061n       
++ xcomp1.xe1.net0 =   1.8000        
++ xcomp2.xc1.net0 =   1.8000        
++ xcomp2.xc2.net =   4.5842n       
++ xcomp2.xc3.net =   1.5613        
++ xcomp2.xnc4.net0 =   1.8000        
++ xcomp2.xc5.net =  15.2061n       
++ xcomp2.xd2.net =   1.5613        
++ xcomp2.xd3.net =   1.5613        
++ xcomp2.xd1.net0 =   1.8000        
++ xcomp2.xnd4.net0 = 396.8604m       
++ xcomp2.xd5.net =  15.2061n       
++ xcomp2.xe1.net0 =   1.8000        
+***   END: Saved Operating Point ***                     
