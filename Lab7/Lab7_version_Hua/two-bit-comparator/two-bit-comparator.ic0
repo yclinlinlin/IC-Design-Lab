@@ -1,0 +1,46 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-2 64-BIT"
+* "format" "HSP"
+* "rundate" "14:50:37 07/10/2023 "
+* "netlist" "two-bit-comparator.sp "
+* "runtitle" "two-bit-comparator"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a0 =   1.8000        
++ a1 =   1.8000        
++ b0 =   1.8000        
++ b1 =   1.8000        
++ eq =   1.8000        
++ gt =  32.4458n       
++ lt =  32.4458n       
++ vdd =   1.8000        
++ xf1.a0out =  10.9565n       
++ xf1.a1out =  10.9565n       
++ xf1.b0out =  10.9565n       
++ xf1.b1out =  10.9565n       
++ xf1.n1 =   8.1114n       
++ xf1.n10 =   1.8000        
++ xf1.n2 =   1.8000        
++ xf1.n3 =   1.8000        
++ xf1.n4 =   1.8000        
++ xf1.n5 =   1.8000        
++ xf1.n6 =   8.4485n       
++ xf1.n7 =   8.1114n       
++ xf1.n8 =   8.4485n       
++ xf1.n9 =   1.8000        
++ xf1.xb1.net =   1.8000        
++ xf1.xb2.net =   7.0193n       
++ xf1.xb3.net =   7.0193n       
++ xf1.xb4.net =   1.5650        
++ xf1.xb5.net =   1.5650        
++ xf1.xb6.net = 402.3407m       
++ xf1.xc1.net =   1.8000        
++ xf1.xc3.net = 402.3406m       
++ xf1.xd1.net =  16.2229n       
++ xf1.xd2.net =  16.2229n       
++ xf1.xe1.net =   1.8000        
+***   END: Saved Operating Point ***                     
