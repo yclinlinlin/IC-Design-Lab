@@ -1,6 +1,8 @@
 # 112學年 第二學期 IC Design Lab
 
-YC LIN
+Design: YC LIN
+
+1~4與7~9題週末將進行更新
 
 **期中考練習，共10題**
 
