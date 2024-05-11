@@ -1,4 +1,4 @@
-# 112-2-IC-Design-Lab Practice9
+# 112-2-IC-Design-Lab Practice 9
 
 - 可參考Lab7
 - delay time全部符合

@@ -1,4 +1,4 @@
-# 112-2-IC-Design-Lab Practice3 
+# 112-2-IC-Design-Lab Practice 3 
 
 - 可參考Lab3-3 
 - 備註: 
