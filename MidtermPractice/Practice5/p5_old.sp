@@ -15,7 +15,7 @@ mn		out		in		gnd		gnd		N_18		l=0.18u	w=wn
 *Full Adder
 .subckt  fulladder  a b cin clk cout sum  vdd gnd 
 
-mp0    netc0     clk    vdd    vdd    P_18      l=0.18u    w=1.395u
+mp0    netc0     clk    vdd    vdd    P_18      l=0.18u    w=1.5u
 *       D        G      S
 mn0		netc0		cin		net2	0		N_18		l=0.18u  	w=3u
 mn1		net2		a		net4	0		N_18		l=0.18u  	w=3u
@@ -29,7 +29,7 @@ xinvc1 netc0 cout vdd gnd inv
 
 
 *sum為關鍵路徑，尺寸要較大
-mp00		n3	   clk	    vdd	  vdd		P_18		l=0.18u 	w=1.27u
+mp00		n3	   clk	    vdd	  vdd		P_18		l=0.18u 	w=4u
 
 
 mn11		n3		netc0	n4	    0		N_18		l=0.18u  	w=3u
@@ -45,12 +45,7 @@ mn88       n7     clk     0     gnd     N_18       l=0.18u   w=4u
 xinvs    n3 sum  vdd gnd inv
 .ends
 
-xadder a b cin clk cout1  sum1 vdd gnd fulladder
-x1 sum1 sum2 vdd gnd inv
-x2 sum2 sum  vdd gnd inv
-
-x3 cout1 cout2 vdd gnd inv
-x4 cout2 cout  vdd gnd inv
+xadder a b cin clk cout  sum vdd gnd fulladder
 
 cload1   cout   gnd   1p
 cload2   sum    gnd   1p
@@ -62,11 +57,9 @@ vb   b   gnd pulse(1.8 0   1n 0.5n 0.5n 39.5n  80n)
 vcin cin gnd pulse(1.8 0   1n 0.5n 0.5n 79.5n  160n)
 
 
-.meas tran delay000  trig v(clk) val=0.9  fall=1
-+                    targ v(sum) val=0.9  fall=1
 
 .meas tran delay100  trig v(clk) val=0.9  rise=2
-+                    targ v(sum) val=0.9  rise=1
++                   targ v(sum) val=0.9  rise=1
 
 .meas tran delay010  trig v(clk) val=0.9  rise=3
 +                   targ v(sum) val=0.9  rise=2
@@ -77,8 +70,6 @@ vcin cin gnd pulse(1.8 0   1n 0.5n 0.5n 79.5n  160n)
 .meas tran delay111  trig v(clk) val=0.9  rise=8
 +                   targ v(sum) val=0.9  rise=4
 
-.meas tran delayC000  trig v(clk) val=0.9  fall=1
-+                     targ v(cout) val=0.9  fall=1
 
 .meas tran delayC110  trig v(clk) val=0.9  rise=4
 +                     targ v(cout) val=0.9  rise=1
