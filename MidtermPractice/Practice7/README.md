@@ -2,7 +2,9 @@
 
 - 可參考Lab7
 - delay time全部符合
-- 備註: 突波是可以接受的
+- 備註: 
+    - 突波是可以接受的
+    - 助教說需要測量 a<b , a=b , a>b 之delay time 
 - 題目與節點
     >![alt text](p7_node.jpg)
 - delay time
