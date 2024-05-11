@@ -1,7 +1,6 @@
 # 112-2-IC-Design-Lab Practice 5
 
 - 可參考 Lab6-1 與 Lab5
-- delay time 全部符合
 - **注意:**
   
     *VCLK    CLK  GND    PULSE(VL　VH　delay　trise　tfall　 pulse_width　period)
