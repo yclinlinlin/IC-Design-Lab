@@ -10,7 +10,7 @@
  lic:  
  lic: FLEXlm: SDK_11.6.8.3 
  lic: USER:   user                 HOSTNAME: centos 
- lic: HOSTID: 00505631ddcc         PID:      12648 
+ lic: HOSTID: 00505631ddcc         PID:      14210 
  lic: Using FLEXlm license file: 
  lic: 27000@centos 
  lic: Checkout 1 hspice 
@@ -63,13 +63,13 @@
  pratice3 from lab3-3 pass-transistor 3-input xor (loading c=1p)
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- delayn1=   1.0068n  targ=  52.2568n   trig=  51.2500n
- delayn2=   1.0225n  targ= 152.2725n   trig= 151.2500n
- delayn3=   1.0435n  targ= 202.2935n   trig= 201.2500n
- delayn4=   1.0273n  targ= 252.2773n   trig= 251.2500n
- delayn5= 982.2790p  targ= 352.2323n   trig= 351.2500n
- delayn6=   1.0405n  targ= 402.2905n   trig= 401.2500n
- pw=  45.3048u  from=   0.             to= 600.0000n
+ delay001=   1.0149n  targ=  52.2649n   trig=  51.2500n
+ delay011=   1.0313n  targ= 152.2813n   trig= 151.2500n
+ delay100=   1.0373n  targ= 202.2873n   trig= 201.2500n
+ delay101=   1.0203n  targ= 252.2703n   trig= 251.2500n
+ delay111= 995.2454p  targ= 352.2452n   trig= 351.2500n
+ delay000=   1.0397n  targ= 402.2897n   trig= 401.2500n
+ pw=  49.2202u  from=   0.             to= 405.0000n
 
           ***** job concluded
  ******  
@@ -81,7 +81,7 @@
  ******  Machine Information  ******
  CPU:
  model name	: Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
- cpu MHz	: 2207.466
+ cpu MHz	: 2207.257
   
  OS:
  Linux version 3.10.0-693.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ) #1 SMP Tue Aug 22 21:09:27 UTC 2017
@@ -113,19 +113,19 @@
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.00           1          21
-  transient          0.03          61         879         282 rev=         7
+  transient          0.03        4051         717         241 rev=         9
   readin             0.01
-  errchk             0.02
+  errchk             0.01
   setup              0.00
   output             0.00
 
 
            peak memory used        290.91 megabytes
-           total cpu time            0.06 seconds
-           total elapsed time        0.12 seconds
-           job started at     12:20:22 05/06/2024
-           job ended   at     12:20:22 05/06/2024
+           total cpu time            0.05 seconds
+           total elapsed time        0.06 seconds
+           job started at     13:03:05 05/10/2024
+           job ended   at     13:03:05 05/10/2024
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.06(s)
+ lic: total license checkout elapse time:        0.02(s)

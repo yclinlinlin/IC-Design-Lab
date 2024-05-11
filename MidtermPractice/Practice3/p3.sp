@@ -26,7 +26,6 @@ m6 n2   bout c    gnd n_18   w=1.18u l=0.18u
 .ends
 
 xxor a b c out1 vdd gnd xor3
-*加緩衝器
 x1 out1 out2 vdd gnd inv wp=10u wn=1.82u
 x2 out2 out  vdd gnd inv wp=10u wn=1.82u
 
@@ -41,19 +40,19 @@ vinb b    gnd   pulse(1.8 0  1n   0.5n  0.5n 99.5n 200n  )
 vinc c    gnd   pulse(1.8 0  1n   0.5n  0.5n 49.5n 100n )
 
 
-.meas tran delayN1 trig v(c)   val=0.9 rise=1
-+                  targ v(out) val=0.9 rise=1
-.meas tran delayN2 trig v(c)   val=0.9 rise=2
-+                  targ v(out) val=0.9 fall=2
-.meas tran delayN3 trig v(c)   val=0.9 fall=3
-+                  targ v(out) val=0.9 rise=2
-.meas tran delayN4 trig v(c)   val=0.9 rise=3
-+                  targ v(out) val=0.9 fall=3
-.meas tran delayN5 trig v(c)   val=0.9 rise=4
-+                  targ v(out) val=0.9 rise=3
-.meas tran delayN6 trig v(c)   val=0.9 fall=5
-+                  targ v(out) val=0.9 fall=4
+.meas tran delay001 trig v(c)   val=0.9 rise=1
++                   targ v(out) val=0.9 rise=1
+.meas tran delay011 trig v(c)   val=0.9 rise=2
++                   targ v(out) val=0.9 fall=2
+.meas tran delay100 trig v(c)   val=0.9 fall=3
++                   targ v(out) val=0.9 rise=2
+.meas tran delay101 trig v(c)   val=0.9 rise=3
++                   targ v(out) val=0.9 fall=3
+.meas tran delay111 trig v(c)   val=0.9 rise=4
++                   targ v(out) val=0.9 rise=3
+.meas tran delay000 trig v(c)   val=0.9 fall=5
++                   targ v(out) val=0.9 fall=4
 .meas tran pw avg power
 
-.tran 10n 600n
+.tran 0.1n 405n
 .end
