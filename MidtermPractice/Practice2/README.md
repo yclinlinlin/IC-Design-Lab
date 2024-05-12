@@ -4,7 +4,8 @@
 - 備註: 
   - delay time 有一個不符合。
   - 可接受突波。
-  - 檔案p2_Chang.sp為張主楊提供，delay全對，但圖形有瑕疵。
+  - 檔案p2_Chang.sp為張同學提供，delay全對，但圖形有瑕疵。
+  - 檔案p2_Zhu.sp為朱同學提供，delay全對。
 - 題目與節點
     >![alt text](p2_node.jpg)
 - delay time
