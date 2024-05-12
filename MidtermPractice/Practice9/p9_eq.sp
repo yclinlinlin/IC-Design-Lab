@@ -32,7 +32,7 @@ xinvb b    invb vdd gnd inv
 
 xand1 b   inva  lt vdd gnd and 
 
-xand2 a   invb gt vdd gnd and wp=4.5u
+xand2 a   invb gt vdd gnd and
 
 xnor  lt gt  eq vdd gnd nor 
 
