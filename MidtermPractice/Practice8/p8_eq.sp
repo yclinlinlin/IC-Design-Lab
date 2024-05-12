@@ -57,13 +57,13 @@ xe8  eq8       eq    vdd gnd inv *wp=6.5u
 
 xg1  gt1       gt2   vdd gnd inv *wp=6.5u
 xg2  gt2       gt3    vdd gnd inv *wp=6.5u
-xg3  gt3       gt4   vdd gnd inv wp=2.5u
-xg4  gt4       gt    vdd gnd inv wp=2.5u
+xg3  gt3       gt4   vdd gnd inv *wp=6.5u
+xg4  gt4       gt    vdd gnd inv *wp=6.5u
 
 xl1  lt1       lt2   vdd gnd inv *wp=6.5u
 xl2  lt2       lt3    vdd gnd inv *wp=6.5u
-xl3  lt3       lt4   vdd gnd inv wp=2.5u
-xl4  lt4       lt    vdd gnd inv wp=2.5u
+xl3  lt3       lt4   vdd gnd inv *wp=6.5u
+xl4  lt4       lt    vdd gnd inv *wp=6.5u
 
 cload1 gt gnd 0.5p
 cload2 lt gnd 0.5p
@@ -77,17 +77,11 @@ va a    gnd   pulse(1.8 0  1n   0.5n  0.5n 99.5n 200n)
 vb b    gnd   pulse(1.8 0  1n   0.5n  0.5n 199.5n 400n)
 vclk clk  gnd   pulse(1.8 0  1n   0.5n  0.5n 49.5n 100n)
 
-.meas tran eq_delay10 trig v(clk)    val=0.9 rise=2
-+                     targ v(eq)     val=0.9 fall=1
+.meas tran delay10 trig v(clk)    val=0.9 rise=2
++                  targ v(eq)     val=0.9 fall=1
 
-.meas tran eq_delay01 trig v(clk)    val=0.9 rise=3
-+                     targ v(eq)     val=0.9 fall=2
-
-.meas tran gt_delay10 trig v(clk)    val=0.9 rise=2
-+                     targ v(gt)     val=0.9 rise=1
-
-.meas tran lt_delay01 trig v(clk)    val=0.9 rise=3
-+                     targ v(lt)     val=0.9 rise=1
+.meas tran delay01 trig v(clk)    val=0.9 rise=3
++                  targ v(eq)     val=0.9 fall=2
 
 
 .tran 0.1n 400n
