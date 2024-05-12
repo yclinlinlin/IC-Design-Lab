@@ -5,7 +5,7 @@ pratice9  pass_reansistor (loading c=2p)
 .unprot
 .global vdd gnd
 
-.subckt  inv  in  out vdd gnd  wp=10u wn=3.5u
+.subckt  inv  in  out vdd gnd  wp=9.5u wn=3.35u
 mp		out		in		vdd		vdd		P_18		l=0.18u	w=wp
 mn		out		in		gnd		gnd		N_18		l=0.18u	w=wn
 .ends
@@ -22,33 +22,33 @@ xinva a aout vdd gnd inv
 xinvb b bout vdd gnd inv
 
 *MP0    Drain   Gate    Source  Body  Model-name     Length     Width
-mn0		out		bout  aout   	0		N_18		l=0.18u  	w=11u 
-mn1		out		b	  0		    0		N_18		l=0.18u  	w=11u 
+mn0		out		bout  aout   	0		N_18		l=0.18u  	w=10u 
+mn1		out		b	  0		    0		N_18		l=0.18u  	w=10u 
 .ends
 
 .subckt comp a b gt lt eq vdd gnd 
 xinva a    inva vdd gnd inv 
 xinvb b    invb vdd gnd inv 
 
-xand1 b   inva  lt vdd gnd and wn=12u
+xand1 b   inva  lt vdd gnd and 
 
-xand2 a   invb gt vdd gnd and wn=12u
+xand2 a   invb gt vdd gnd and wp=4.5u
 
 xnor  lt gt  eq vdd gnd nor 
 
 .ends
 
 xcomp a b  gt1 lt1 eq1 vdd gnd  comp
-xe1  eq1       eq2   vdd gnd inv wp=10.2u
-xe2  eq2       eq    vdd gnd inv wp=10.2u
+xe1  eq1       eq2   vdd gnd inv wp=10u
+xe2  eq2       eq    vdd gnd inv wp=10u
 
 
 xg1  gt1       gt2   vdd gnd inv wp=9u
 xg2  gt2       gt    vdd gnd inv wp=9u
 
 
-xl1  lt1       lt2   vdd gnd inv wp=10u
-xl2  lt2       lt    vdd gnd inv wp=10u
+xl1  lt1       lt2   vdd gnd inv wp=9u
+xl2  lt2       lt  vdd gnd inv wp=9u
 
 
 
@@ -63,25 +63,12 @@ vgnd	gnd		0		0
 va a    gnd   pulse(1.8 0  1n   0.5n  0.5n 99.5n 200n)
 vb b    gnd   pulse(1.8 0  1n   0.5n  0.5n 199.5n 400n)
 
-.meas tran eq_delay10 trig v(a)    val=0.9 rise=1
-+                     targ v(eq)   val=0.9 fall=1
+.meas tran delay10 trig v(a)    val=0.9 rise=1
++                  targ v(eq)   val=0.9 fall=1
 
-.meas tran eq_delay11 trig v(a)    val=0.9 rise=2
-+                     targ v(eq)   val=0.9 rise=1
-
-.meas tran gt_delay10 trig v(a)    val=0.9 rise=1
-+                     targ v(gt)   val=0.9 rise=1
-
-.meas tran gt_delay01 trig v(a)    val=0.9 fall=2
-+                     targ v(gt)   val=0.9 fall=1
-
-.meas tran lt_delay01 trig v(a)    val=0.9 fall=2
-+                     targ v(lt)   val=0.9 rise=1
-
-.meas tran lt_delay11 trig v(a)    val=0.9 rise=2
-+                     targ v(lt)   val=0.9 fall=1
+.meas tran delay11 trig v(a)    val=0.9 rise=2
++                  targ v(eq)   val=0.9 rise=1
 
 
 .tran 0.1n 400n
 .end
-

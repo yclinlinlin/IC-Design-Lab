@@ -3,11 +3,18 @@
 - 可參考Lab7 與 Lab3
 - 備註: 
     - 突波是可以接受的
-    - 助教說需要測量 a<b , a=b , a>b 之delay time 
+    - 助教:「需要測量 a<b , a=b , a>b 之delay time 」
+    - p9_eq.sp 為僅測量 a=b 之 delay time 
   
 - 題目與節點
     >![alt text](p9_node.jpg)
 - delay time
-    >![alt text](p9_delay.png)
+    >　p9.sp
+    > ![alt text](p9_delay.png)
+    > p9_eq.sp
+    > ![alt text](p9_delay_eq.png)　
 - 波型
-    >![alt text](p9_wave.png)
+    > p9.sp
+    > ![alt text](p9_wave.png)
+    > p9_eq.sp
+    > ![alt text](p9_wave_eq.png)
