@@ -4,7 +4,7 @@
 - 備註: 
     - delay time全部符合
     - 助教:「需要測量 a<b , a=b , a>b 之delay time 」
-    - p9_eq.sp 為僅測量 a=b 之 delay time 
+    - p9_eq.sp 僅測量 a=b 之 delay time 
   
 - 題目與節點
     >![alt text](p9_node.jpg)
