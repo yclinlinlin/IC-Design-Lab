@@ -1,0 +1,31 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12 linux64"
+* "format" "HSP"
+* "rundate" "03:46:27 04/14/2024 "
+* "netlist" "full.sp "
+* "runtitle" "lab6-2-a 1-bit full adder (loading c=0.1p)"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a = 400.0000m       
++ b = 400.0000m       
++ cin = 400.0000m       
++ cout = 399.9985m       
++ sum = 399.9985m       
++ vdd = 400.0000m       
++ xadder.n0 = 135.0364m       
++ xadder.n1 = 250.6200m       
++ xadder.n2 = 241.8610m       
++ xadder.n3 =  10.7845u       
++ xadder.n4 =  29.6690p       
++ xadder.n5 =   7.1893u       
++ xadder.n6 =   3.5945u       
++ xadder.net0 = 380.6297m       
++ xadder.net1 = 356.3732m       
++ xadder.net2 = 255.9974n       
++ xadder.net3 = 383.9966n       
++ xadder.netc0 = 767.9970n       
+***   END: Saved Operating Point ***                     

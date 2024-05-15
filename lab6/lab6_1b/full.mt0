@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='N-2017.12 linux64' PARAM_COUNT=0
+.TITLE 'lab6-1-b 8-bit full adder (loading c=0.1p)'
+ delayr           delayf           delaysf          delaysr         
+ pw               temper           alter#          
+  1.314e-09        1.361e-09        1.377e-09        1.451e-09      
+  2.937e-04         25.0000        1               
