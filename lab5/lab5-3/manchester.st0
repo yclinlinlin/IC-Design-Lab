@@ -1,0 +1,55 @@
+****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******
+ Input File: manchester.sp
+ lic:
+ lic: FLEXlm: SDK_11.6.8.3
+ lic: USER:   user                 HOSTNAME: centos
+ lic: HOSTID: 00505631ddcc         PID:      24356
+ lic: Using FLEXlm license file:
+ lic: 27000@centos
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 30-dec-2101/2100.2100
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@centos
+ lic:
+ init: begin read circuit files, cpu clock= 1.00E-02
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/ad
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/behave
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/bjt
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/burr_b
+                         rn
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/comlin
+                         ear
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/dio
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/fet
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/lin_te
+                         ch
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/pci
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/signet
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/ti
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/tline
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/xilinx
+       option runlvl
+       option post =     2.00
+ init: end read circuit files, cpu clock= 2.00E-02 peak memory=     309 mb
+ init: begin check errors, cpu clock= 2.00E-02
+ init: end check errors, cpu clock= 3.00E-02 peak memory=     311 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 3.00E-02
+       establish matrix -- done, cpu clock= 3.00E-02 peak memory=     311 mb
+       re-order matrix -- done, cpu clock= 3.00E-02 peak memory=     311 mb
+ init: end setup matrix, cpu clock= 3.00E-02 peak memory=     312 mb
+ dcop: begin dcop, cpu clock= 3.00E-02
+ dcop: end dcop, cpu clock= 4.00E-02 peak memory=     312 mb tot_iter=      22
+ output: manchester.mt0
+ sweep: tran tran0    begin, stop_t=  4.00E-08 #sweeps= 401 cpu clock= 4.00E-02
+ tran: time= 4.1000E-09 tot_iter=     165 conv_iter=      55 cpu clock= 8.00E-02
+ tran: time= 8.1000E-09 tot_iter=     304 conv_iter=     101 cpu clock= 1.20E-01
+ tran: time= 1.2100E-08 tot_iter=     466 conv_iter=     153 cpu clock= 1.70E-01
+ tran: time= 1.6036E-08 tot_iter=     621 conv_iter=     205 cpu clock= 2.10E-01
+ tran: time= 2.0100E-08 tot_iter=     795 conv_iter=     262 cpu clock= 2.70E-01
+ tran: time= 2.4100E-08 tot_iter=     954 conv_iter=     315 cpu clock= 3.20E-01
+ tran: time= 2.8100E-08 tot_iter=    1115 conv_iter=     367 cpu clock= 3.70E-01
+ tran: time= 3.2100E-08 tot_iter=    1272 conv_iter=     419 cpu clock= 4.10E-01
+ tran: time= 3.6100E-08 tot_iter=    1433 conv_iter=     472 cpu clock= 4.60E-01
+ tran: time= 4.0000E-08 tot_iter=    1573 conv_iter=     518 cpu clock= 5.10E-01
+ sweep: tran tran0    end, cpu clock= 5.10E-01 peak memory=     312 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

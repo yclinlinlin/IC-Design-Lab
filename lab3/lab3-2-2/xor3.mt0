@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='N-2017.12 linux64' PARAM_COUNT=0
+.TITLE 'lab3-2 pseudo-nmos 3-input xor (loading c=0.05p)'
+ delayn           pw               pdp              temper          
+ alter#          
+  5.000e-10        1.808e-04        9.039e-14         25.0000       
+1               

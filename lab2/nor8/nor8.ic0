@@ -1,0 +1,30 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12 linux64"
+* "format" "HSP"
+* "rundate" "11:22:09 03/11/2024 "
+* "netlist" "nor8.sp "
+* "runtitle" "8-input nor (loading c=0.05p)"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   0.            
++ c =   0.            
++ d =   0.            
++ e =   0.            
++ f =   0.            
++ g =   0.            
++ h =   0.            
++ out =  14.0606n       
++ vdd =   1.8000        
++ xnor8.net0 = 487.8994m       
++ xnor8.net1 = 485.2152m       
++ xnor8.net2 = 481.4332m       
++ xnor8.net3 = 476.1172m       
++ xnor8.net4 = 468.4013m       
++ xnor8.net5 = 456.2254m       
++ xnor8.net6 = 432.3430m       
+***   END: Saved Operating Point ***                     

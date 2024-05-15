@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='N-2017.12 linux64' PARAM_COUNT=0
+.TITLE '3-input xor static cmos (loading c=0.05p)'
+ delayn           pw               pdp              temper          
+ alter#          
+  3.559e-10        6.472e-05        2.303e-14         25.0000       
+1               

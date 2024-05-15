@@ -1,0 +1,18 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12 linux64"
+* "format" "HSP"
+* "rundate" "16:53:41 03/10/2024 "
+* "netlist" "inv.sp "
+* "runtitle" "2-input inv (loading c=0.01p)"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ b =   0.            
++ in =   0.            
++ out =   1.8000        
++ vdd =   1.8000        
+***   END: Saved Operating Point ***                     

@@ -1,0 +1,30 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12 linux64"
+* "format" "HSP"
+* "rundate" "10:24:13 03/11/2024 "
+* "netlist" "nand8.sp "
+* "runtitle" "8-input nand (loading c=0.05p)"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ c =   1.8000        
++ d =   1.8000        
++ e =   1.8000        
++ f =   1.8000        
++ g =   1.8000        
++ h =   1.8000        
++ out = 346.7087n       
++ vdd =   1.8000        
++ xnand6.net = 303.3701n       
++ xnand6.net1 = 260.0315n       
++ xnand6.net2 = 216.6929n       
++ xnand6.net3 = 173.3543n       
++ xnand6.net4 = 130.0158n       
++ xnand6.net5 =  86.6772n       
++ xnand6.net6 =  43.3386n       
+***   END: Saved Operating Point ***                     

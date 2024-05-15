@@ -1,0 +1,171 @@
+ ****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: xor3.sp                                                           
+  Command line options: /eda/synopsys/hspice/2017.12/hspice/linux64/hspice -i xor3.sp -o xor3
+ lic:  
+ lic: FLEXlm: SDK_11.6.8.3 
+ lic: USER:   user                 HOSTNAME: centos 
+ lic: HOSTID: 00505631ddcc         PID:      5868 
+ lic: Using FLEXlm license file: 
+ lic: 27000@centos 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2101/2100.2100 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@centos 
+ lic:   
+1****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+ ******  
+ lab3-3 pass-transistor 3-input xor (loading c=0.05p~0.3p)
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xxor3.                          xor                1.00 
+        2 xxor3.xinva.                    inv                1.00 
+        3 xxor3.xinvb.                    inv                1.00 
+        4 xxor3.xinvc.                    inv                1.00 
+        5 xxor3.xinvx.                    inv                1.00 
+  **info** (xor3.sp:34) DC voltage reset to initial transient source value in source 0:va. new dc=0.1800D+01
+  **warning** (xor3.sp:32) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=xor3.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    5.000E-14 ***
+
+ ******
+ lab3-3 pass-transistor 3-input xor (loading c=0.05p~0.3p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  10.2473n  targ=  50.3973n   trig=  40.1500n
+ pw=   2.6752u  from=   0.             to= 640.0000n
+ pdp=  27.4140f
+
+          ***** job concluded
+ ******
+ lab3-3 pass-transistor 3-input xor (loading c=0.05p~0.3p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   100.0000f       ***
+  
+ delayn=  14.5164n  targ=  54.6664n   trig=  40.1500n
+ pw=   3.6547u  from=   0.             to= 640.0000n
+ pdp=  53.0533f
+
+          ***** job concluded
+ ******
+ lab3-3 pass-transistor 3-input xor (loading c=0.05p~0.3p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   150.0000f       ***
+  
+ delayn=  17.8563n  targ=  58.0063n   trig=  40.1500n
+ pw=   4.6802u  from=   0.             to= 640.0000n
+ pdp=  83.5712f
+
+          ***** job concluded
+ ******
+ lab3-3 pass-transistor 3-input xor (loading c=0.05p~0.3p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   200.0000f       ***
+  
+ delayn=  20.3917n  targ=  60.5417n   trig=  40.1500n
+ pw=   5.6904u  from=   0.             to= 640.0000n
+ pdp= 116.0379f
+
+          ***** job concluded
+ ******
+ lab3-3 pass-transistor 3-input xor (loading c=0.05p~0.3p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   250.0000f       ***
+  
+ delayn=  22.9206n  targ=  63.0706n   trig=  40.1500n
+ pw=   6.6991u  from=   0.             to= 640.0000n
+ pdp= 153.5466f
+
+          ***** job concluded
+ ******
+ lab3-3 pass-transistor 3-input xor (loading c=0.05p~0.3p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   300.0000f       ***
+  
+ delayn=  24.8392n  targ=  64.9892n   trig=  40.1500n
+ pw=   7.6835u  from=   0.             to= 640.0000n
+ pdp= 190.8525f
+
+          ***** job concluded
+ ******  
+ lab3-3 pass-transistor 3-input xor (loading c=0.05p~0.3p)
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
+ cpu MHz	: 2207.298
+  
+ OS:
+ Linux version 3.10.0-693.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ) #1 SMP Tue Aug 22 21:09:27 UTC 2017
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      35 # elements   =      17
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      12 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          22
+  transient          0.23       38406        7306        2606 rev=        63
+  readin             0.00
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        310.34 megabytes
+           total cpu time            0.25 seconds
+           total elapsed time        0.14 seconds
+           job started at     18:02:57 03/24/2024
+           job ended   at     18:02:57 03/24/2024
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.01(s)

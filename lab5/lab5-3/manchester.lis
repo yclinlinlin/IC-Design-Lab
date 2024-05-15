@@ -1,0 +1,222 @@
+ ****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: manchester.sp                                                     
+  Command line options: /eda/synopsys/hspice/2017.12/hspice/linux64/hspice -i manchester.sp -o manchester
+ lic:  
+ lic: FLEXlm: SDK_11.6.8.3 
+ lic: USER:   user                 HOSTNAME: centos 
+ lic: HOSTID: 00505631ddcc         PID:      24356 
+ lic: Using FLEXlm license file: 
+ lic: 27000@centos 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2101/2100.2100 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@centos 
+ lic:   
+  **warning** (manchester.sp:103) measure result delay4 redefined, ignored the previous.
+  **warning** (manchester.sp:42) Parameter m1 is ignored
+1****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+ ******  
+ lab5-3 dynamic manchester carry-generation chain (loading c=0.05p)
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xinvci.                         inv                1.00 
+        2 xadd0.                          add                1.00 
+        3 xadd1.                          add                1.00 
+        4 xadd2.                          add                1.00 
+        5 xadd3.                          add                1.00 
+        6 xadd4.                          add                1.00 
+        7 xadd5.                          add                1.00 
+        8 xadd6.                          add                1.00 
+        9 xadd7.                          add                1.00 
+       10 xadd0.xand.                     and                1.00 
+       11 xadd0.xxor.                     xor                1.00 
+       12 xadd0.xinv3.                    inv                1.00 
+       13 xadd1.xand.                     and                1.00 
+       14 xadd1.xxor.                     xor                1.00 
+       15 xadd1.xinv3.                    inv                1.00 
+       16 xadd2.xand.                     and                1.00 
+       17 xadd2.xxor.                     xor                1.00 
+       18 xadd2.xinv3.                    inv                1.00 
+       19 xadd3.xand.                     and                1.00 
+       20 xadd3.xxor.                     xor                1.00 
+       21 xadd3.xinv3.                    inv                1.00 
+       22 xadd4.xand.                     and                1.00 
+       23 xadd4.xxor.                     xor                1.00 
+       24 xadd4.xinv3.                    inv                1.00 
+       25 xadd5.xand.                     and                1.00 
+       26 xadd5.xxor.                     xor                1.00 
+       27 xadd5.xinv3.                    inv                1.00 
+       28 xadd6.xand.                     and                1.00 
+       29 xadd6.xxor.                     xor                1.00 
+       30 xadd6.xinv3.                    inv                1.00 
+       31 xadd7.xand.                     and                1.00 
+       32 xadd7.xxor.                     xor                1.00 
+       33 xadd7.xinv3.                    inv                1.00 
+       34 xadd0.xand.xinv0.               inv                1.00 
+       35 xadd0.xxor.xinvina.             inv                1.00 
+       36 xadd0.xxor.xinvinb.             inv                1.00 
+       37 xadd1.xand.xinv0.               inv                1.00 
+       38 xadd1.xxor.xinvina.             inv                1.00 
+       39 xadd1.xxor.xinvinb.             inv                1.00 
+       40 xadd2.xand.xinv0.               inv                1.00 
+       41 xadd2.xxor.xinvina.             inv                1.00 
+       42 xadd2.xxor.xinvinb.             inv                1.00 
+       43 xadd3.xand.xinv0.               inv                1.00 
+       44 xadd3.xxor.xinvina.             inv                1.00 
+       45 xadd3.xxor.xinvinb.             inv                1.00 
+       46 xadd4.xand.xinv0.               inv                1.00 
+       47 xadd4.xxor.xinvina.             inv                1.00 
+       48 xadd4.xxor.xinvinb.             inv                1.00 
+       49 xadd5.xand.xinv0.               inv                1.00 
+       50 xadd5.xxor.xinvina.             inv                1.00 
+       51 xadd5.xxor.xinvinb.             inv                1.00 
+       52 xadd6.xand.xinv0.               inv                1.00 
+       53 xadd6.xxor.xinvina.             inv                1.00 
+       54 xadd6.xxor.xinvinb.             inv                1.00 
+       55 xadd7.xand.xinv0.               inv                1.00 
+       56 xadd7.xxor.xinvina.             inv                1.00 
+       57 xadd7.xxor.xinvinb.             inv                1.00 
+  **info** (manchester.sp:72) DC voltage reset to initial transient source value in source 0:va. new dc=0.1800D+01
+  **warning** (manchester.sp:69) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=manchester.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ lab5-3 dynamic manchester carry-generation chain (loading c=0.05p)
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a       =   1.8000   0:a1      =   1.8000   0:a2      =   1.8000 
+ + 0:a3      =   1.8000   0:a4      =   1.8000   0:a5      =   1.8000 
+ + 0:a6      =   1.8000   0:a7      =   1.8000   0:b       =   1.8000 
+ + 0:b1      =   1.8000   0:b2      =   1.8000   0:b3      =   1.8000 
+ + 0:b4      =   1.8000   0:b5      =   1.8000   0:b6      =   1.8000 
+ + 0:b7      =   1.8000   0:c0      =  10.9565n  0:c1      =  10.9565n
+ + 0:c2      =  10.9565n  0:c3      =  10.9565n  0:c4      =  10.9565n
+ + 0:c5      =  10.9565n  0:c6      =  10.9565n  0:c7      =  10.9565n
+ + 0:ci      =   0.       0:ciout   =   1.8000   0:clk     =   0.     
+ + 0:out0    =   1.8000   0:out1    =   1.8000   0:out2    =   1.8000 
+ + 0:out3    =   1.8000   0:out4    =   1.8000   0:out5    =   1.8000 
+ + 0:out6    =   1.8000   0:out7    =   1.8000   0:vdd     =   1.8000 
+ + 2:g       =   1.8000   2:net1    =   1.5650   2:p       =  33.1200n
+ + 3:g       =   1.8000   3:net1    =   1.5650   3:p       =  33.1199n
+ + 4:g       =   1.8000   4:net1    =   1.5650   4:p       =  33.1200n
+ + 5:g       =   1.8000   5:net1    =   1.5650   5:p       =  33.1199n
+ + 6:g       =   1.8000   6:net1    =   1.5650   6:p       =  33.1200n
+ + 7:g       =   1.8000   7:net1    =   1.5650   7:p       =  33.1200n
+ + 8:g       =   1.8000   8:net1    =   1.5650   8:p       =  33.1200n
+ + 9:g       =   1.8000   9:net1    =   1.5650   9:p       =  33.1200n
+ +10:net     =  10.8346n 10:out0    =  21.6693n 11:inaout  =  10.9565n
+ +11:inbout  =  10.9565n 11:net0    = 402.3406m 11:net1    =   1.8000 
+ +11:net2    =  16.3575n 11:net3    =  16.5600n 13:net     =  10.8346n
+ +13:out0    =  21.6693n 14:inaout  =  10.9565n 14:inbout  =  10.9565n
+ +14:net0    = 402.3406m 14:net1    =   1.8000  14:net2    =  16.3574n
+ +14:net3    =  16.5600n 16:net     =  10.8346n 16:out0    =  21.6693n
+ +17:inaout  =  10.9565n 17:inbout  =  10.9565n 17:net0    = 402.3406m
+ +17:net1    =   1.8000  17:net2    =  16.3575n 17:net3    =  16.5600n
+ +19:net     =  10.8346n 19:out0    =  21.6693n 20:inaout  =  10.9565n
+ +20:inbout  =  10.9565n 20:net0    = 402.3406m 20:net1    =   1.8000 
+ +20:net2    =  16.3574n 20:net3    =  16.5600n 22:net     =  10.8346n
+ +22:out0    =  21.6693n 23:inaout  =  10.9565n 23:inbout  =  10.9565n
+ +23:net0    = 402.3406m 23:net1    =   1.8000  23:net2    =  16.3575n
+ +23:net3    =  16.5600n 25:net     =  10.8346n 25:out0    =  21.6693n
+ +26:inaout  =  10.9565n 26:inbout  =  10.9565n 26:net0    = 402.3406m
+ +26:net1    =   1.8000  26:net2    =  16.3574n 26:net3    =  16.5600n
+ +28:net     =  10.8346n 28:out0    =  21.6693n 29:inaout  =  10.9565n
+ +29:inbout  =  10.9565n 29:net0    = 402.3406m 29:net1    =   1.8000 
+ +29:net2    =  16.3574n 29:net3    =  16.5600n 31:net     =  10.8346n
+ +31:out0    =  21.6693n 32:inaout  =  10.9565n 32:inbout  =  10.9565n
+ +32:net0    = 402.3406m 32:net1    =   1.8000  32:net2    =  16.3574n
+ +32:net3    =  16.5600n
+
+ ******
+ lab5-3 dynamic manchester carry-generation chain (loading c=0.05p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delay1= 301.4420p  targ=  14.4514n   trig=  14.1500n
+ delay2= 295.1181p  targ=   2.4451n   trig=   2.1500n
+ delay3= 289.5747p  targ=   2.4396n   trig=   2.1500n
+ delay4= 278.0524p  targ=   2.4281n   trig=   2.1500n
+ delay6= 272.0122p  targ=   2.4220n   trig=   2.1500n
+ delay7= 265.8092p  targ=   2.4158n   trig=   2.1500n
+ delay8= 253.8323p  targ=   2.4038n   trig=   2.1500n
+ pw= 431.7299u  from=   0.             to=  40.0000n
+
+          ***** job concluded
+ ******  
+ lab5-3 dynamic manchester carry-generation chain (loading c=0.05p)
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
+ cpu MHz	: 2207.298
+  
+ OS:
+ Linux version 3.10.0-693.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ) #1 SMP Tue Aug 22 21:09:27 UTC 2017
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =     513 # elements   =     221
+  # resistors   =       0 # capacitors =       8 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =      19
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =     194 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          22
+  transient          0.47         401        1575         519 rev=        18
+  readin             0.01
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        312.02 megabytes
+           total cpu time            0.50 seconds
+           total elapsed time        0.29 seconds
+           job started at     23:14:30 04/07/2024
+           job ended   at     23:14:31 04/07/2024
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.02(s)

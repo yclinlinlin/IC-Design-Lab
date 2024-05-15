@@ -1,0 +1,27 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12 linux64"
+* "format" "HSP"
+* "rundate" "18:45:43 03/17/2024 "
+* "netlist" "nand2.sp "
+* "runtitle" "2-input nand cascade(loading c=0.02p)"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ c =   1.8000        
++ d =   1.8000        
++ e =   1.8000        
++ out1 =  21.6693n       
++ out2 =   1.8000        
++ out3 =  21.6693n       
++ out4 =   1.8000        
++ vdd =   1.8000        
++ xnand20.net =  10.8346n       
++ xnand21.net =   7.0193n       
++ xnand22.net =  10.8347n       
++ xnand23.net =   7.0193n       
+***   END: Saved Operating Point ***                     

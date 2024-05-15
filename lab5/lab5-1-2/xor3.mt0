@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='N-2017.12 linux64' PARAM_COUNT=0
+.TITLE 'lab5-1 dynamic 3-input xor (loading c=0.1p)'
+ delayf           delayr           pw               pdp1            
+ pdp2             temper           alter#          
+  1.693e-10        3.187e-10        9.457e-05        1.601e-14      
+  3.014e-14         25.0000        1               

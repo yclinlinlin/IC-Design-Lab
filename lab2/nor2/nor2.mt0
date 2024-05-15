@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='N-2017.12 linux64' PARAM_COUNT=0
+.TITLE '2-input nor (loading c=0.05p)'
+ delayn           pw               pdp              temper          
+ alter#          
+  4.494e-10        9.343e-06        4.198e-15         25.0000       
+1               
