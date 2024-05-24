@@ -1,0 +1,44 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-2 64-BIT"
+* "format" "HSP"
+* "rundate" "14:09:21 01/17/2024 "
+* "netlist" "2-input and.sp "
+* "runtitle" "2-input and"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ c =   1.8000        
++ ck =   0.            
++ d =   1.8000        
++ e =   1.8000        
++ out1 =   1.8000        
++ out2 =   1.8000        
++ out3 =   1.8000        
++ out4 =   1.8000        
++ vdd =   1.8000        
++ xg1.aout =  10.9565n       
++ xg1.bout =  10.9565n       
++ xg1.net = 131.2607m       
++ xg1.out1 =   1.8000        
++ xg1.out2 =  10.9565n       
++ xh2.aout =  10.9565n       
++ xh2.bout =  10.9565n       
++ xh2.net = 131.2607m       
++ xh2.out1 =   1.8000        
++ xh2.out2 =  10.9565n       
++ xj3.aout =  10.9565n       
++ xj3.bout =  10.9565n       
++ xj3.net = 131.2607m       
++ xj3.out1 =   1.8000        
++ xj3.out2 =  10.9565n       
++ xk4.aout =  10.9565n       
++ xk4.bout =  10.9565n       
++ xk4.net = 131.2607m       
++ xk4.out1 =   1.8000        
++ xk4.out2 =  10.9565n       
+***   END: Saved Operating Point ***                     

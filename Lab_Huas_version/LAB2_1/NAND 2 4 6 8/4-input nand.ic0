@@ -1,0 +1,22 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-2 64-BIT"
+* "format" "HSP"
+* "rundate" "10:32:33 07/05/2023 "
+* "netlist" "4-input nand.sp "
+* "runtitle" "4-input nand"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ c =   1.8000        
++ d =   1.8000        
++ out =  86.6772n       
++ vdd =   1.8000        
++ xa1.net1 =  65.0079n       
++ xa1.net2 =  43.3386n       
++ xa1.net3 =  21.6693n       
+***   END: Saved Operating Point ***                     

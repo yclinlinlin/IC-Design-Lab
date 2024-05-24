@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='J-2014.09-2 64-BIT'
+.TITLE 'inverter'
+ delayn1          temper           alter#          
+    failed          25.0000        1               

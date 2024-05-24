@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='J-2014.09-2 64-BIT'
+.TITLE 'full adder'
+ delayn1          pw               pdp              temper          
+ alter#          
+    failed         5.546e-06          failed          25.0000       
+ 1               

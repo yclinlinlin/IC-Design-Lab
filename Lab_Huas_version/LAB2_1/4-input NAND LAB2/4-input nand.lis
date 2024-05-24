@@ -1,0 +1,190 @@
+ ****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: 4-input nand.sp                                                   
+  Command line options: -i 4-input nand.sp -o 4-input nand.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   user                 HOSTNAME: LAPTOP-V0SVEGVF 
+  lic: HOSTID: "e8f408ef740e 00ff95ffeb7e 005056c00001 005056c00008 e8f408ef740a
+  e8f408ef740b eaf408e
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-V0SVEGVF 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-V0SVEGVF 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-2\meta.cfg
+  **warning** (4-input nand.sp:12) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 4-input nand
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xa1.                            nand1              1.00 
+  **info** (4-input nand.sp:27) DC voltage reset to initial transient source value              in source        0:va                  new dc=  0.1800D+01
+  **warning** (4-input nand.sp:9) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=4-input nand.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.000E-14 ***
+
+ ******  
+ 4-input nand
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn1= 113.5628p  targ=  30.2636n   trig=  30.1500n
+ pw=   4.7896u  from=   0.          to= 160.0000n
+ pdp= 543.9193a
+
+          ***** job concluded
+ ******  
+ 4-input nand
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =   60.0000f       ***
+
+ delayn1= 256.4763p  targ=  30.4065n   trig=  30.1500n
+ pw=  11.2199u  from=   0.          to= 160.0000n
+ pdp=   2.8776f
+
+          ***** job concluded
+ ******  
+ 4-input nand
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  100.0000f       ***
+
+ delayn1= 401.9183p  targ=  30.5519n   trig=  30.1500n
+ pw=  17.5930u  from=   0.          to= 160.0000n
+ pdp=   7.0710f
+
+          ***** job concluded
+ ******  
+ 4-input nand
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  140.0000f       ***
+
+ delayn1= 565.5582p  targ=  30.7156n   trig=  30.1500n
+ pw=  24.9955u  from=   0.          to= 160.0000n
+ pdp=  14.1364f
+
+          ***** job concluded
+ ******  
+ 4-input nand
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  180.0000f       ***
+
+ delayn1= 737.0849p  targ=  30.8871n   trig=  30.1500n
+ pw=  31.4133u  from=   0.          to= 160.0000n
+ pdp=  23.1542f
+
+          ***** job concluded
+ ******  
+ 4-input nand
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  220.0000f       ***
+
+ delayn1= 877.3515p  targ=  31.0274n   trig=  30.1500n
+ pw=  37.7130u  from=   0.          to= 160.0000n
+ pdp=  33.0875f
+
+          ***** job concluded
+ ******  
+ 4-input nand
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  260.0000f       ***
+
+ delayn1=   1.0141n  targ=  31.1641n   trig=  30.1500n
+ pw=  43.7905u  from=   0.          to= 160.0000n
+ pdp=  44.4086f
+
+          ***** job concluded
+ ******  
+ 4-input nand
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  300.0000f       ***
+
+ delayn1=   1.1477n  targ=  31.2977n   trig=  30.1500n
+ pw=  49.9164u  from=   0.          to= 160.0000n
+ pdp=  57.2867f
+
+          ***** job concluded
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 4-input nand
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      26 # elements   =      14
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       5
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       8 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1           4
+  transient          0.11       12808        6559        2644 rev=       158
+  readin             0.01
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         44.20 megabytes
+           total cpu time            0.14 seconds
+           total elapsed time        0.17 seconds
+           job started at     10:46:22 07/05/2023
+           job ended   at     10:46:22 07/05/2023
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.03(s)

@@ -1,0 +1,231 @@
+ ****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: 2-input and.sp                                                    
+  Command line options: -hpp -i 2-input and.sp -o 2-input and.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   User                 HOSTNAME: LAPTOP-HIOSMBNM 
+  lic: HOSTID: "a036bc64ac5e 009337e9bab9 005056c00001 005056c00008 009337e9bab5
+  009337e9bab6 029337e
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-HIOSMBNM 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-2\meta.cfg
+ 
+ ****** Advanced Analog Library - J-2014.09-2 (Oct 22 2014) ****** 
+  **warning** (2-input and.sp:12) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 2-input and
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xg1.                            and                1.00 
+        2 xh2.                            and                1.00 
+        3 xj3.                            and                1.00 
+        4 xk4.                            and                1.00 
+        5 xg1.xb1.                        inv1               1.00 
+        6 xg1.xc1.                        inv1               1.00 
+        7 xg1.xc2.                        inv1               1.00 
+        8 xg1.xc3.                        inv1               1.00 
+        9 xh2.xb1.                        inv1               1.00 
+       10 xh2.xc1.                        inv1               1.00 
+       11 xh2.xc2.                        inv1               1.00 
+       12 xh2.xc3.                        inv1               1.00 
+       13 xj3.xb1.                        inv1               1.00 
+       14 xj3.xc1.                        inv1               1.00 
+       15 xj3.xc2.                        inv1               1.00 
+       16 xj3.xc3.                        inv1               1.00 
+       17 xk4.xb1.                        inv1               1.00 
+       18 xk4.xc1.                        inv1               1.00 
+       19 xk4.xc2.                        inv1               1.00 
+       20 xk4.xc3.                        inv1               1.00 
+  **info** (2-input and.sp:37) DC voltage reset to initial transient source value              in source        0:va                  new dc=  0.1800D+01
+  **warning** (2-input and.sp:9) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=2-input and.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 2-input and
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is all       simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a       =   1.8000   0:b       =   1.8000   0:c       =   1.8000 
+ + 0:ck      =   0.       0:d       =   1.8000   0:e       =   1.8000 
+ + 0:out1    =   1.8000   0:out2    =   1.8000   0:out3    =   1.8000 
+ + 0:out4    =   1.8000   0:vdd     =   1.8000   1:aout    =  10.9565n
+ + 1:bout    =  10.9565n  1:net     = 131.2607m  1:out1    =   1.8000 
+ + 1:out2    =  10.9565n  2:aout    =  10.9565n  2:bout    =  10.9565n
+ + 2:net     = 131.2607m  2:out1    =   1.8000   2:out2    =  10.9565n
+ + 3:aout    =  10.9565n  3:bout    =  10.9565n  3:net     = 131.2607m
+ + 3:out1    =   1.8000   3:out2    =  10.9565n  4:aout    =  10.9565n
+ + 4:bout    =  10.9565n  4:net     = 131.2607m  4:out1    =   1.8000 
+ + 4:out2    =  10.9565n
+
+ 
+Warning: 4 port signals are assumed local to their subcircuits 
+ 
+Port signals that have the same names as global nets: 
+Location  Port name  Subckt   
+          "GND"      "AND"    
+          "VDD"      "AND"    
+          "GND"      "INV1"   
+          "VDD"      "INV1"   
+ 
+".opt runlvl= 3" sets ".opt sim_accuracy= 1"  
+ 
+  ******  Summary of Possible Problems in Netlist  *************** 
+  Negative resistor              0   
+  Negative capacitor             0   
+  Negative inductor              0   
+  Unconnected node               0   
+  Dangling terminal              0   
+  Non-rail bulk terminal         0   
+  Floating MOS gate              0   
+  Floating MOS bulk              0   
+  Floating BJT substrate         0   
+  Floating controlled input      0   
+  Floating current source nodes  0   
+  Source loop                    0   
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 1 thread. 
+  
+ 
+License user information 
+FLEXLM    v8.5b             
+USER      User              
+HOSTNAME  LAPTOP-HIOSMBNM   
+HOSTID    029337e9bab5      
+PID       18512             
+ 
+License file: 27000@LAPTOP-HIOSMBNM 
+license  checkout number  expiration date         # in use / total  server                 
+ 
+hspice   1                30-dec-2030/2029.2029  2/99               27000@LAPTOP-HIOSMBNM  
+ 
+0.1% time = 100.000000 ps ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+10.0% time = 4.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 8.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 12.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+40.0% time = 16.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 20.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 24.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 28.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 32.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 36.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+100.0% time = 40.000000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  513.0378p    targ=  6.6630n trig=  6.1500n 
+delayn2=  513.0355p    targ=  6.6630n trig=  6.1500n 
+delayn3=  512.8034p    targ=  6.6628n trig=  6.1500n 
+delayn4=  466.1454p    targ=  6.6161n trig=  6.1500n 
+pw=  257.2205u      from=  0.000e+000  to=  4.000e-008 
+pdp=  131.9638f    param = 1.320e-013 
+ 
+ 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.29 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 0.0000e+000 
+  Transient Wall time per timestep      = 0.0000e+000 
+  Transient Wall time per timestep-node = 0.0000e+000 
+  Total CPU time                       = 0.2860 
+  Total CPU time per step              = 0.0004 
+ 
+ 
+ 
+
+          ***** job concluded
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 2-input and
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    20
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =     128 # elements   =      59
+  # resistors   =       0 # capacitors =       4 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       7
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      48 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          13
+  transient          0.00         401        2709         737  rev= 32 
+  readin             0.07
+  errchk             0.00
+  setup              0.00
+  output             0.00
+           peak memory used         58.33 megabytes 
+           total cpu time            0.37 seconds
+           total elapsed time        0.40 seconds
+           job started at     14:09:21 01/17/2024
+           job ended   at     14:09:21 01/17/2024
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.02(s)

@@ -1,0 +1,117 @@
+ ****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: 6-input nor.sp                                                    
+  Command line options: -i 6-input nor.sp -o 6-input nor.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   user                 HOSTNAME: LAPTOP-V0SVEGVF 
+  lic: HOSTID: "e8f408ef740e 00ff95ffeb7e 005056c00001 005056c00008 e8f408ef740a
+  e8f408ef740b eaf408e
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-V0SVEGVF 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-V0SVEGVF 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-2\meta.cfg
+  **warning** (6-input nor.sp:12) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 6-input nor
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xa1.                            nand1              1.00 
+  **info** (6-input nor.sp:36) DC voltage reset to initial transient source value              in source        0:vf                  new dc=  0.1800D+01
+  **warning** (6-input nor.sp:9) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=6-input nor.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 6-input nor
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:a       =   0.      0:b       =   0.      0:c       =   0.     
+ +0:d       =   0.      0:e       =   0.      0:f       =   1.8000 
+ +0:out     =  11.4443n 0:vdd     =   1.8000  1:net1    = 426.1611m
+ +1:net2    = 449.5617m 1:net3    = 461.2323m 1:net4    = 468.3787m
+ +1:net5    = 473.0395m
+
+ ******  
+ 6-input nor
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn1= 106.0334p  targ=  30.2560n   trig=  30.1500n
+ pw=  12.1638u  from=   0.          to=  80.0000n
+ pdp=   1.2898f
+
+          ***** job concluded
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 6-input nor
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      38 # elements   =      20
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       7
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      12 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          21
+  transient          0.02         801         557         199 rev=        10
+  readin             0.01
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         44.13 megabytes
+           total cpu time            0.04 seconds
+           total elapsed time        0.07 seconds
+           job started at     11:23:00 07/05/2023
+           job ended   at     11:23:00 07/05/2023
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.03(s)

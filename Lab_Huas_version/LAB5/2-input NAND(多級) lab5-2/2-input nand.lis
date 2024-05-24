@@ -1,0 +1,26 @@
+ ****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: 2-input nand.sp                                                   
+  Command line options: -hpp -i 2-input nand.sp -o 2-input nand.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   User                 HOSTNAME: LAPTOP-HIOSMBNM 
+  lic: HOSTID: "a036bc64ac5e 009337e9bab9 005056c00001 005056c00008 009337e9bab5
+  009337e9bab6 029337e
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-HIOSMBNM 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-2\meta.cfg
+ **error** (2-input nand.sp:29).end is expected
+
+               ***** job aborted
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.02(s)

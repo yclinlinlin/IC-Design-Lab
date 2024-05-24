@@ -1,0 +1,29 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-2 64-BIT"
+* "format" "HSP"
+* "rundate" "11:00:37 07/06/2023 "
+* "netlist" "pseudo 3-input xor.sp "
+* "runtitle" "pseudo 3-input xor"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ c =   1.8000        
++ out =   1.8000        
++ vdd =   1.8000        
++ xa1.aout =   8.1114n       
++ xa1.bout =   8.1114n       
++ xa1.cout =   8.1114n       
++ xa1.net10 =   7.0193n       
++ xa1.net11 =   1.5650        
++ xa1.net12 =   5.8848n       
++ xa1.net13 =   1.5604        
++ xa1.net14 =   1.5397        
++ xa1.net15 = 136.0171m       
++ xa1.net16 =  22.1460m       
++ xa1.net9 =  14.0387n       
+***   END: Saved Operating Point ***                     

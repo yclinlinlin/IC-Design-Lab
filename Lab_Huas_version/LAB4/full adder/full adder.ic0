@@ -1,0 +1,41 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-2 64-BIT"
+* "format" "HSP"
+* "rundate" "15:49:52 07/06/2023 "
+* "netlist" "full adder.sp "
+* "runtitle" "full adder"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ carry =   1.8000        
++ cin =   1.8000        
++ out =   0.            
++ sum =   1.8000        
++ vdd =   1.8000        
++ xj1.c1 =   1.8000        
++ xj1.c2 =  23.8370n       
++ xj1.cout =  26.9325n       
++ xj1.s1 = 101.5380n       
++ xj1.xf1.cout =  95.3470n       
++ xj1.xg1.cout =   1.8000        
++ xj1.xh1.net = 386.6686m       
++ xj1.xf1.xc1.aout =  23.8367n       
++ xj1.xf1.xc1.bout =  23.8367n       
++ xj1.xf1.xc1.net1 =   1.8000        
++ xj1.xf1.xc1.net2 = 386.6683m       
++ xj1.xf1.xc1.net3 =  50.7690n       
++ xj1.xf1.xc1.net4 =  50.5910n       
++ xj1.xf1.xdl.net =  47.6735n       
++ xj1.xg1.xc1.aout =   1.8000        
++ xj1.xg1.xc1.bout =  23.8367n       
++ xj1.xg1.xc1.net1 =   1.8000        
++ xj1.xg1.xc1.net2 =   1.8000        
++ xj1.xg1.xc1.net3 = 150.9689n       
++ xj1.xg1.xc1.net4 =   1.5703        
++ xj1.xg1.xdl.net = 150.9692n       
+***   END: Saved Operating Point ***                     

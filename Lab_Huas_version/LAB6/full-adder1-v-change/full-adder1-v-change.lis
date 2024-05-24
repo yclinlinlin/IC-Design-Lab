@@ -1,0 +1,1295 @@
+ ****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: full-adder1-v-change.sp                                           
+  Command line options: -mt 16 -hpp -i full-adder1-v-change.sp -o full-adder1-v-change.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   User                 HOSTNAME: LAPTOP-HIOSMBNM 
+  lic: HOSTID: "a036bc64ac5e 009337e9bab9 005056c00001 005056c00008 009337e9bab5
+  009337e9bab6 029337e
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-HIOSMBNM 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-2\meta.cfg
+ 
+ ****** Advanced Analog Library - J-2014.09-2 (Oct 22 2014) ****** 
+  **warning** (full-adder1-v-change.sp:11) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ full-adder1-v-change
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x1.                             full_adder         1.00 
+        2 x1.x1.                          inv1               1.00 
+        3 x1.x2.                          inv1               1.00 
+  **info** (full-adder1-v-change.sp:55) DC voltage reset to initial transient source value              in source        0:vc                  new dc=  0.6000D+00
+  **warning** (full-adder1-v-change.sp:8) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=full-adder1-v-change.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    6.000E-01 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    8.000E-01 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.000E+00 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.200E+00 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.400E+00 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.600E+00 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.800E+00 ***
+
+ 
+Warning: 4 port signals are assumed local to their subcircuits 
+ 
+Port signals that have the same names as global nets: 
+Location  Port name  Subckt         
+          "GND"      "FULL_ADDER"   
+          "VDD"      "FULL_ADDER"   
+          "GND"      "INV1"         
+          "VDD"      "INV1"         
+ 
+".opt runlvl= 3" sets ".opt sim_accuracy= 1"  
+ 
+  ******  Summary of Possible Problems in Netlist  *************** 
+  Negative resistor              0   
+  Negative capacitor             0   
+  Negative inductor              0   
+  Unconnected node               0   
+  Dangling terminal              0   
+  Non-rail bulk terminal         0   
+  Floating MOS gate              0   
+  Floating MOS bulk              0   
+  Floating BJT substrate         0   
+  Floating controlled input      0   
+  Floating current source nodes  0   
+  Source loop                    0   
+starting TRAN sweep 
+ 
+ 
+TRAN sweep:  
+0.0% K = 600.000000 m ( etc = 0.0 sec, ett = 0.0 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 8 threads. 
+Thread count specified on command line = 16 
+Thread count has been reduced due to circuit size. 
+  
+ 
+License user information 
+FLEXLM    v8.5b             
+USER      User              
+HOSTNAME  LAPTOP-HIOSMBNM   
+HOSTID    029337e9bab5      
+PID       28524             
+ 
+License file: 27000@LAPTOP-HIOSMBNM 
+license  checkout number  expiration date         # in use / total  server                 
+ 
+hspice   4                30-dec-2030/2029.2029  5/99               27000@LAPTOP-HIOSMBNM  
+ 
+0.1% time = 117.685043 us ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+10.0% time = 10.603564 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 20.240473 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 30.036827 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+40.0% time = 41.454953 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 50.164548 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 60.486187 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 70.280036 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 80.000001 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 90.098156 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=    failed    (null) 
+delayn2=    failed    (null) 
+pw=  26.7795p      from=  0.000e+000  to=  1.000e-001 
+pdp=    failed    (null) 
+ 
+ 
+100.0% time = 100.000000 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.24 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 0.0000e+000 
+  Transient Wall time per timestep      = 0.0000e+000 
+  Transient Wall time per timestep-node = 0.0000e+000 
+  Total CPU time                       = 0.2370 
+  Total CPU time per step              = 0.0004 
+ 
+ 
+ 
+ 
+ 
+TRAN sweep:  
+14.2% K = 800.000000 m ( etc = 0.0 sec, ett = 0.0 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 8 threads. 
+Thread count specified on command line = 16 
+Thread count has been reduced due to circuit size. 
+  
+0.1% time = 115.503283 us ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+10.0% time = 10.915618 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 20.012673 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 30.820251 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+Warning: For measurement DELAYN2, target time is smaller than trigger time 
+40.0% time = 40.000001 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 50.000890 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 60.235706 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 71.169574 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 80.000001 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 91.150634 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  1.3567n    targ=  24.0000m trig=  24.0000m 
+delayn2=  -16.0000m    targ=  16.0000m trig=  32.0000m 
+pw=  51.3596p      from=  0.000e+000  to=  1.000e-001 
+pdp=  0.0697a    param = 6.968e-020 
+ 
+ 
+100.0% time = 100.000000 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.10 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 0.0000e+000 
+  Transient Wall time per timestep      = 0.0000e+000 
+  Transient Wall time per timestep-node = 0.0000e+000 
+  Total CPU time                       = 0.0970 
+  Total CPU time per step              = 5.9364e-005 
+ 
+ 
+ 
+ 
+ 
+TRAN sweep:  
+28.5% K = 1.000000   ( etc = 0.0 sec, ett = 0.0 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 8 threads. 
+Thread count specified on command line = 16 
+Thread count has been reduced due to circuit size. 
+  
+0.1% time = 143.221328 us ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+Warning: For measurement DELAYN2, target time is smaller than trigger time 
+10.0% time = 10.068527 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 20.000001 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 30.022605 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+40.0% time = 40.000001 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 50.064101 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 60.000001 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 70.022605 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 80.000001 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 90.068527 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  706.5151p    targ=  2.4000m trig=  2.4000m 
+delayn2=  -1.6000m    targ=  1.6000m trig=  3.2000m 
+pw=  224.2692p      from=  0.000e+000  to=  1.000e-001 
+pdp=  0.1584a    param = 1.584e-019 
+ 
+ 
+100.0% time = 100.000000 ms ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.55 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 0.0000e+000 
+  Transient Wall time per timestep      = 0.0000e+000 
+  Transient Wall time per timestep-node = 0.0000e+000 
+  Total CPU time                       = 0.5480 
+  Total CPU time per step              = 5.7466e-005 
+ 
+ 
+ 
+ 
+ 
+TRAN sweep:  
+42.8% K = 1.200000   ( etc = 0.0 sec, ett = 0.0 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 8 threads. 
+Thread count specified on command line = 16 
+Thread count has been reduced due to circuit size. 
+  
+0.1% time = 101.239383 us ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+Warning: For measurement DELAYN2, target time is smaller than trigger time 
+1.2% time = 1.200001 ms ( etc = 1:22, ett = 1:23 ) 
+( wall = 1.0 sec cpu = 1.0 sec s=1 ) 
+10.0% time = 10.000001 ms ( etc = 9.0 sec, ett = 10.0 sec ) 
+( wall = 1.0 sec cpu = 1.0 sec s=1 ) 
+20.0% time = 20.000001 ms ( etc = 4.0 sec, ett = 5.0 sec ) 
+( wall = 1.0 sec cpu = 1.0 sec s=1 ) 
+23.9% time = 23.906793 ms ( etc = 6.4 sec, ett = 8.4 sec ) 
+( wall = 2.0 sec cpu = 2.0 sec s=1 ) 
+30.0% time = 30.000001 ms ( etc = 4.7 sec, ett = 6.7 sec ) 
+( wall = 2.0 sec cpu = 2.0 sec s=1 ) 
+40.0% time = 40.000001 ms ( etc = 3.0 sec, ett = 5.0 sec ) 
+( wall = 2.0 sec cpu = 2.0 sec s=1 ) 
+47.4% time = 47.410325 ms ( etc = 3.3 sec, ett = 6.3 sec ) 
+( wall = 3.0 sec cpu = 3.0 sec s=1 ) 
+50.0% time = 50.000001 ms ( etc = 3.0 sec, ett = 6.0 sec ) 
+( wall = 3.0 sec cpu = 3.0 sec s=1 ) 
+60.0% time = 60.000001 ms ( etc = 2.0 sec, ett = 5.0 sec ) 
+( wall = 3.0 sec cpu = 3.0 sec s=1 ) 
+70.0% time = 70.000001 ms ( etc = 1.3 sec, ett = 4.3 sec ) 
+( wall = 3.0 sec cpu = 3.0 sec s=1 ) 
+70.1% time = 70.100627 ms ( etc = 1.7 sec, ett = 5.7 sec ) 
+( wall = 4.0 sec cpu = 4.0 sec s=1 ) 
+80.0% time = 80.000001 ms ( etc = 1.0 sec, ett = 5.0 sec ) 
+( wall = 4.0 sec cpu = 4.0 sec s=1 ) 
+90.0% time = 90.000001 ms ( etc = 0.4 sec, ett = 4.4 sec ) 
+( wall = 4.0 sec cpu = 4.0 sec s=1 ) 
+96.4% time = 96.400001 ms ( etc = 0.2 sec, ett = 5.2 sec ) 
+( wall = 5.0 sec cpu = 5.0 sec s=1 ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  489.2936p    targ=  240.0015u trig=  240.0010u 
+delayn2=  -159.9996u    targ=  160.0015u trig=  320.0010u 
+pw=  2.4741n      from=  0.000e+000  to=  1.000e-001 
+pdp=  1.2106a    param = 1.211e-018 
+ 
+ 
+100.0% time = 100.000000 ms ( etc = 0.0 sec, ett = 5.0 sec ) 
+( wall = 5.0 sec cpu = 5.0 sec s=1 ) 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     4.22 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 4.0000 
+  Transient Wall time per timestep      = 5.0920e-005 
+  Transient Wall time per timestep-node = 2.3146e-006 
+  Total CPU time                       = 4.2220 
+  Total CPU time per step              = 5.3746e-005 
+ 
+ 
+ 
+ 
+ 
+TRAN sweep:  
+57.1% K = 1.400000   ( etc = 3.8 sec, ett = 8.8 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 8 threads. 
+Thread count specified on command line = 16 
+Thread count has been reduced due to circuit size. 
+  
+Warning: For measurement DELAYN2, target time is smaller than trigger time 
+0.1% time = 100.254349 us ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+2.5% time = 2.500253 ms ( etc = 39.0 sec, ett = 40.0 sec ) 
+( wall = 1.0 sec cpu = 1.0 sec s=1 ) 
+5.1% time = 5.101697 ms ( etc = 37.2 sec, ett = 39.2 sec ) 
+( wall = 2.0 sec cpu = 2.0 sec s=1 ) 
+7.4% time = 7.400001 ms ( etc = 37.5 sec, ett = 40.5 sec ) 
+( wall = 3.0 sec cpu = 3.0 sec s=1 ) 
+10.0% time = 10.000001 ms ( etc = 36.0 sec, ett = 40.0 sec ) 
+( wall = 4.0 sec cpu = 4.0 sec s=1 ) 
+12.4% time = 12.400001 ms ( etc = 35.3 sec, ett = 40.3 sec ) 
+( wall = 5.0 sec cpu = 5.0 sec s=1 ) 
+15.1% time = 15.101697 ms ( etc = 33.7 sec, ett = 39.7 sec ) 
+( wall = 6.0 sec cpu = 6.0 sec s=1 ) 
+17.7% time = 17.700504 ms ( etc = 32.5 sec, ett = 39.5 sec ) 
+( wall = 7.0 sec cpu = 7.0 sec s=1 ) 
+20.0% time = 20.000001 ms ( etc = 28.0 sec, ett = 35.0 sec ) 
+( wall = 7.0 sec cpu = 7.0 sec s=1 ) 
+20.2% time = 20.200001 ms ( etc = 31.6 sec, ett = 39.6 sec ) 
+( wall = 8.0 sec cpu = 8.0 sec s=1 ) 
+22.9% time = 22.900520 ms ( etc = 30.3 sec, ett = 39.3 sec ) 
+( wall = 9.0 sec cpu = 9.0 sec s=1 ) 
+25.5% time = 25.500043 ms ( etc = 29.2 sec, ett = 39.2 sec ) 
+( wall = 10.0 sec cpu = 10.0 sec s=1 ) 
+28.2% time = 28.200001 ms ( etc = 28.0 sec, ett = 39.0 sec ) 
+( wall = 11.0 sec cpu = 11.0 sec s=1 ) 
+30.0% time = 30.000001 ms ( etc = 25.7 sec, ett = 36.7 sec ) 
+( wall = 11.0 sec cpu = 11.0 sec s=1 ) 
+30.8% time = 30.800001 ms ( etc = 27.0 sec, ett = 39.0 sec ) 
+( wall = 12.0 sec cpu = 12.0 sec s=1 ) 
+33.4% time = 33.400001 ms ( etc = 25.9 sec, ett = 38.9 sec ) 
+( wall = 13.0 sec cpu = 13.0 sec s=1 ) 
+36.0% time = 36.000001 ms ( etc = 24.9 sec, ett = 38.9 sec ) 
+( wall = 14.0 sec cpu = 14.0 sec s=1 ) 
+38.7% time = 38.701697 ms ( etc = 23.8 sec, ett = 38.8 sec ) 
+( wall = 15.0 sec cpu = 15.0 sec s=1 ) 
+40.0% time = 40.000001 ms ( etc = 22.5 sec, ett = 37.5 sec ) 
+( wall = 15.0 sec cpu = 15.0 sec s=1 ) 
+41.3% time = 41.300038 ms ( etc = 22.7 sec, ett = 38.7 sec ) 
+( wall = 16.0 sec cpu = 16.0 sec s=1 ) 
+43.8% time = 43.800001 ms ( etc = 21.8 sec, ett = 38.8 sec ) 
+( wall = 17.0 sec cpu = 17.0 sec s=1 ) 
+46.5% time = 46.500038 ms ( etc = 20.7 sec, ett = 38.7 sec ) 
+( wall = 18.0 sec cpu = 18.0 sec s=1 ) 
+49.1% time = 49.101697 ms ( etc = 19.7 sec, ett = 38.7 sec ) 
+( wall = 19.0 sec cpu = 19.0 sec s=1 ) 
+50.0% time = 50.000001 ms ( etc = 19.0 sec, ett = 38.0 sec ) 
+( wall = 19.0 sec cpu = 19.0 sec s=1 ) 
+51.8% time = 51.800001 ms ( etc = 18.6 sec, ett = 38.6 sec ) 
+( wall = 20.0 sec cpu = 20.0 sec s=1 ) 
+54.6% time = 54.600001 ms ( etc = 17.5 sec, ett = 38.5 sec ) 
+( wall = 21.0 sec cpu = 21.0 sec s=1 ) 
+57.2% time = 57.200001 ms ( etc = 16.5 sec, ett = 38.5 sec ) 
+( wall = 22.0 sec cpu = 22.0 sec s=1 ) 
+59.8% time = 59.800001 ms ( etc = 15.5 sec, ett = 38.5 sec ) 
+( wall = 23.0 sec cpu = 23.0 sec s=1 ) 
+60.0% time = 60.000001 ms ( etc = 15.3 sec, ett = 38.3 sec ) 
+( wall = 23.0 sec cpu = 23.0 sec s=1 ) 
+62.4% time = 62.400001 ms ( etc = 14.5 sec, ett = 38.5 sec ) 
+( wall = 24.0 sec cpu = 24.0 sec s=1 ) 
+65.2% time = 65.200001 ms ( etc = 13.3 sec, ett = 38.3 sec ) 
+( wall = 25.0 sec cpu = 25.0 sec s=1 ) 
+67.3% time = 67.300254 ms ( etc = 12.6 sec, ett = 38.6 sec ) 
+( wall = 26.0 sec cpu = 26.0 sec s=1 ) 
+69.8% time = 69.800001 ms ( etc = 11.7 sec, ett = 38.7 sec ) 
+( wall = 27.0 sec cpu = 27.0 sec s=1 ) 
+70.0% time = 70.000001 ms ( etc = 11.6 sec, ett = 38.6 sec ) 
+( wall = 27.0 sec cpu = 27.0 sec s=1 ) 
+72.3% time = 72.301697 ms ( etc = 10.7 sec, ett = 38.7 sec ) 
+( wall = 28.0 sec cpu = 28.0 sec s=1 ) 
+74.7% time = 74.701697 ms ( etc = 9.8 sec, ett = 38.8 sec ) 
+( wall = 29.0 sec cpu = 29.0 sec s=1 ) 
+77.3% time = 77.300254 ms ( etc = 8.8 sec, ett = 38.8 sec ) 
+( wall = 30.0 sec cpu = 30.0 sec s=1 ) 
+80.0% time = 80.000001 ms ( etc = 7.8 sec, ett = 38.8 sec ) 
+( wall = 31.0 sec cpu = 31.0 sec s=1 ) 
+82.6% time = 82.600001 ms ( etc = 6.7 sec, ett = 38.7 sec ) 
+( wall = 32.0 sec cpu = 32.0 sec s=1 ) 
+85.3% time = 85.300254 ms ( etc = 5.7 sec, ett = 38.7 sec ) 
+( wall = 33.0 sec cpu = 33.0 sec s=1 ) 
+87.7% time = 87.700254 ms ( etc = 4.8 sec, ett = 38.8 sec ) 
+( wall = 34.0 sec cpu = 34.0 sec s=1 ) 
+90.0% time = 90.000001 ms ( etc = 3.8 sec, ett = 37.8 sec ) 
+( wall = 34.0 sec cpu = 34.0 sec s=1 ) 
+90.3% time = 90.301697 ms ( etc = 3.8 sec, ett = 38.8 sec ) 
+( wall = 35.0 sec cpu = 35.0 sec s=1 ) 
+92.3% time = 92.301697 ms ( etc = 3.0 sec, ett = 39.0 sec ) 
+( wall = 36.0 sec cpu = 36.0 sec s=1 ) 
+94.7% time = 94.701697 ms ( etc = 2.1 sec, ett = 39.1 sec ) 
+( wall = 37.0 sec cpu = 37.0 sec s=1 ) 
+96.8% time = 96.800001 ms ( etc = 1.3 sec, ett = 39.3 sec ) 
+( wall = 38.0 sec cpu = 38.0 sec s=1 ) 
+99.3% time = 99.300254 ms ( etc = 0.3 sec, ett = 39.3 sec ) 
+( wall = 39.0 sec cpu = 39.0 sec s=1 ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  387.4258p    targ=  24.0014u trig=  24.0011u 
+delayn2=  -15.9997u    targ=  16.0014u trig=  32.0011u 
+pw=  32.8517n      from=  0.000e+000  to=  1.000e-001 
+pdp=  12.7276a    param = 1.273e-017 
+ 
+ 
+100.0% time = 100.000000 ms ( etc = 0.0 sec, ett = 39.0 sec ) 
+( wall = 39.0 sec cpu = 39.0 sec s=1 ) 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     39.16 sec   
+Peak Memory  0.00 Mb     
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 40.0000 
+  Transient Wall time per timestep      = 5.6780e-005 
+  Transient Wall time per timestep-node = 2.5809e-006 
+  Total CPU time                       = 39.1640 
+  Total CPU time per step              = 5.5593e-005 
+ 
+ 
+ 
+ 
+ 
+TRAN sweep:  
+71.4% K = 1.600000   ( etc = 17.6 sec, ett = 1:01 ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 8 threads. 
+Thread count specified on command line = 16 
+Thread count has been reduced due to circuit size. 
+  
+Warning: For measurement DELAYN2, target time is smaller than trigger time 
+0.1% time = 100.001000 us ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+0.2% time = 200.001000 us ( etc = 8:19, ett = 8:20 ) 
+( wall = 1.0 sec cpu = 1.0 sec s=1 ) 
+0.5% time = 500.001000 us ( etc = 6:38, ett = 6:40 ) 
+( wall = 2.0 sec cpu = 2.0 sec s=1 ) 
+0.8% time = 800.001000 us ( etc = 6:12, ett = 6:15 ) 
+( wall = 3.0 sec cpu = 3.0 sec s=1 ) 
+1.0% time = 1.000001 ms ( etc = 6:36, ett = 6:40 ) 
+( wall = 4.0 sec cpu = 4.0 sec s=1 ) 
+1.3% time = 1.300001 ms ( etc = 6:19, ett = 6:24 ) 
+( wall = 5.0 sec cpu = 5.0 sec s=1 ) 
+1.5% time = 1.500001 ms ( etc = 6:34, ett = 6:40 ) 
+( wall = 6.0 sec cpu = 6.0 sec s=1 ) 
+1.8% time = 1.800001 ms ( etc = 6:21, ett = 6:28 ) 
+( wall = 7.0 sec cpu = 7.0 sec s=1 ) 
+2.0% time = 2.000001 ms ( etc = 6:32, ett = 6:40 ) 
+( wall = 8.0 sec cpu = 8.0 sec s=1 ) 
+2.3% time = 2.300001 ms ( etc = 6:22, ett = 6:31 ) 
+( wall = 9.0 sec cpu = 9.0 sec s=1 ) 
+2.6% time = 2.600001 ms ( etc = 6:14, ett = 6:24 ) 
+( wall = 10.0 sec cpu = 10.0 sec s=1 ) 
+2.8% time = 2.800001 ms ( etc = 6:21, ett = 6:32 ) 
+( wall = 11.0 sec cpu = 11.0 sec s=1 ) 
+3.1% time = 3.100001 ms ( etc = 6:15, ett = 6:27 ) 
+( wall = 12.0 sec cpu = 12.0 sec s=1 ) 
+3.4% time = 3.400001 ms ( etc = 6:09, ett = 6:22 ) 
+( wall = 13.0 sec cpu = 13.0 sec s=1 ) 
+3.6% time = 3.600001 ms ( etc = 6:14, ett = 6:28 ) 
+( wall = 14.0 sec cpu = 14.0 sec s=1 ) 
+3.9% time = 3.900001 ms ( etc = 6:09, ett = 6:24 ) 
+( wall = 15.0 sec cpu = 15.0 sec s=1 ) 
+4.2% time = 4.200001 ms ( etc = 6:04, ett = 6:20 ) 
+( wall = 16.0 sec cpu = 16.0 sec s=1 ) 
+4.4% time = 4.400001 ms ( etc = 6:09, ett = 6:26 ) 
+( wall = 17.0 sec cpu = 17.0 sec s=1 ) 
+4.7% time = 4.700001 ms ( etc = 6:04, ett = 6:22 ) 
+( wall = 18.0 sec cpu = 18.0 sec s=1 ) 
+4.9% time = 4.900001 ms ( etc = 6:08, ett = 6:27 ) 
+( wall = 19.0 sec cpu = 19.0 sec s=1 ) 
+5.2% time = 5.200001 ms ( etc = 6:04, ett = 6:24 ) 
+( wall = 20.0 sec cpu = 20.0 sec s=1 ) 
+5.4% time = 5.400001 ms ( etc = 6:07, ett = 6:28 ) 
+( wall = 21.0 sec cpu = 21.0 sec s=1 ) 
+5.7% time = 5.700001 ms ( etc = 6:03, ett = 6:25 ) 
+( wall = 22.0 sec cpu = 22.0 sec s=1 ) 
+6.0% time = 6.000001 ms ( etc = 6:00, ett = 6:23 ) 
+( wall = 23.0 sec cpu = 23.0 sec s=1 ) 
+6.2% time = 6.200001 ms ( etc = 6:03, ett = 6:27 ) 
+( wall = 24.0 sec cpu = 24.0 sec s=1 ) 
+6.5% time = 6.500001 ms ( etc = 5:59, ett = 6:24 ) 
+( wall = 25.0 sec cpu = 25.0 sec s=1 ) 
+6.8% time = 6.800001 ms ( etc = 5:56, ett = 6:22 ) 
+( wall = 26.0 sec cpu = 26.0 sec s=1 ) 
+7.1% time = 7.100001 ms ( etc = 5:53, ett = 6:20 ) 
+( wall = 27.0 sec cpu = 27.0 sec s=1 ) 
+7.4% time = 7.400001 ms ( etc = 5:50, ett = 6:18 ) 
+( wall = 28.0 sec cpu = 28.0 sec s=1 ) 
+7.7% time = 7.700001 ms ( etc = 5:47, ett = 6:16 ) 
+( wall = 29.0 sec cpu = 29.0 sec s=1 ) 
+7.9% time = 7.900001 ms ( etc = 5:49, ett = 6:19 ) 
+( wall = 30.0 sec cpu = 30.0 sec s=1 ) 
+8.2% time = 8.200001 ms ( etc = 5:47, ett = 6:18 ) 
+( wall = 31.0 sec cpu = 31.0 sec s=1 ) 
+8.5% time = 8.500001 ms ( etc = 5:44, ett = 6:16 ) 
+( wall = 32.0 sec cpu = 32.0 sec s=1 ) 
+8.7% time = 8.700001 ms ( etc = 5:46, ett = 6:19 ) 
+( wall = 33.0 sec cpu = 33.0 sec s=1 ) 
+9.0% time = 9.000001 ms ( etc = 5:43, ett = 6:17 ) 
+( wall = 34.0 sec cpu = 34.0 sec s=1 ) 
+9.3% time = 9.300001 ms ( etc = 5:41, ett = 6:16 ) 
+( wall = 35.0 sec cpu = 35.0 sec s=1 ) 
+9.5% time = 9.500001 ms ( etc = 5:42, ett = 6:18 ) 
+( wall = 36.0 sec cpu = 36.0 sec s=1 ) 
+9.8% time = 9.800001 ms ( etc = 5:40, ett = 6:17 ) 
+( wall = 37.0 sec cpu = 37.0 sec s=1 ) 
+10.0% time = 10.000001 ms ( etc = 5:42, ett = 6:20 ) 
+( wall = 38.0 sec cpu = 38.0 sec s=1 ) 
+10.3% time = 10.300001 ms ( etc = 5:39, ett = 6:18 ) 
+( wall = 39.0 sec cpu = 39.0 sec s=1 ) 
+10.6% time = 10.600001 ms ( etc = 5:37, ett = 6:17 ) 
+( wall = 40.0 sec cpu = 40.0 sec s=1 ) 
+10.9% time = 10.900001 ms ( etc = 5:35, ett = 6:16 ) 
+( wall = 41.0 sec cpu = 41.0 sec s=1 ) 
+11.1% time = 11.100001 ms ( etc = 5:36, ett = 6:18 ) 
+( wall = 42.0 sec cpu = 42.0 sec s=1 ) 
+11.4% time = 11.400001 ms ( etc = 5:34, ett = 6:17 ) 
+( wall = 43.0 sec cpu = 43.0 sec s=1 ) 
+11.7% time = 11.700001 ms ( etc = 5:32, ett = 6:16 ) 
+( wall = 44.0 sec cpu = 44.0 sec s=1 ) 
+12.0% time = 12.000001 ms ( etc = 5:30, ett = 6:15 ) 
+( wall = 45.0 sec cpu = 45.0 sec s=1 ) 
+12.2% time = 12.200001 ms ( etc = 5:31, ett = 6:17 ) 
+( wall = 46.0 sec cpu = 46.0 sec s=1 ) 
+12.5% time = 12.500001 ms ( etc = 5:29, ett = 6:16 ) 
+( wall = 47.0 sec cpu = 47.0 sec s=1 ) 
+12.7% time = 12.700001 ms ( etc = 5:29, ett = 6:17 ) 
+( wall = 48.0 sec cpu = 48.0 sec s=1 ) 
+13.0% time = 13.000001 ms ( etc = 5:27, ett = 6:16 ) 
+( wall = 49.0 sec cpu = 49.0 sec s=1 ) 
+13.2% time = 13.200001 ms ( etc = 5:33, ett = 6:23 ) 
+( wall = 50.0 sec cpu = 50.0 sec s=1 ) 
+13.3% time = 13.300001 ms ( etc = 5:33, ett = 6:24 ) 
+( wall = 51.0 sec cpu = 51.0 sec s=1 ) 
+13.5% time = 13.500001 ms ( etc = 5:35, ett = 6:27 ) 
+( wall = 52.0 sec cpu = 52.0 sec s=1 ) 
+13.7% time = 13.700001 ms ( etc = 5:37, ett = 6:30 ) 
+( wall = 53.0 sec cpu = 53.0 sec s=1 ) 
+13.9% time = 13.900001 ms ( etc = 5:36, ett = 6:30 ) 
+( wall = 54.0 sec cpu = 54.0 sec s=1 ) 
+14.0% time = 14.000001 ms ( etc = 5:41, ett = 6:36 ) 
+( wall = 55.0 sec cpu = 55.0 sec s=1 ) 
+14.1% time = 14.100001 ms ( etc = 5:43, ett = 6:39 ) 
+( wall = 56.0 sec cpu = 56.0 sec s=1 ) 
+14.4% time = 14.400001 ms ( etc = 5:42, ett = 6:39 ) 
+( wall = 57.0 sec cpu = 57.0 sec s=1 ) 
+14.7% time = 14.700001 ms ( etc = 5:38, ett = 6:36 ) 
+( wall = 58.0 sec cpu = 58.0 sec s=1 ) 
+14.8% time = 14.800001 ms ( etc = 5:43, ett = 6:42 ) 
+( wall = 59.0 sec cpu = 59.0 sec s=1 ) 
+15.1% time = 15.100001 ms ( etc = 5:42, ett = 6:42 ) 
+( wall = 1:00 cpu = 1:00 s=1 ) 
+15.4% time = 15.400001 ms ( etc = 5:38, ett = 6:39 ) 
+( wall = 1:01 cpu = 1:01 s=1 ) 
+15.6% time = 15.600001 ms ( etc = 5:40, ett = 6:42 ) 
+( wall = 1:02 cpu = 1:02 s=1 ) 
+15.8% time = 15.800001 ms ( etc = 5:42, ett = 6:45 ) 
+( wall = 1:03 cpu = 1:03 s=1 ) 
+15.9% time = 15.900001 ms ( etc = 5:44, ett = 6:48 ) 
+( wall = 1:04 cpu = 1:04 s=1 ) 
+16.2% time = 16.200001 ms ( etc = 5:43, ett = 6:48 ) 
+( wall = 1:05 cpu = 1:05 s=1 ) 
+16.5% time = 16.500001 ms ( etc = 5:42, ett = 6:48 ) 
+( wall = 1:06 cpu = 1:06 s=1 ) 
+16.7% time = 16.700001 ms ( etc = 5:41, ett = 6:48 ) 
+( wall = 1:07 cpu = 1:07 s=1 ) 
+17.0% time = 17.000001 ms ( etc = 5:40, ett = 6:48 ) 
+( wall = 1:08 cpu = 1:08 s=1 ) 
+17.2% time = 17.200001 ms ( etc = 5:39, ett = 6:48 ) 
+( wall = 1:09 cpu = 1:09 s=1 ) 
+17.5% time = 17.500001 ms ( etc = 5:38, ett = 6:48 ) 
+( wall = 1:10 cpu = 1:10 s=1 ) 
+17.8% time = 17.800001 ms ( etc = 5:34, ett = 6:45 ) 
+( wall = 1:11 cpu = 1:11 s=1 ) 
+18.1% time = 18.100001 ms ( etc = 5:32, ett = 6:44 ) 
+( wall = 1:12 cpu = 1:12 s=1 ) 
+18.4% time = 18.400001 ms ( etc = 5:31, ett = 6:44 ) 
+( wall = 1:13 cpu = 1:13 s=1 ) 
+18.6% time = 18.600001 ms ( etc = 5:30, ett = 6:44 ) 
+( wall = 1:14 cpu = 1:14 s=1 ) 
+18.9% time = 18.900001 ms ( etc = 5:29, ett = 6:44 ) 
+( wall = 1:15 cpu = 1:15 s=1 ) 
+19.1% time = 19.100001 ms ( etc = 5:31, ett = 6:47 ) 
+( wall = 1:16 cpu = 1:16 s=1 ) 
+19.4% time = 19.400001 ms ( etc = 5:30, ett = 6:47 ) 
+( wall = 1:17 cpu = 1:17 s=1 ) 
+19.7% time = 19.700001 ms ( etc = 5:29, ett = 6:47 ) 
+( wall = 1:18 cpu = 1:18 s=1 ) 
+19.9% time = 19.900001 ms ( etc = 5:30, ett = 6:49 ) 
+( wall = 1:19 cpu = 1:19 s=1 ) 
+20.0% time = 20.000001 ms ( etc = 5:26, ett = 6:45 ) 
+( wall = 1:19 cpu = 1:19 s=1 ) 
+20.2% time = 20.200001 ms ( etc = 5:28, ett = 6:48 ) 
+( wall = 1:20 cpu = 1:20 s=1 ) 
+20.5% time = 20.500001 ms ( etc = 5:27, ett = 6:48 ) 
+( wall = 1:21 cpu = 1:21 s=1 ) 
+20.8% time = 20.800001 ms ( etc = 5:23, ett = 6:45 ) 
+( wall = 1:22 cpu = 1:22 s=1 ) 
+21.0% time = 21.000001 ms ( etc = 5:25, ett = 6:48 ) 
+( wall = 1:23 cpu = 1:23 s=1 ) 
+21.3% time = 21.300001 ms ( etc = 5:24, ett = 6:48 ) 
+( wall = 1:24 cpu = 1:24 s=1 ) 
+21.6% time = 21.600001 ms ( etc = 5:20, ett = 6:45 ) 
+( wall = 1:25 cpu = 1:25 s=1 ) 
+21.9% time = 21.900001 ms ( etc = 5:18, ett = 6:44 ) 
+( wall = 1:26 cpu = 1:26 s=1 ) 
+22.1% time = 22.100001 ms ( etc = 5:18, ett = 6:45 ) 
+( wall = 1:27 cpu = 1:27 s=1 ) 
+22.4% time = 22.400001 ms ( etc = 5:16, ett = 6:44 ) 
+( wall = 1:28 cpu = 1:28 s=1 ) 
+22.7% time = 22.700001 ms ( etc = 5:15, ett = 6:44 ) 
+( wall = 1:29 cpu = 1:29 s=1 ) 
+22.9% time = 22.900001 ms ( etc = 5:17, ett = 6:47 ) 
+( wall = 1:30 cpu = 1:30 s=1 ) 
+23.2% time = 23.200001 ms ( etc = 5:13, ett = 6:44 ) 
+( wall = 1:31 cpu = 1:31 s=1 ) 
+23.4% time = 23.400001 ms ( etc = 5:15, ett = 6:47 ) 
+( wall = 1:32 cpu = 1:32 s=1 ) 
+23.7% time = 23.700001 ms ( etc = 5:14, ett = 6:47 ) 
+( wall = 1:33 cpu = 1:33 s=1 ) 
+23.9% time = 23.900001 ms ( etc = 5:16, ett = 6:50 ) 
+( wall = 1:34 cpu = 1:34 s=1 ) 
+24.1% time = 24.100001 ms ( etc = 5:15, ett = 6:50 ) 
+( wall = 1:35 cpu = 1:35 s=1 ) 
+24.4% time = 24.400001 ms ( etc = 5:13, ett = 6:49 ) 
+( wall = 1:36 cpu = 1:36 s=1 ) 
+24.6% time = 24.600001 ms ( etc = 5:13, ett = 6:50 ) 
+( wall = 1:37 cpu = 1:37 s=1 ) 
+24.9% time = 24.900001 ms ( etc = 5:11, ett = 6:49 ) 
+( wall = 1:38 cpu = 1:38 s=1 ) 
+25.1% time = 25.100001 ms ( etc = 5:11, ett = 6:50 ) 
+( wall = 1:39 cpu = 1:39 s=1 ) 
+25.4% time = 25.400001 ms ( etc = 5:04, ett = 6:44 ) 
+( wall = 1:40 cpu = 1:40 s=1 ) 
+25.7% time = 25.700001 ms ( etc = 5:00, ett = 6:41 ) 
+( wall = 1:41 cpu = 1:41 s=1 ) 
+26.0% time = 26.000001 ms ( etc = 4:57, ett = 6:39 ) 
+( wall = 1:42 cpu = 1:42 s=1 ) 
+26.2% time = 26.200001 ms ( etc = 4:56, ett = 6:39 ) 
+( wall = 1:43 cpu = 1:43 s=1 ) 
+26.5% time = 26.500001 ms ( etc = 4:50, ett = 6:34 ) 
+( wall = 1:44 cpu = 1:44 s=1 ) 
+26.8% time = 26.800001 ms ( etc = 4:44, ett = 6:29 ) 
+( wall = 1:45 cpu = 1:45 s=1 ) 
+27.1% time = 27.100001 ms ( etc = 4:43, ett = 6:29 ) 
+( wall = 1:46 cpu = 1:46 s=1 ) 
+27.3% time = 27.300001 ms ( etc = 4:44, ett = 6:31 ) 
+( wall = 1:47 cpu = 1:47 s=1 ) 
+27.5% time = 27.500001 ms ( etc = 4:41, ett = 6:29 ) 
+( wall = 1:48 cpu = 1:48 s=1 ) 
+27.8% time = 27.800001 ms ( etc = 4:40, ett = 6:29 ) 
+( wall = 1:49 cpu = 1:49 s=1 ) 
+28.0% time = 28.000001 ms ( etc = 4:42, ett = 6:32 ) 
+( wall = 1:50 cpu = 1:50 s=1 ) 
+28.3% time = 28.300001 ms ( etc = 4:38, ett = 6:29 ) 
+( wall = 1:51 cpu = 1:51 s=1 ) 
+28.5% time = 28.500001 ms ( etc = 4:38, ett = 6:30 ) 
+( wall = 1:52 cpu = 1:52 s=1 ) 
+28.7% time = 28.700001 ms ( etc = 4:35, ett = 6:28 ) 
+( wall = 1:53 cpu = 1:53 s=1 ) 
+29.0% time = 29.000001 ms ( etc = 4:33, ett = 6:27 ) 
+( wall = 1:54 cpu = 1:54 s=1 ) 
+29.2% time = 29.200001 ms ( etc = 4:35, ett = 6:30 ) 
+( wall = 1:55 cpu = 1:55 s=1 ) 
+29.5% time = 29.500001 ms ( etc = 4:32, ett = 6:28 ) 
+( wall = 1:56 cpu = 1:56 s=1 ) 
+29.7% time = 29.700001 ms ( etc = 4:33, ett = 6:30 ) 
+( wall = 1:57 cpu = 1:57 s=1 ) 
+30.0% time = 30.000001 ms ( etc = 4:30, ett = 6:28 ) 
+( wall = 1:58 cpu = 1:58 s=1 ) 
+30.2% time = 30.200001 ms ( etc = 4:31, ett = 6:30 ) 
+( wall = 1:59 cpu = 1:59 s=1 ) 
+30.5% time = 30.500001 ms ( etc = 4:30, ett = 6:30 ) 
+( wall = 2:00 cpu = 2:00 s=1 ) 
+30.8% time = 30.800001 ms ( etc = 4:29, ett = 6:30 ) 
+( wall = 2:01 cpu = 2:01 s=1 ) 
+31.0% time = 31.000001 ms ( etc = 4:30, ett = 6:32 ) 
+( wall = 2:02 cpu = 2:02 s=1 ) 
+31.3% time = 31.300001 ms ( etc = 4:27, ett = 6:30 ) 
+( wall = 2:03 cpu = 2:03 s=1 ) 
+31.5% time = 31.500001 ms ( etc = 4:28, ett = 6:32 ) 
+( wall = 2:04 cpu = 2:04 s=1 ) 
+31.8% time = 31.800001 ms ( etc = 4:25, ett = 6:30 ) 
+( wall = 2:05 cpu = 2:05 s=1 ) 
+32.0% time = 32.000001 ms ( etc = 4:26, ett = 6:32 ) 
+( wall = 2:06 cpu = 2:06 s=1 ) 
+32.2% time = 32.200001 ms ( etc = 4:27, ett = 6:34 ) 
+( wall = 2:07 cpu = 2:07 s=1 ) 
+32.4% time = 32.400001 ms ( etc = 4:27, ett = 6:35 ) 
+( wall = 2:08 cpu = 2:08 s=1 ) 
+32.7% time = 32.700001 ms ( etc = 4:27, ett = 6:36 ) 
+( wall = 2:09 cpu = 2:09 s=1 ) 
+33.0% time = 33.000001 ms ( etc = 4:23, ett = 6:33 ) 
+( wall = 2:10 cpu = 2:10 s=1 ) 
+33.2% time = 33.200001 ms ( etc = 4:25, ett = 6:36 ) 
+( wall = 2:11 cpu = 2:11 s=1 ) 
+33.5% time = 33.500001 ms ( etc = 4:23, ett = 6:35 ) 
+( wall = 2:12 cpu = 2:12 s=1 ) 
+33.8% time = 33.800001 ms ( etc = 4:20, ett = 6:33 ) 
+( wall = 2:13 cpu = 2:13 s=1 ) 
+34.1% time = 34.100001 ms ( etc = 4:19, ett = 6:33 ) 
+( wall = 2:14 cpu = 2:14 s=1 ) 
+34.4% time = 34.400001 ms ( etc = 4:18, ett = 6:33 ) 
+( wall = 2:15 cpu = 2:15 s=1 ) 
+34.7% time = 34.700001 ms ( etc = 4:17, ett = 6:33 ) 
+( wall = 2:16 cpu = 2:16 s=1 ) 
+34.9% time = 34.900001 ms ( etc = 4:16, ett = 6:33 ) 
+( wall = 2:17 cpu = 2:17 s=1 ) 
+35.2% time = 35.200001 ms ( etc = 4:15, ett = 6:33 ) 
+( wall = 2:18 cpu = 2:18 s=1 ) 
+35.5% time = 35.500001 ms ( etc = 4:13, ett = 6:32 ) 
+( wall = 2:19 cpu = 2:19 s=1 ) 
+35.8% time = 35.800001 ms ( etc = 4:10, ett = 6:30 ) 
+( wall = 2:20 cpu = 2:20 s=1 ) 
+36.1% time = 36.100001 ms ( etc = 4:09, ett = 6:30 ) 
+( wall = 2:21 cpu = 2:21 s=1 ) 
+36.4% time = 36.400001 ms ( etc = 4:06, ett = 6:28 ) 
+( wall = 2:22 cpu = 2:22 s=1 ) 
+36.7% time = 36.700001 ms ( etc = 4:05, ett = 6:28 ) 
+( wall = 2:23 cpu = 2:23 s=1 ) 
+36.9% time = 36.900001 ms ( etc = 4:04, ett = 6:28 ) 
+( wall = 2:24 cpu = 2:24 s=1 ) 
+37.2% time = 37.200001 ms ( etc = 4:01, ett = 6:26 ) 
+( wall = 2:25 cpu = 2:25 s=1 ) 
+37.5% time = 37.500001 ms ( etc = 4:00, ett = 6:26 ) 
+( wall = 2:26 cpu = 2:26 s=1 ) 
+37.8% time = 37.800001 ms ( etc = 3:57, ett = 6:24 ) 
+( wall = 2:27 cpu = 2:27 s=1 ) 
+38.1% time = 38.100001 ms ( etc = 3:56, ett = 6:24 ) 
+( wall = 2:28 cpu = 2:28 s=1 ) 
+38.4% time = 38.400001 ms ( etc = 3:53, ett = 6:22 ) 
+( wall = 2:29 cpu = 2:29 s=1 ) 
+38.7% time = 38.700001 ms ( etc = 3:52, ett = 6:22 ) 
+( wall = 2:30 cpu = 2:30 s=1 ) 
+39.0% time = 39.000001 ms ( etc = 3:51, ett = 6:22 ) 
+( wall = 2:31 cpu = 2:31 s=1 ) 
+39.2% time = 39.200001 ms ( etc = 3:52, ett = 6:24 ) 
+( wall = 2:32 cpu = 2:32 s=1 ) 
+39.5% time = 39.500001 ms ( etc = 3:49, ett = 6:22 ) 
+( wall = 2:33 cpu = 2:33 s=1 ) 
+39.7% time = 39.700001 ms ( etc = 3:50, ett = 6:24 ) 
+( wall = 2:34 cpu = 2:34 s=1 ) 
+39.9% time = 39.900001 ms ( etc = 3:51, ett = 6:26 ) 
+( wall = 2:35 cpu = 2:35 s=1 ) 
+40.0% time = 40.000001 ms ( etc = 3:49, ett = 6:24 ) 
+( wall = 2:35 cpu = 2:35 s=1 ) 
+40.2% time = 40.200001 ms ( etc = 3:48, ett = 6:24 ) 
+( wall = 2:36 cpu = 2:36 s=1 ) 
+40.5% time = 40.500001 ms ( etc = 3:46, ett = 6:23 ) 
+( wall = 2:37 cpu = 2:37 s=1 ) 
+40.8% time = 40.800001 ms ( etc = 3:44, ett = 6:22 ) 
+( wall = 2:38 cpu = 2:38 s=1 ) 
+41.0% time = 41.000001 ms ( etc = 3:44, ett = 6:23 ) 
+( wall = 2:39 cpu = 2:39 s=1 ) 
+41.3% time = 41.300001 ms ( etc = 3:42, ett = 6:22 ) 
+( wall = 2:40 cpu = 2:40 s=1 ) 
+41.5% time = 41.500001 ms ( etc = 3:42, ett = 6:23 ) 
+( wall = 2:41 cpu = 2:41 s=1 ) 
+41.8% time = 41.800001 ms ( etc = 3:39, ett = 6:21 ) 
+( wall = 2:42 cpu = 2:42 s=1 ) 
+42.1% time = 42.100001 ms ( etc = 3:38, ett = 6:21 ) 
+( wall = 2:43 cpu = 2:43 s=1 ) 
+42.4% time = 42.400001 ms ( etc = 3:35, ett = 6:19 ) 
+( wall = 2:44 cpu = 2:44 s=1 ) 
+42.6% time = 42.600001 ms ( etc = 3:36, ett = 6:21 ) 
+( wall = 2:45 cpu = 2:45 s=1 ) 
+42.9% time = 42.900001 ms ( etc = 3:33, ett = 6:19 ) 
+( wall = 2:46 cpu = 2:46 s=1 ) 
+43.1% time = 43.100001 ms ( etc = 3:34, ett = 6:21 ) 
+( wall = 2:47 cpu = 2:47 s=1 ) 
+43.4% time = 43.400001 ms ( etc = 3:31, ett = 6:19 ) 
+( wall = 2:48 cpu = 2:48 s=1 ) 
+43.6% time = 43.600001 ms ( etc = 3:32, ett = 6:21 ) 
+( wall = 2:49 cpu = 2:49 s=1 ) 
+43.7% time = 43.700001 ms ( etc = 3:35, ett = 6:25 ) 
+( wall = 2:50 cpu = 2:50 s=1 ) 
+44.0% time = 44.000001 ms ( etc = 3:32, ett = 6:23 ) 
+( wall = 2:51 cpu = 2:51 s=1 ) 
+44.3% time = 44.300001 ms ( etc = 3:31, ett = 6:23 ) 
+( wall = 2:52 cpu = 2:52 s=1 ) 
+44.6% time = 44.600001 ms ( etc = 3:28, ett = 6:21 ) 
+( wall = 2:53 cpu = 2:53 s=1 ) 
+44.9% time = 44.900001 ms ( etc = 3:27, ett = 6:21 ) 
+( wall = 2:54 cpu = 2:54 s=1 ) 
+45.2% time = 45.200001 ms ( etc = 3:24, ett = 6:19 ) 
+( wall = 2:55 cpu = 2:55 s=1 ) 
+45.4% time = 45.400001 ms ( etc = 3:24, ett = 6:20 ) 
+( wall = 2:56 cpu = 2:56 s=1 ) 
+45.7% time = 45.700001 ms ( etc = 3:21, ett = 6:18 ) 
+( wall = 2:57 cpu = 2:57 s=1 ) 
+46.0% time = 46.000001 ms ( etc = 3:20, ett = 6:18 ) 
+( wall = 2:58 cpu = 2:58 s=1 ) 
+46.2% time = 46.200001 ms ( etc = 3:21, ett = 6:20 ) 
+( wall = 2:59 cpu = 2:59 s=1 ) 
+46.5% time = 46.500001 ms ( etc = 3:18, ett = 6:18 ) 
+( wall = 3:00 cpu = 3:00 s=1 ) 
+46.8% time = 46.800001 ms ( etc = 3:17, ett = 6:18 ) 
+( wall = 3:01 cpu = 3:01 s=1 ) 
+47.0% time = 47.000001 ms ( etc = 3:18, ett = 6:20 ) 
+( wall = 3:02 cpu = 3:02 s=1 ) 
+47.3% time = 47.300001 ms ( etc = 3:17, ett = 6:20 ) 
+( wall = 3:03 cpu = 3:03 s=1 ) 
+47.6% time = 47.600001 ms ( etc = 3:16, ett = 6:20 ) 
+( wall = 3:04 cpu = 3:04 s=1 ) 
+47.9% time = 47.900001 ms ( etc = 3:14, ett = 6:19 ) 
+( wall = 3:05 cpu = 3:05 s=1 ) 
+48.2% time = 48.200001 ms ( etc = 3:12, ett = 6:18 ) 
+( wall = 3:06 cpu = 3:06 s=1 ) 
+48.5% time = 48.500001 ms ( etc = 3:11, ett = 6:18 ) 
+( wall = 3:07 cpu = 3:07 s=1 ) 
+48.8% time = 48.800001 ms ( etc = 3:10, ett = 6:18 ) 
+( wall = 3:08 cpu = 3:08 s=1 ) 
+49.0% time = 49.000001 ms ( etc = 3:10, ett = 6:19 ) 
+( wall = 3:09 cpu = 3:09 s=1 ) 
+49.3% time = 49.300001 ms ( etc = 3:09, ett = 6:19 ) 
+( wall = 3:10 cpu = 3:10 s=1 ) 
+49.5% time = 49.500001 ms ( etc = 3:10, ett = 6:21 ) 
+( wall = 3:11 cpu = 3:11 s=1 ) 
+49.8% time = 49.800001 ms ( etc = 3:09, ett = 6:21 ) 
+( wall = 3:12 cpu = 3:12 s=1 ) 
+50.0% time = 50.000001 ms ( etc = 3:04, ett = 6:16 ) 
+( wall = 3:12 cpu = 3:12 s=1 ) 
+50.1% time = 50.100001 ms ( etc = 3:07, ett = 6:20 ) 
+( wall = 3:13 cpu = 3:13 s=1 ) 
+50.4% time = 50.400001 ms ( etc = 3:06, ett = 6:20 ) 
+( wall = 3:14 cpu = 3:14 s=1 ) 
+50.7% time = 50.700001 ms ( etc = 3:04, ett = 6:19 ) 
+( wall = 3:15 cpu = 3:15 s=1 ) 
+51.0% time = 51.000001 ms ( etc = 3:03, ett = 6:19 ) 
+( wall = 3:16 cpu = 3:16 s=1 ) 
+51.3% time = 51.300001 ms ( etc = 3:02, ett = 6:19 ) 
+( wall = 3:17 cpu = 3:17 s=1 ) 
+51.5% time = 51.500001 ms ( etc = 3:03, ett = 6:21 ) 
+( wall = 3:18 cpu = 3:18 s=1 ) 
+51.8% time = 51.800001 ms ( etc = 3:02, ett = 6:21 ) 
+( wall = 3:19 cpu = 3:19 s=1 ) 
+52.1% time = 52.100001 ms ( etc = 2:59, ett = 6:19 ) 
+( wall = 3:20 cpu = 3:20 s=1 ) 
+52.4% time = 52.400001 ms ( etc = 2:58, ett = 6:19 ) 
+( wall = 3:21 cpu = 3:21 s=1 ) 
+52.6% time = 52.600001 ms ( etc = 2:57, ett = 6:19 ) 
+( wall = 3:22 cpu = 3:22 s=1 ) 
+52.9% time = 52.900001 ms ( etc = 2:55, ett = 6:18 ) 
+( wall = 3:23 cpu = 3:23 s=1 ) 
+53.2% time = 53.200001 ms ( etc = 2:55, ett = 6:19 ) 
+( wall = 3:24 cpu = 3:24 s=1 ) 
+53.5% time = 53.500001 ms ( etc = 2:52, ett = 6:17 ) 
+( wall = 3:25 cpu = 3:25 s=1 ) 
+53.8% time = 53.800001 ms ( etc = 2:51, ett = 6:17 ) 
+( wall = 3:26 cpu = 3:26 s=1 ) 
+54.0% time = 54.000001 ms ( etc = 2:52, ett = 6:19 ) 
+( wall = 3:27 cpu = 3:27 s=1 ) 
+54.3% time = 54.300001 ms ( etc = 2:49, ett = 6:17 ) 
+( wall = 3:28 cpu = 3:28 s=1 ) 
+54.6% time = 54.600001 ms ( etc = 2:48, ett = 6:17 ) 
+( wall = 3:29 cpu = 3:29 s=1 ) 
+54.9% time = 54.900001 ms ( etc = 2:46, ett = 6:16 ) 
+( wall = 3:30 cpu = 3:30 s=1 ) 
+55.2% time = 55.200001 ms ( etc = 2:45, ett = 6:16 ) 
+( wall = 3:31 cpu = 3:31 s=1 ) 
+55.5% time = 55.500001 ms ( etc = 2:43, ett = 6:15 ) 
+( wall = 3:32 cpu = 3:32 s=1 ) 
+55.8% time = 55.800001 ms ( etc = 2:42, ett = 6:15 ) 
+( wall = 3:33 cpu = 3:33 s=1 ) 
+56.1% time = 56.100001 ms ( etc = 2:40, ett = 6:14 ) 
+( wall = 3:34 cpu = 3:34 s=1 ) 
+56.3% time = 56.300001 ms ( etc = 2:41, ett = 6:16 ) 
+( wall = 3:35 cpu = 3:35 s=1 ) 
+56.6% time = 56.600001 ms ( etc = 2:38, ett = 6:14 ) 
+( wall = 3:36 cpu = 3:36 s=1 ) 
+56.9% time = 56.900001 ms ( etc = 2:37, ett = 6:14 ) 
+( wall = 3:37 cpu = 3:37 s=1 ) 
+57.2% time = 57.200001 ms ( etc = 2:35, ett = 6:13 ) 
+( wall = 3:38 cpu = 3:38 s=1 ) 
+57.5% time = 57.500001 ms ( etc = 2:32, ett = 6:11 ) 
+( wall = 3:39 cpu = 3:39 s=1 ) 
+57.8% time = 57.800001 ms ( etc = 2:30, ett = 6:10 ) 
+( wall = 3:40 cpu = 3:40 s=1 ) 
+58.1% time = 58.100001 ms ( etc = 2:29, ett = 6:10 ) 
+( wall = 3:41 cpu = 3:41 s=1 ) 
+58.4% time = 58.400001 ms ( etc = 2:28, ett = 6:10 ) 
+( wall = 3:42 cpu = 3:42 s=1 ) 
+58.7% time = 58.700001 ms ( etc = 2:27, ett = 6:10 ) 
+( wall = 3:43 cpu = 3:43 s=1 ) 
+59.0% time = 59.000001 ms ( etc = 2:26, ett = 6:10 ) 
+( wall = 3:44 cpu = 3:44 s=1 ) 
+59.2% time = 59.200001 ms ( etc = 2:25, ett = 6:10 ) 
+( wall = 3:45 cpu = 3:45 s=1 ) 
+59.6% time = 59.600001 ms ( etc = 2:23, ett = 6:09 ) 
+( wall = 3:46 cpu = 3:46 s=1 ) 
+59.8% time = 59.800001 ms ( etc = 2:23, ett = 6:10 ) 
+( wall = 3:47 cpu = 3:47 s=1 ) 
+60.0% time = 60.000001 ms ( etc = 2:20, ett = 6:07 ) 
+( wall = 3:47 cpu = 3:47 s=1 ) 
+60.1% time = 60.100001 ms ( etc = 2:21, ett = 6:09 ) 
+( wall = 3:48 cpu = 3:48 s=1 ) 
+60.4% time = 60.400001 ms ( etc = 2:20, ett = 6:09 ) 
+( wall = 3:49 cpu = 3:49 s=1 ) 
+60.7% time = 60.700001 ms ( etc = 2:18, ett = 6:08 ) 
+( wall = 3:50 cpu = 3:50 s=1 ) 
+61.0% time = 61.000001 ms ( etc = 2:17, ett = 6:08 ) 
+( wall = 3:51 cpu = 3:51 s=1 ) 
+61.2% time = 61.200001 ms ( etc = 2:17, ett = 6:09 ) 
+( wall = 3:52 cpu = 3:52 s=1 ) 
+61.5% time = 61.500001 ms ( etc = 2:16, ett = 6:09 ) 
+( wall = 3:53 cpu = 3:53 s=1 ) 
+61.8% time = 61.800001 ms ( etc = 2:15, ett = 6:09 ) 
+( wall = 3:54 cpu = 3:54 s=1 ) 
+62.1% time = 62.100001 ms ( etc = 2:14, ett = 6:09 ) 
+( wall = 3:55 cpu = 3:55 s=1 ) 
+62.4% time = 62.400001 ms ( etc = 2:13, ett = 6:09 ) 
+( wall = 3:56 cpu = 3:56 s=1 ) 
+62.7% time = 62.700001 ms ( etc = 2:11, ett = 6:08 ) 
+( wall = 3:57 cpu = 3:57 s=1 ) 
+63.0% time = 63.000001 ms ( etc = 2:10, ett = 6:08 ) 
+( wall = 3:58 cpu = 3:58 s=1 ) 
+63.3% time = 63.300001 ms ( etc = 2:08, ett = 6:07 ) 
+( wall = 3:59 cpu = 3:59 s=1 ) 
+63.6% time = 63.600001 ms ( etc = 2:07, ett = 6:07 ) 
+( wall = 4:00 cpu = 4:00 s=1 ) 
+63.9% time = 63.900001 ms ( etc = 2:08, ett = 6:09 ) 
+( wall = 4:01 cpu = 4:01 s=1 ) 
+64.1% time = 64.100001 ms ( etc = 2:06, ett = 6:08 ) 
+( wall = 4:02 cpu = 4:02 s=1 ) 
+64.4% time = 64.400001 ms ( etc = 2:05, ett = 6:08 ) 
+( wall = 4:03 cpu = 4:03 s=1 ) 
+64.7% time = 64.700001 ms ( etc = 2:04, ett = 6:08 ) 
+( wall = 4:04 cpu = 4:04 s=1 ) 
+65.0% time = 65.000001 ms ( etc = 2:03, ett = 6:08 ) 
+( wall = 4:05 cpu = 4:05 s=1 ) 
+65.3% time = 65.300001 ms ( etc = 2:02, ett = 6:08 ) 
+( wall = 4:06 cpu = 4:06 s=1 ) 
+65.5% time = 65.500001 ms ( etc = 2:01, ett = 6:08 ) 
+( wall = 4:07 cpu = 4:07 s=1 ) 
+65.8% time = 65.800001 ms ( etc = 2:00, ett = 6:08 ) 
+( wall = 4:08 cpu = 4:08 s=1 ) 
+66.1% time = 66.100001 ms ( etc = 1:59, ett = 6:08 ) 
+( wall = 4:09 cpu = 4:09 s=1 ) 
+66.4% time = 66.400001 ms ( etc = 1:58, ett = 6:08 ) 
+( wall = 4:10 cpu = 4:10 s=1 ) 
+66.6% time = 66.600001 ms ( etc = 1:57, ett = 6:08 ) 
+( wall = 4:11 cpu = 4:11 s=1 ) 
+66.9% time = 66.900001 ms ( etc = 1:56, ett = 6:08 ) 
+( wall = 4:12 cpu = 4:12 s=1 ) 
+67.1% time = 67.100001 ms ( etc = 1:56, ett = 6:09 ) 
+( wall = 4:13 cpu = 4:13 s=1 ) 
+67.4% time = 67.400001 ms ( etc = 1:55, ett = 6:09 ) 
+( wall = 4:14 cpu = 4:14 s=1 ) 
+67.7% time = 67.700001 ms ( etc = 1:54, ett = 6:09 ) 
+( wall = 4:15 cpu = 4:15 s=1 ) 
+68.0% time = 68.000001 ms ( etc = 1:52, ett = 6:08 ) 
+( wall = 4:16 cpu = 4:16 s=1 ) 
+68.3% time = 68.300001 ms ( etc = 1:51, ett = 6:08 ) 
+( wall = 4:17 cpu = 4:17 s=1 ) 
+68.5% time = 68.500001 ms ( etc = 1:51, ett = 6:09 ) 
+( wall = 4:18 cpu = 4:18 s=1 ) 
+68.8% time = 68.800001 ms ( etc = 1:50, ett = 6:09 ) 
+( wall = 4:19 cpu = 4:19 s=1 ) 
+69.1% time = 69.100001 ms ( etc = 1:49, ett = 6:09 ) 
+( wall = 4:20 cpu = 4:20 s=1 ) 
+69.4% time = 69.400001 ms ( etc = 1:48, ett = 6:09 ) 
+( wall = 4:21 cpu = 4:21 s=1 ) 
+69.7% time = 69.700001 ms ( etc = 1:47, ett = 6:09 ) 
+( wall = 4:22 cpu = 4:22 s=1 ) 
+69.9% time = 69.900001 ms ( etc = 1:47, ett = 6:10 ) 
+( wall = 4:23 cpu = 4:23 s=1 ) 
+70.0% time = 70.000001 ms ( etc = 1:45, ett = 6:08 ) 
+( wall = 4:23 cpu = 4:23 s=1 ) 
+70.2% time = 70.200001 ms ( etc = 1:45, ett = 6:09 ) 
+( wall = 4:24 cpu = 4:24 s=1 ) 
+70.4% time = 70.400001 ms ( etc = 1:46, ett = 6:11 ) 
+( wall = 4:25 cpu = 4:25 s=1 ) 
+70.7% time = 70.700001 ms ( etc = 1:44, ett = 6:10 ) 
+( wall = 4:26 cpu = 4:26 s=1 ) 
+71.0% time = 71.000001 ms ( etc = 1:43, ett = 6:10 ) 
+( wall = 4:27 cpu = 4:27 s=1 ) 
+71.3% time = 71.300001 ms ( etc = 1:42, ett = 6:10 ) 
+( wall = 4:28 cpu = 4:28 s=1 ) 
+71.6% time = 71.600001 ms ( etc = 1:41, ett = 6:10 ) 
+( wall = 4:29 cpu = 4:29 s=1 ) 
+71.9% time = 71.900001 ms ( etc = 1:40, ett = 6:10 ) 
+( wall = 4:30 cpu = 4:30 s=1 ) 
+72.2% time = 72.200001 ms ( etc = 1:39, ett = 6:10 ) 
+( wall = 4:31 cpu = 4:31 s=1 ) 
+72.5% time = 72.500001 ms ( etc = 1:38, ett = 6:10 ) 
+( wall = 4:32 cpu = 4:32 s=1 ) 
+72.7% time = 72.700001 ms ( etc = 1:37, ett = 6:10 ) 
+( wall = 4:33 cpu = 4:33 s=1 ) 
+73.0% time = 73.000001 ms ( etc = 1:37, ett = 6:11 ) 
+( wall = 4:34 cpu = 4:34 s=1 ) 
+73.3% time = 73.300001 ms ( etc = 1:35, ett = 6:10 ) 
+( wall = 4:35 cpu = 4:35 s=1 ) 
+73.6% time = 73.600001 ms ( etc = 1:35, ett = 6:11 ) 
+( wall = 4:36 cpu = 4:36 s=1 ) 
+73.9% time = 73.900001 ms ( etc = 1:33, ett = 6:10 ) 
+( wall = 4:37 cpu = 4:37 s=1 ) 
+74.2% time = 74.200001 ms ( etc = 1:32, ett = 6:10 ) 
+( wall = 4:38 cpu = 4:38 s=1 ) 
+74.5% time = 74.500001 ms ( etc = 1:31, ett = 6:10 ) 
+( wall = 4:39 cpu = 4:39 s=1 ) 
+74.8% time = 74.800001 ms ( etc = 1:30, ett = 6:10 ) 
+( wall = 4:40 cpu = 4:40 s=1 ) 
+75.0% time = 75.000001 ms ( etc = 1:29, ett = 6:10 ) 
+( wall = 4:41 cpu = 4:41 s=1 ) 
+75.3% time = 75.300001 ms ( etc = 1:28, ett = 6:10 ) 
+( wall = 4:42 cpu = 4:42 s=1 ) 
+75.6% time = 75.600001 ms ( etc = 1:27, ett = 6:10 ) 
+( wall = 4:43 cpu = 4:43 s=1 ) 
+75.9% time = 75.900001 ms ( etc = 1:26, ett = 6:10 ) 
+( wall = 4:44 cpu = 4:44 s=1 ) 
+76.2% time = 76.200001 ms ( etc = 1:25, ett = 6:10 ) 
+( wall = 4:45 cpu = 4:45 s=1 ) 
+76.5% time = 76.500001 ms ( etc = 1:24, ett = 6:10 ) 
+( wall = 4:46 cpu = 4:46 s=1 ) 
+76.8% time = 76.800001 ms ( etc = 1:22, ett = 6:09 ) 
+( wall = 4:47 cpu = 4:47 s=1 ) 
+77.1% time = 77.100001 ms ( etc = 1:21, ett = 6:09 ) 
+( wall = 4:48 cpu = 4:48 s=1 ) 
+77.4% time = 77.400001 ms ( etc = 1:20, ett = 6:09 ) 
+( wall = 4:49 cpu = 4:49 s=1 ) 
+77.6% time = 77.600001 ms ( etc = 1:20, ett = 6:10 ) 
+( wall = 4:50 cpu = 4:50 s=1 ) 
+77.9% time = 77.900001 ms ( etc = 1:19, ett = 6:10 ) 
+( wall = 4:51 cpu = 4:51 s=1 ) 
+78.2% time = 78.200001 ms ( etc = 1:17, ett = 6:09 ) 
+( wall = 4:52 cpu = 4:52 s=1 ) 
+78.5% time = 78.500001 ms ( etc = 1:16, ett = 6:09 ) 
+( wall = 4:53 cpu = 4:53 s=1 ) 
+78.8% time = 78.800001 ms ( etc = 1:15, ett = 6:09 ) 
+( wall = 4:54 cpu = 4:54 s=1 ) 
+79.1% time = 79.100001 ms ( etc = 1:14, ett = 6:09 ) 
+( wall = 4:55 cpu = 4:55 s=1 ) 
+79.4% time = 79.400001 ms ( etc = 1:13, ett = 6:09 ) 
+( wall = 4:56 cpu = 4:56 s=1 ) 
+79.7% time = 79.700001 ms ( etc = 1:12, ett = 6:09 ) 
+( wall = 4:57 cpu = 4:57 s=1 ) 
+80.0% time = 80.000001 ms ( etc = 1:11, ett = 6:09 ) 
+( wall = 4:58 cpu = 4:58 s=1 ) 
+80.3% time = 80.300001 ms ( etc = 1:09, ett = 6:08 ) 
+( wall = 4:59 cpu = 4:59 s=1 ) 
+80.6% time = 80.600001 ms ( etc = 1:08, ett = 6:08 ) 
+( wall = 5:00 cpu = 5:00 s=1 ) 
+80.9% time = 80.900001 ms ( etc = 1:07, ett = 6:08 ) 
+( wall = 5:01 cpu = 5:01 s=1 ) 
+81.1% time = 81.100001 ms ( etc = 1:06, ett = 6:08 ) 
+( wall = 5:02 cpu = 5:02 s=1 ) 
+81.4% time = 81.400001 ms ( etc = 1:05, ett = 6:08 ) 
+( wall = 5:03 cpu = 5:03 s=1 ) 
+81.7% time = 81.700001 ms ( etc = 1:04, ett = 6:08 ) 
+( wall = 5:04 cpu = 5:04 s=1 ) 
+82.0% time = 82.000001 ms ( etc = 1:03, ett = 6:08 ) 
+( wall = 5:05 cpu = 5:05 s=1 ) 
+82.3% time = 82.300001 ms ( etc = 1:02, ett = 6:08 ) 
+( wall = 5:06 cpu = 5:06 s=1 ) 
+82.6% time = 82.600001 ms ( etc = 1:00, ett = 6:07 ) 
+( wall = 5:07 cpu = 5:07 s=1 ) 
+82.9% time = 82.900001 ms ( etc = 59.9 sec, ett = 6:07 ) 
+( wall = 5:08 cpu = 5:08 s=1 ) 
+83.2% time = 83.200001 ms ( etc = 58.8 sec, ett = 6:07 ) 
+( wall = 5:09 cpu = 5:09 s=1 ) 
+83.5% time = 83.500001 ms ( etc = 57.8 sec, ett = 6:07 ) 
+( wall = 5:10 cpu = 5:10 s=1 ) 
+83.8% time = 83.800001 ms ( etc = 56.7 sec, ett = 6:07 ) 
+( wall = 5:11 cpu = 5:11 s=1 ) 
+84.1% time = 84.100001 ms ( etc = 55.3 sec, ett = 6:07 ) 
+( wall = 5:12 cpu = 5:12 s=1 ) 
+84.4% time = 84.400001 ms ( etc = 54.5 sec, ett = 6:07 ) 
+( wall = 5:13 cpu = 5:13 s=1 ) 
+84.7% time = 84.700001 ms ( etc = 53.1 sec, ett = 6:07 ) 
+( wall = 5:14 cpu = 5:14 s=1 ) 
+85.0% time = 85.000001 ms ( etc = 51.7 sec, ett = 6:06 ) 
+( wall = 5:15 cpu = 5:15 s=1 ) 
+85.3% time = 85.300001 ms ( etc = 50.7 sec, ett = 6:06 ) 
+( wall = 5:16 cpu = 5:16 s=1 ) 
+85.6% time = 85.600001 ms ( etc = 49.7 sec, ett = 6:06 ) 
+( wall = 5:17 cpu = 5:17 s=1 ) 
+85.9% time = 85.900001 ms ( etc = 48.6 sec, ett = 6:06 ) 
+( wall = 5:18 cpu = 5:18 s=1 ) 
+86.1% time = 86.100001 ms ( etc = 48.3 sec, ett = 6:07 ) 
+( wall = 5:19 cpu = 5:19 s=1 ) 
+86.4% time = 86.400001 ms ( etc = 47.2 sec, ett = 6:07 ) 
+( wall = 5:20 cpu = 5:20 s=1 ) 
+86.7% time = 86.700001 ms ( etc = 46.2 sec, ett = 6:07 ) 
+( wall = 5:21 cpu = 5:21 s=1 ) 
+87.0% time = 87.000001 ms ( etc = 45.1 sec, ett = 6:07 ) 
+( wall = 5:22 cpu = 5:22 s=1 ) 
+87.3% time = 87.300001 ms ( etc = 43.8 sec, ett = 6:06 ) 
+( wall = 5:23 cpu = 5:23 s=1 ) 
+87.6% time = 87.600001 ms ( etc = 42.8 sec, ett = 6:06 ) 
+( wall = 5:24 cpu = 5:24 s=1 ) 
+87.9% time = 87.900001 ms ( etc = 41.7 sec, ett = 6:06 ) 
+( wall = 5:25 cpu = 5:25 s=1 ) 
+88.2% time = 88.200001 ms ( etc = 40.7 sec, ett = 6:06 ) 
+( wall = 5:26 cpu = 5:26 s=1 ) 
+88.5% time = 88.500001 ms ( etc = 39.7 sec, ett = 6:06 ) 
+( wall = 5:27 cpu = 5:27 s=1 ) 
+88.8% time = 88.800001 ms ( etc = 38.6 sec, ett = 6:06 ) 
+( wall = 5:28 cpu = 5:28 s=1 ) 
+89.1% time = 89.100001 ms ( etc = 37.6 sec, ett = 6:06 ) 
+( wall = 5:29 cpu = 5:29 s=1 ) 
+89.4% time = 89.400001 ms ( etc = 36.6 sec, ett = 6:06 ) 
+( wall = 5:30 cpu = 5:30 s=1 ) 
+89.7% time = 89.700001 ms ( etc = 35.3 sec, ett = 6:06 ) 
+( wall = 5:31 cpu = 5:31 s=1 ) 
+90.0% time = 90.000001 ms ( etc = 34.2 sec, ett = 6:06 ) 
+( wall = 5:32 cpu = 5:32 s=1 ) 
+90.3% time = 90.300001 ms ( etc = 33.2 sec, ett = 6:06 ) 
+( wall = 5:33 cpu = 5:33 s=1 ) 
+90.6% time = 90.600001 ms ( etc = 32.2 sec, ett = 6:06 ) 
+( wall = 5:34 cpu = 5:34 s=1 ) 
+90.9% time = 90.900001 ms ( etc = 31.2 sec, ett = 6:06 ) 
+( wall = 5:35 cpu = 5:35 s=1 ) 
+91.2% time = 91.200001 ms ( etc = 30.1 sec, ett = 6:06 ) 
+( wall = 5:36 cpu = 5:36 s=1 ) 
+91.5% time = 91.500001 ms ( etc = 29.1 sec, ett = 6:06 ) 
+( wall = 5:37 cpu = 5:37 s=1 ) 
+91.8% time = 91.800001 ms ( etc = 28.1 sec, ett = 6:06 ) 
+( wall = 5:38 cpu = 5:38 s=1 ) 
+92.0% time = 92.000001 ms ( etc = 27.6 sec, ett = 6:06 ) 
+( wall = 5:39 cpu = 5:39 s=1 ) 
+92.3% time = 92.300001 ms ( etc = 26.4 sec, ett = 6:06 ) 
+( wall = 5:40 cpu = 5:40 s=1 ) 
+92.6% time = 92.600001 ms ( etc = 25.3 sec, ett = 6:06 ) 
+( wall = 5:41 cpu = 5:41 s=1 ) 
+92.9% time = 92.900001 ms ( etc = 24.3 sec, ett = 6:06 ) 
+( wall = 5:42 cpu = 5:42 s=1 ) 
+93.2% time = 93.200001 ms ( etc = 23.3 sec, ett = 6:06 ) 
+( wall = 5:43 cpu = 5:43 s=1 ) 
+93.5% time = 93.500001 ms ( etc = 22.3 sec, ett = 6:06 ) 
+( wall = 5:44 cpu = 5:44 s=1 ) 
+93.8% time = 93.800001 ms ( etc = 21.2 sec, ett = 6:06 ) 
+( wall = 5:45 cpu = 5:45 s=1 ) 
+94.1% time = 94.100001 ms ( etc = 20.2 sec, ett = 6:06 ) 
+( wall = 5:46 cpu = 5:46 s=1 ) 
+94.3% time = 94.300001 ms ( etc = 19.7 sec, ett = 6:06 ) 
+( wall = 5:47 cpu = 5:47 s=1 ) 
+94.6% time = 94.600001 ms ( etc = 18.6 sec, ett = 6:06 ) 
+( wall = 5:48 cpu = 5:48 s=1 ) 
+94.9% time = 94.900001 ms ( etc = 17.6 sec, ett = 6:06 ) 
+( wall = 5:49 cpu = 5:49 s=1 ) 
+95.2% time = 95.200001 ms ( etc = 16.6 sec, ett = 6:06 ) 
+( wall = 5:50 cpu = 5:50 s=1 ) 
+95.5% time = 95.500001 ms ( etc = 15.5 sec, ett = 6:06 ) 
+( wall = 5:51 cpu = 5:51 s=1 ) 
+95.8% time = 95.800001 ms ( etc = 14.4 sec, ett = 6:06 ) 
+( wall = 5:52 cpu = 5:52 s=1 ) 
+96.1% time = 96.100001 ms ( etc = 13.4 sec, ett = 6:06 ) 
+( wall = 5:53 cpu = 5:53 s=1 ) 
+96.4% time = 96.400001 ms ( etc = 12.3 sec, ett = 6:06 ) 
+( wall = 5:54 cpu = 5:54 s=1 ) 
+96.7% time = 96.700001 ms ( etc = 11.3 sec, ett = 6:06 ) 
+( wall = 5:55 cpu = 5:55 s=1 ) 
+97.0% time = 97.000001 ms ( etc = 10.3 sec, ett = 6:06 ) 
+( wall = 5:56 cpu = 5:56 s=1 ) 
+97.3% time = 97.300001 ms ( etc = 9.2 sec, ett = 6:06 ) 
+( wall = 5:57 cpu = 5:57 s=1 ) 
+97.6% time = 97.600001 ms ( etc = 8.2 sec, ett = 6:06 ) 
+( wall = 5:58 cpu = 5:58 s=1 ) 
+97.9% time = 97.900001 ms ( etc = 7.2 sec, ett = 6:06 ) 
+( wall = 5:59 cpu = 5:59 s=1 ) 
+98.2% time = 98.200001 ms ( etc = 6.2 sec, ett = 6:06 ) 
+( wall = 6:00 cpu = 6:00 s=1 ) 
+98.5% time = 98.500001 ms ( etc = 5.1 sec, ett = 6:06 ) 
+( wall = 6:01 cpu = 6:01 s=1 ) 
+98.8% time = 98.800001 ms ( etc = 4.1 sec, ett = 6:06 ) 
+( wall = 6:02 cpu = 6:02 s=1 ) 
+99.1% time = 99.100001 ms ( etc = 3.1 sec, ett = 6:06 ) 
+( wall = 6:03 cpu = 6:03 s=1 ) 
+99.4% time = 99.400001 ms ( etc = 2.1 sec, ett = 6:06 ) 
+( wall = 6:04 cpu = 6:04 s=1 ) 
+99.7% time = 99.700001 ms ( etc = 1.0 sec, ett = 6:06 ) 
+( wall = 6:05 cpu = 6:05 s=1 ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  325.8998p    targ=  2.4014u trig=  2.4010u 
+delayn2=  -1.5997u    targ=  1.6013u trig=  3.2010u 
+pw=  430.3526n      from=  0.000e+000  to=  1.000e-001 
+pdp=  140.2518a    param = 1.403e-016 
+ 
+ 
+100.0% time = 100.000000 ms ( etc = 0.0 sec, ett = 6:06 ) 
+( wall = 6:06 cpu = 6:06 s=1 ) 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     365.79 sec   
+Peak Memory  0.00 Mb      

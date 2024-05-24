@@ -1,0 +1,172 @@
+ ****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: dynamic_manchester_adder.sp                                       
+  Command line options: -mt 12 -i dynamic_manchester_adder.sp -o dynamic_manchester_adder.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   User                 HOSTNAME: LAPTOP-HIOSMBNM 
+  lic: HOSTID: "a036bc64ac5e 009337e9bab9 005056c00001 005056c00008 009337e9bab5
+  009337e9bab6 029337e
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-HIOSMBNM 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-2\meta.cfg
+  **warning** (dynamic_manchester_adder.sp:11) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ dynamic_manchester_adder
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xa1.                            nand1              1.00 
+        2 xa2.                            nand1              1.00 
+        3 xi1.                            inv1               1.00 
+        4 xi2.                            inv1               1.00 
+        5 xo1.                            xor1               1.00 
+        6 xo2.                            xor1               1.00 
+        7 xm1.                            mancher            1.00 
+        8 xm2.                            mancher            1.00 
+        9 xm3.                            mancher            1.00 
+       10 xm4.                            mancher            1.00 
+       11 xm5.                            mancher            1.00 
+       12 xm6.                            mancher            1.00 
+       13 xm7.                            mancher            1.00 
+       14 xm8.                            mancher            1.00 
+       15 xo1.xa1.                        inv1               1.00 
+       16 xo1.xb1.                        inv1               1.00 
+       17 xo2.xa1.                        inv1               1.00 
+       18 xo2.xb1.                        inv1               1.00 
+       19 xm1.xi3.                        inv1               1.00 
+       20 xm1.xi4.                        inv1               1.00 
+       21 xm2.xi3.                        inv1               1.00 
+       22 xm2.xi4.                        inv1               1.00 
+       23 xm3.xi3.                        inv1               1.00 
+       24 xm3.xi4.                        inv1               1.00 
+       25 xm4.xi3.                        inv1               1.00 
+       26 xm4.xi4.                        inv1               1.00 
+       27 xm5.xi3.                        inv1               1.00 
+       28 xm5.xi4.                        inv1               1.00 
+       29 xm6.xi3.                        inv1               1.00 
+       30 xm6.xi4.                        inv1               1.00 
+       31 xm7.xi3.                        inv1               1.00 
+       32 xm7.xi4.                        inv1               1.00 
+       33 xm8.xi3.                        inv1               1.00 
+       34 xm8.xi4.                        inv1               1.00 
+  **info** (dynamic_manchester_adder.sp:68) DC voltage reset to initial transient source value              in source        0:va                  new dc=  0.1800D+01
+  **warning** (dynamic_manchester_adder.sp:8) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  lic: MT Count(12), require 5 extra license token 
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-HIOSMBNM 
+  lic: Checkout 6 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 6(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM 
+  lic:   
+  Opening plot unit= 79
+ file=dynamic_manchester_adder.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ dynamic_manchester_adder
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a       =   1.8000   0:a0      =   1.8000   0:b       =   1.8000 
+ + 0:b0      =   1.8000   0:c0      =   3.7619n  0:c1      =   3.7619n
+ + 0:c2      =   3.7619n  0:c3      =   3.7619n  0:c4      =   3.7619n
+ + 0:c5      =   3.7619n  0:c6      =   3.7619n  0:c7      =   3.7619n
+ + 0:ci      =   0.       0:clk     =   0.       0:g0      =   1.8000 
+ + 0:g01     =  10.7174n  0:g1      =   1.8000   0:g11     =  10.7174n
+ + 0:p0      =  33.1200n  0:p1      =  33.1200n  0:vdd     =   1.8000 
+ + 1:net     =   5.3587n  2:net     =   5.3587n  5:aout    =   3.7619n
+ + 5:bout    =   3.7619n  5:net1    =   1.8000   5:net2    = 402.3406m
+ + 5:net3    =  16.5600n  5:net4    =  16.3574n  6:aout    =   3.7619n
+ + 6:bout    =   3.7619n  6:net1    =   1.8000   6:net2    = 402.3406m
+ + 6:net3    =  16.5600n  6:net4    =  16.3574n  7:cii     =   1.8000 
+ + 7:net     =   1.5643   7:out1    =   1.8000   8:cii     =   1.8000 
+ + 8:net     =   1.5643   8:out1    =   1.8000   9:cii     =   1.8000 
+ + 9:net     =   1.5643   9:out1    =   1.8000  10:cii     =   1.8000 
+ +10:net     =   1.5643  10:out1    =   1.8000  11:cii     =   1.8000 
+ +11:net     =   1.5643  11:out1    =   1.8000  12:cii     =   1.8000 
+ +12:net     =   1.5643  12:out1    =   1.8000  13:cii     =   1.8000 
+ +13:net     =   1.5643  13:out1    =   1.8000  14:cii     =   1.8000 
+ +14:net     =   1.5643  14:out1    =   1.8000 
+
+ ******  
+ dynamic_manchester_adder
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn1= 582.4103p  targ=   6.7324n   trig=   6.1500n
+ pw= 904.7979u  from=   0.          to=  40.0000n
+ pdp= 526.9637f
+
+          ***** job concluded
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ dynamic_manchester_adder
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :    12
+  Available CPU Count        :    20
+  Actual Threads Count       :    12
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =     260 # elements   =     115
+  # resistors   =       0 # capacitors =       8 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       7
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =     100 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          22
+  transient          0.25         401        2657         844 rev=        17
+  readin             0.02
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         57.27 megabytes
+           total cpu time            0.28 seconds
+           total elapsed time        0.30 seconds
+           job started at     17:53:29 07/07/2023
+           job ended   at     17:53:30 07/07/2023
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.02(s)

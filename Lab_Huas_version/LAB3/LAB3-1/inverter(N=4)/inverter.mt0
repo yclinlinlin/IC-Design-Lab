@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='J-2014.09-2 64-BIT'
+.TITLE 'inverter'
+ delayn1          pw               pdp              temper          
+ alter#          
+  2.189e-10        8.686e-03        1.902e-12         25.0000       
+ 1               

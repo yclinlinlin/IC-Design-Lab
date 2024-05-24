@@ -1,0 +1,222 @@
+ ****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: pass-transistor 3-input xor.sp                                    
+  Command line options: -i pass-transistor 3-input xor.sp -o pass-transistor 3-input xor.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   user                 HOSTNAME: LAPTOP-V0SVEGVF 
+  lic: HOSTID: "e8f408ef740e 00ff95ffeb7e 005056c00001 005056c00008 e8f408ef740a
+  e8f408ef740b eaf408e
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-V0SVEGVF 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-V0SVEGVF 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-2\meta.cfg
+  **warning** (pass-transistor 3-input xor.sp:12) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ pass-transistor 3-input xor
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xa1.                            xor1               1.00 
+        2 xa1.xa1.                        inv1               1.00 
+        3 xa1.xb1.                        inv1               1.00 
+        4 xa1.xc1.                        inv1               1.00 
+        5 xa1.xn1.                        inv1               1.00 
+        6 xa1.xn2.                        inv1               1.00 
+        7 xa1.xn3.                        inv1               1.00 
+        8 xa1.xn4.                        inv1               1.00 
+        9 xa1.xn5.                        inv1               1.00 
+  **info** (pass-transistor 3-input xor.sp:40) DC voltage reset to initial transient source value              in source        0:va                  new dc=  0.1800D+01
+  **warning** (pass-transistor 3-input xor.sp:9) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=pass-transistor 3-input xor.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    5.000E-14 ***
+
+ ******  
+ pass-transistor 3-input xor
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn1= 120.2004n  targ= 160.3504n   trig=  40.1500n
+ pw=   4.9209u  from=   0.          to= 640.0000n
+ pdp= 591.4992f
+
+          ***** job concluded
+ ******  
+ pass-transistor 3-input xor
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  100.0000f       ***
+
+ delayn1= 120.2977n  targ= 160.4477n   trig=  40.1500n
+ pw=   6.4441u  from=   0.          to= 640.0000n
+ pdp= 775.2142f
+
+          ***** job concluded
+ ******  
+ pass-transistor 3-input xor
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  150.0000f       ***
+
+ delayn1= 120.3946n  targ= 160.5446n   trig=  40.1500n
+ pw=   7.9912u  from=   0.          to= 640.0000n
+ pdp= 962.0944f
+
+          ***** job concluded
+ ******  
+ pass-transistor 3-input xor
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  200.0000f       ***
+
+ delayn1= 120.4920n  targ= 160.6420n   trig=  40.1500n
+ pw=   9.5229u  from=   0.          to= 640.0000n
+ pdp=   1.1474p
+
+          ***** job concluded
+ ******  
+ pass-transistor 3-input xor
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  250.0000f       ***
+
+ delayn1= 120.5841n  targ= 160.7341n   trig=  40.1500n
+ pw=  11.1336u  from=   0.          to= 640.0000n
+ pdp=   1.3425p
+
+          ***** job concluded
+ ******  
+ pass-transistor 3-input xor
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  300.0000f       ***
+
+ delayn1= 120.6849n  targ= 160.8349n   trig=  40.1500n
+ pw=  12.6666u  from=   0.          to= 640.0000n
+ pdp=   1.5287p
+
+          ***** job concluded
+ ******  
+ pass-transistor 3-input xor
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  350.0000f       ***
+
+ delayn1= 120.7790n  targ= 160.9290n   trig=  40.1500n
+ pw=  14.1496u  from=   0.          to= 640.0000n
+ pdp=   1.7090p
+
+          ***** job concluded
+ ******  
+ pass-transistor 3-input xor
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  400.0000f       ***
+
+ delayn1= 120.8780n  targ= 161.0280n   trig=  40.1500n
+ pw=  15.6779u  from=   0.          to= 640.0000n
+ pdp=   1.8951p
+
+          ***** job concluded
+ ******  
+ pass-transistor 3-input xor
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  450.0000f       ***
+
+ delayn1= 120.9686n  targ= 161.1186n   trig=  40.1500n
+ pw=  17.2032u  from=   0.          to= 640.0000n
+ pdp=   2.0811p
+
+          ***** job concluded
+ ******  
+ pass-transistor 3-input xor
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+
+   *** parameter k =  500.0000f       ***
+
+ delayn1= 121.0707n  targ= 161.2207n   trig=  40.1500n
+ pw=  18.6874u  from=   0.          to= 640.0000n
+ pdp=   2.2625p
+
+          ***** job concluded
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ pass-transistor 3-input xor
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      55 # elements   =      25
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      20 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          22
+  transient          0.41       64010       15109        5244 rev=       117
+  readin             0.03
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         44.23 megabytes
+           total cpu time            0.44 seconds
+           total elapsed time        0.48 seconds
+           job started at     11:03:29 07/06/2023
+           job ended   at     11:03:29 07/06/2023
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.03(s)

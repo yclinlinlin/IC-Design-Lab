@@ -1,0 +1,125 @@
+ ****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: half adder.sp                                                     
+  Command line options: -i half adder.sp -o half adder.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   User                 HOSTNAME: LAPTOP-HIOSMBNM 
+  lic: HOSTID: "a036bc64ac5e 009337e9bab9 005056c00001 005056c00008 009337e9bab5
+  009337e9bab6 029337e
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-HIOSMBNM 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-2\meta.cfg
+  **warning** (half adder.sp:11) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ half adder
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xf1.                            halfadder1         1.00 
+        2 xf1.xc1.                        xor1               1.00 
+        3 xf1.xdl.                        nand1              1.00 
+        4 xf1.xe1.                        inv1               1.00 
+        5 xf1.xc1.xa1.                    inv1               1.00 
+        6 xf1.xc1.xb1.                    inv1               1.00 
+  **info** (half adder.sp:50) DC voltage reset to initial transient source value              in source        0:va                  new dc=  0.1800D+01
+  **warning** (half adder.sp:9) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  **warning** (half adder.sp:57) Unable to find referenced node out; Output variable ignored. Specify a valid node.
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=half adder.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ half adder
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:a       =   1.8000  0:b       =   1.8000  0:carry   =   1.8000 
+ +0:sum     = 101.5380n 0:vdd     =   1.8000  1:cout    =  95.3470n
+ +2:aout    =  23.8367n 2:bout    =  23.8367n 2:net1    =   1.8000 
+ +2:net2    = 386.6683m 2:net3    =  50.7690n 2:net4    =  50.5910n
+ +3:net     =  47.6735n
+
+ ******  
+ half adder
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  **warning** (half adder.sp:57) .MEASURE  delayn1 never reached the trigger value, Measurement failed!
+  **warning** (half adder.sp:57) .MEASURE  delayn1 never reached the target value, Measurement failed!
+  **warning** (half adder.sp:57) Target event is undefined. Please specify a valid event. Measure failed.
+   delayn1= failed                          trig= not found
+ pw=   2.6089u  from=   0.          to=  80.0000n
+
+          ***** job concluded
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ half adder
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    20
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      50 # elements   =      21
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      18 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          18
+  transient          0.02         801        1091         353 rev=         5
+  readin             0.30
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         44.26 megabytes
+           total cpu time            0.32 seconds
+           total elapsed time        0.34 seconds
+           job started at     15:29:27 07/06/2023
+           job ended   at     15:29:27 07/06/2023
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.01(s)

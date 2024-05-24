@@ -1,0 +1,404 @@
+ ****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: 8-bit-fulladder.sp                                                
+  Command line options: -mt 16 -hpp -i 8-bit-fulladder.sp -o 8-bit-fulladder.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   User                 HOSTNAME: LAPTOP-HIOSMBNM 
+  lic: HOSTID: "a036bc64ac5e 009337e9bab9 005056c00001 005056c00008 009337e9bab5
+  009337e9bab6 029337e
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-HIOSMBNM 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-2\meta.cfg
+ 
+ ****** Advanced Analog Library - J-2014.09-2 (Oct 22 2014) ****** 
+  **warning** (8-bit-fulladder.sp:11) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 8-bit-fulladder
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xk1.                            eight-bit-fulladder1
+                                                                 1.00 
+        2 xk1.xj1.                        fulladder1         1.00 
+        3 xk1.xj2.                        fulladder1         1.00 
+        4 xk1.xj3.                        fulladder1         1.00 
+        5 xk1.xj4.                        fulladder1         1.00 
+        6 xk1.xj5.                        fulladder1         1.00 
+        7 xk1.xj6.                        fulladder1         1.00 
+        8 xk1.xj7.                        fulladder1         1.00 
+        9 xk1.xj8.                        fulladder1         1.00 
+       10 xk1.xj1.xf1.                    halfadder1         1.00 
+       11 xk1.xj1.xg1.                    halfadder1         1.00 
+       12 xk1.xj1.xh1.                    nor1               1.00 
+       13 xk1.xj1.xk1.                    inv1               1.00 
+       14 xk1.xj2.xf1.                    halfadder1         1.00 
+       15 xk1.xj2.xg1.                    halfadder1         1.00 
+       16 xk1.xj2.xh1.                    nor1               1.00 
+       17 xk1.xj2.xk1.                    inv1               1.00 
+       18 xk1.xj3.xf1.                    halfadder1         1.00 
+       19 xk1.xj3.xg1.                    halfadder1         1.00 
+       20 xk1.xj3.xh1.                    nor1               1.00 
+       21 xk1.xj3.xk1.                    inv1               1.00 
+       22 xk1.xj4.xf1.                    halfadder1         1.00 
+       23 xk1.xj4.xg1.                    halfadder1         1.00 
+       24 xk1.xj4.xh1.                    nor1               1.00 
+       25 xk1.xj4.xk1.                    inv1               1.00 
+       26 xk1.xj5.xf1.                    halfadder1         1.00 
+       27 xk1.xj5.xg1.                    halfadder1         1.00 
+       28 xk1.xj5.xh1.                    nor1               1.00 
+       29 xk1.xj5.xk1.                    inv1               1.00 
+       30 xk1.xj6.xf1.                    halfadder1         1.00 
+       31 xk1.xj6.xg1.                    halfadder1         1.00 
+       32 xk1.xj6.xh1.                    nor1               1.00 
+       33 xk1.xj6.xk1.                    inv1               1.00 
+       34 xk1.xj7.xf1.                    halfadder1         1.00 
+       35 xk1.xj7.xg1.                    halfadder1         1.00 
+       36 xk1.xj7.xh1.                    nor1               1.00 
+       37 xk1.xj7.xk1.                    inv1               1.00 
+       38 xk1.xj8.xf1.                    halfadder1         1.00 
+       39 xk1.xj8.xg1.                    halfadder1         1.00 
+       40 xk1.xj8.xh1.                    nor1               1.00 
+       41 xk1.xj8.xk1.                    inv1               1.00 
+       42 xk1.xj1.xf1.xc1.                xor1               1.00 
+       43 xk1.xj1.xf1.xdl.                nand1              1.00 
+       44 xk1.xj1.xf1.xe1.                inv1               1.00 
+       45 xk1.xj1.xg1.xc1.                xor1               1.00 
+       46 xk1.xj1.xg1.xdl.                nand1              1.00 
+       47 xk1.xj1.xg1.xe1.                inv1               1.00 
+       48 xk1.xj2.xf1.xc1.                xor1               1.00 
+       49 xk1.xj2.xf1.xdl.                nand1              1.00 
+       50 xk1.xj2.xf1.xe1.                inv1               1.00 
+       51 xk1.xj2.xg1.xc1.                xor1               1.00 
+       52 xk1.xj2.xg1.xdl.                nand1              1.00 
+       53 xk1.xj2.xg1.xe1.                inv1               1.00 
+       54 xk1.xj3.xf1.xc1.                xor1               1.00 
+       55 xk1.xj3.xf1.xdl.                nand1              1.00 
+       56 xk1.xj3.xf1.xe1.                inv1               1.00 
+       57 xk1.xj3.xg1.xc1.                xor1               1.00 
+       58 xk1.xj3.xg1.xdl.                nand1              1.00 
+       59 xk1.xj3.xg1.xe1.                inv1               1.00 
+       60 xk1.xj4.xf1.xc1.                xor1               1.00 
+       61 xk1.xj4.xf1.xdl.                nand1              1.00 
+       62 xk1.xj4.xf1.xe1.                inv1               1.00 
+       63 xk1.xj4.xg1.xc1.                xor1               1.00 
+       64 xk1.xj4.xg1.xdl.                nand1              1.00 
+       65 xk1.xj4.xg1.xe1.                inv1               1.00 
+       66 xk1.xj5.xf1.xc1.                xor1               1.00 
+       67 xk1.xj5.xf1.xdl.                nand1              1.00 
+       68 xk1.xj5.xf1.xe1.                inv1               1.00 
+       69 xk1.xj5.xg1.xc1.                xor1               1.00 
+       70 xk1.xj5.xg1.xdl.                nand1              1.00 
+       71 xk1.xj5.xg1.xe1.                inv1               1.00 
+       72 xk1.xj6.xf1.xc1.                xor1               1.00 
+       73 xk1.xj6.xf1.xdl.                nand1              1.00 
+       74 xk1.xj6.xf1.xe1.                inv1               1.00 
+       75 xk1.xj6.xg1.xc1.                xor1               1.00 
+       76 xk1.xj6.xg1.xdl.                nand1              1.00 
+       77 xk1.xj6.xg1.xe1.                inv1               1.00 
+       78 xk1.xj7.xf1.xc1.                xor1               1.00 
+       79 xk1.xj7.xf1.xdl.                nand1              1.00 
+       80 xk1.xj7.xf1.xe1.                inv1               1.00 
+       81 xk1.xj7.xg1.xc1.                xor1               1.00 
+       82 xk1.xj7.xg1.xdl.                nand1              1.00 
+       83 xk1.xj7.xg1.xe1.                inv1               1.00 
+       84 xk1.xj8.xf1.xc1.                xor1               1.00 
+       85 xk1.xj8.xf1.xdl.                nand1              1.00 
+       86 xk1.xj8.xf1.xe1.                inv1               1.00 
+       87 xk1.xj8.xg1.xc1.                xor1               1.00 
+       88 xk1.xj8.xg1.xdl.                nand1              1.00 
+       89 xk1.xj8.xg1.xe1.                inv1               1.00 
+       90 xk1.xj1.xf1.xc1.xa1.            inv1               1.00 
+       91 xk1.xj1.xf1.xc1.xb1.            inv1               1.00 
+       92 xk1.xj1.xg1.xc1.xa1.            inv1               1.00 
+       93 xk1.xj1.xg1.xc1.xb1.            inv1               1.00 
+       94 xk1.xj2.xf1.xc1.xa1.            inv1               1.00 
+       95 xk1.xj2.xf1.xc1.xb1.            inv1               1.00 
+       96 xk1.xj2.xg1.xc1.xa1.            inv1               1.00 
+       97 xk1.xj2.xg1.xc1.xb1.            inv1               1.00 
+       98 xk1.xj3.xf1.xc1.xa1.            inv1               1.00 
+       99 xk1.xj3.xf1.xc1.xb1.            inv1               1.00 
+      100 xk1.xj3.xg1.xc1.xa1.            inv1               1.00 
+      101 xk1.xj3.xg1.xc1.xb1.            inv1               1.00 
+      102 xk1.xj4.xf1.xc1.xa1.            inv1               1.00 
+      103 xk1.xj4.xf1.xc1.xb1.            inv1               1.00 
+      104 xk1.xj4.xg1.xc1.xa1.            inv1               1.00 
+      105 xk1.xj4.xg1.xc1.xb1.            inv1               1.00 
+      106 xk1.xj5.xf1.xc1.xa1.            inv1               1.00 
+      107 xk1.xj5.xf1.xc1.xb1.            inv1               1.00 
+      108 xk1.xj5.xg1.xc1.xa1.            inv1               1.00 
+      109 xk1.xj5.xg1.xc1.xb1.            inv1               1.00 
+      110 xk1.xj6.xf1.xc1.xa1.            inv1               1.00 
+      111 xk1.xj6.xf1.xc1.xb1.            inv1               1.00 
+      112 xk1.xj6.xg1.xc1.xa1.            inv1               1.00 
+      113 xk1.xj6.xg1.xc1.xb1.            inv1               1.00 
+      114 xk1.xj7.xf1.xc1.xa1.            inv1               1.00 
+      115 xk1.xj7.xf1.xc1.xb1.            inv1               1.00 
+      116 xk1.xj7.xg1.xc1.xa1.            inv1               1.00 
+      117 xk1.xj7.xg1.xc1.xb1.            inv1               1.00 
+      118 xk1.xj8.xf1.xc1.xa1.            inv1               1.00 
+      119 xk1.xj8.xf1.xc1.xb1.            inv1               1.00 
+      120 xk1.xj8.xg1.xc1.xa1.            inv1               1.00 
+      121 xk1.xj8.xg1.xc1.xb1.            inv1               1.00 
+  **info** (8-bit-fulladder.sp:93) DC voltage reset to initial transient source value              in source        0:va0                 new dc=  0.1800D+01
+  **warning** (8-bit-fulladder.sp:9) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  **warning** (8-bit-fulladder.sp:106) Unable to find referenced node a; Output variable ignored. Specify a valid node.
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=8-bit-fulladder.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 8-bit-fulladder
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is all       simulation time is     0.     
+      node    =voltage        node    =voltage        node    =voltage
+
+ +  0:a0      =   1.8000    0:a1      =   1.8000    0:a2      =   1.8000 
+ +  0:a3      =   1.8000    0:a4      =   1.8000    0:a5      =   1.8000 
+ +  0:a6      =   1.8000    0:a7      =   1.8000    0:b0      =   1.8000 
+ +  0:b1      =   1.8000    0:b2      =   1.8000    0:b3      =   1.8000 
+ +  0:b4      =   1.8000    0:b5      =   1.8000    0:b6      =   1.8000 
+ +  0:b7      =   1.8000    0:cin     =   1.8000    0:cout    =   1.8000 
+ +  0:s0      =   1.8000    0:s1      =   1.8000    0:s2      =   1.8000 
+ +  0:s3      =   1.8000    0:s4      =   1.8000    0:s5      =   1.8000 
+ +  0:s6      =   1.8000    0:s7      =   1.8000    0:vdd     =   1.8000 
+ +  1:c0      =   1.8000    1:c1      =   1.8000    1:c2      =   1.8000 
+ +  1:c3      =   1.8000    1:c4      =   1.8000    1:c5      =   1.8000 
+ +  1:c6      =   1.8000    2:c1      =   1.8000    2:c2      =  23.8370n
+ +  2:cout    =  26.9325n   2:s1      = 101.5380n   3:c1      =   1.8000 
+ +  3:c2      =  23.8370n   3:cout    =  26.9325n   3:s1      = 101.5380n
+ +  4:c1      =   1.8000    4:c2      =  23.8370n   4:cout    =  26.9325n
+ +  4:s1      = 101.5380n   5:c1      =   1.8000    5:c2      =  23.8370n
+ +  5:cout    =  26.9325n   5:s1      = 101.5380n   6:c1      =   1.8000 
+ +  6:c2      =  23.8370n   6:cout    =  26.9325n   6:s1      = 101.5380n
+ +  7:c1      =   1.8000    7:c2      =  23.8370n   7:cout    =  26.9325n
+ +  7:s1      = 101.5380n   8:c1      =   1.8000    8:c2      =  23.8370n
+ +  8:cout    =  26.9325n   8:s1      = 101.5380n   9:c1      =   1.8000 
+ +  9:c2      =  23.8370n   9:cout    =  26.9325n   9:s1      = 101.5380n
+ + 10:cout    =  95.3470n  11:cout    =   1.8000   12:net     = 386.6686m
+ + 14:cout    =  95.3470n  15:cout    =   1.8000   16:net     = 386.6686m
+ + 18:cout    =  95.3470n  19:cout    =   1.8000   20:net     = 386.6685m
+ + 22:cout    =  95.3470n  23:cout    =   1.8000   24:net     = 386.6686m
+ + 26:cout    =  95.3470n  27:cout    =   1.8000   28:net     = 386.6686m
+ + 30:cout    =  95.3470n  31:cout    =   1.8000   32:net     = 386.6685m
+ + 34:cout    =  95.3470n  35:cout    =   1.8000   36:net     = 386.6685m
+ + 38:cout    =  95.3470n  39:cout    =   1.8000   40:net     = 386.6685m
+ + 42:aout    =  23.8367n  42:bout    =  23.8367n  42:net1    =   1.8000 
+ + 42:net2    = 386.6683m  42:net3    =  50.7690n  42:net4    =  50.5910n
+ + 43:net     =  47.6735n  45:aout    =   1.8000   45:bout    =  23.8367n
+ + 45:net1    =   1.8000   45:net2    =   1.8000   45:net3    = 150.9689n
+ + 45:net4    =   1.5703   46:net     = 150.9692n  48:aout    =  23.8367n
+ + 48:bout    =  23.8367n  48:net1    =   1.8000   48:net2    = 386.6683m
+ + 48:net3    =  50.7690n  48:net4    =  50.5910n  49:net     =  47.6735n
+ + 51:aout    =   1.8000   51:bout    =  23.8370n  51:net1    =   1.8000 
+ + 51:net2    =   1.8000   51:net3    = 150.9690n  51:net4    =   1.5703 
+ + 52:net     = 150.9692n  54:aout    =  23.8367n  54:bout    =  23.8367n
+ + 54:net1    =   1.8000   54:net2    = 386.6683m  54:net3    =  50.7690n
+ + 54:net4    =  50.5910n  55:net     =  47.6735n  57:aout    =   1.8000 
+ + 57:bout    =  23.8370n  57:net1    =   1.8000   57:net2    =   1.8000 
+ + 57:net3    = 150.9690n  57:net4    =   1.5703   58:net     = 150.9692n
+ + 60:aout    =  23.8367n  60:bout    =  23.8367n  60:net1    =   1.8000 
+ + 60:net2    = 386.6683m  60:net3    =  50.7690n  60:net4    =  50.5910n
+ + 61:net     =  47.6735n  63:aout    =   1.8000   63:bout    =  23.8370n
+ + 63:net1    =   1.8000   63:net2    =   1.8000   63:net3    = 150.9690n
+ + 63:net4    =   1.5703   64:net     = 150.9692n  66:aout    =  23.8367n
+ + 66:bout    =  23.8367n  66:net1    =   1.8000   66:net2    = 386.6683m
+ + 66:net3    =  50.7690n  66:net4    =  50.5910n  67:net     =  47.6735n
+ + 69:aout    =   1.8000   69:bout    =  23.8370n  69:net1    =   1.8000 
+ + 69:net2    =   1.8000   69:net3    = 150.9690n  69:net4    =   1.5703 
+ + 70:net     = 150.9692n  72:aout    =  23.8367n  72:bout    =  23.8367n
+ + 72:net1    =   1.8000   72:net2    = 386.6683m  72:net3    =  50.7690n
+ + 72:net4    =  50.5910n  73:net     =  47.6735n  75:aout    =   1.8000 
+ + 75:bout    =  23.8370n  75:net1    =   1.8000   75:net2    =   1.8000 
+ + 75:net3    = 150.9690n  75:net4    =   1.5703   76:net     = 150.9692n
+ + 78:aout    =  23.8367n  78:bout    =  23.8367n  78:net1    =   1.8000 
+ + 78:net2    = 386.6683m  78:net3    =  50.7690n  78:net4    =  50.5910n
+ + 79:net     =  47.6735n  81:aout    =   1.8000   81:bout    =  23.8370n
+ + 81:net1    =   1.8000   81:net2    =   1.8000   81:net3    = 150.9690n
+ + 81:net4    =   1.5703   82:net     = 150.9692n  84:aout    =  23.8367n
+ + 84:bout    =  23.8367n  84:net1    =   1.8000   84:net2    = 386.6683m
+ + 84:net3    =  50.7690n  84:net4    =  50.5910n  85:net     =  47.6735n
+ + 87:aout    =   1.8000   87:bout    =  23.8370n  87:net1    =   1.8000 
+ + 87:net2    =   1.8000   87:net3    = 150.9690n  87:net4    =   1.5703 
+ + 88:net     = 150.9692n
+
+ 
+Warning: 14 port signals are assumed local to their subcircuits 
+ 
+Port signals that have the same names as global nets: 
+Location  Port name  Subckt                                               
+          "GND"      "EIGHT-BIT-FULLADDER1"                               
+          "VDD"      "EIGHT-BIT-FULLADDER1"                               
+          "GND"      "EIGHT-BIT-FULLADDER1FULLADDER1"                    
+          "VDD"      "EIGHT-BIT-FULLADDER1FULLADDER1"                    
+          "GND"      "EIGHT-BIT-FULLADDER1FULLADDER1HALFADDER1"         
+          "VDD"      "EIGHT-BIT-FULLADDER1FULLADDER1HALFADDER1"         
+          "GND"      "EIGHT-BIT-FULLADDER1FULLADDER1HALFADDER1NAND1"   
+          "VDD"      "EIGHT-BIT-FULLADDER1FULLADDER1HALFADDER1NAND1"   
+          "GND"      "EIGHT-BIT-FULLADDER1FULLADDER1HALFADDER1XOR1"    
+          "VDD"      "EIGHT-BIT-FULLADDER1FULLADDER1HALFADDER1XOR1"    
+          "GND"      "EIGHT-BIT-FULLADDER1FULLADDER1INV1"               
+          "VDD"      "EIGHT-BIT-FULLADDER1FULLADDER1INV1"               
+          "GND"      "EIGHT-BIT-FULLADDER1FULLADDER1NOR1"               
+          "VDD"      "EIGHT-BIT-FULLADDER1FULLADDER1NOR1"               
+ 
+".opt runlvl= 3" sets ".opt sim_accuracy= 1"  
+ 
+  ******  Summary of Possible Problems in Netlist  *************** 
+  Negative resistor              0   
+  Negative capacitor             0   
+  Negative inductor              0   
+  Unconnected node               0   
+  Dangling terminal              0   
+  Non-rail bulk terminal         0   
+  Floating MOS gate              0   
+  Floating MOS bulk              0   
+  Floating BJT substrate         0   
+  Floating controlled input      0   
+  Floating current source nodes  0   
+  Source loop                    0   
+ 
+Warning: in line 106: "V(A)" has no match. 
+ 
+Warning: .MEASURE statement in line 106 is ignored. 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+NDD 16 
+Running 16 threads. 
+  
+ 
+License user information 
+FLEXLM    v8.5b             
+USER      User              
+HOSTNAME  LAPTOP-HIOSMBNM   
+HOSTID    029337e9bab5      
+PID       35520             
+ 
+License file: 27000@LAPTOP-HIOSMBNM 
+license  checkout number  expiration date         # in use / total  server                 
+ 
+hspice   8                30-dec-2030/2029.2029  9/99               27000@LAPTOP-HIOSMBNM  
+ 
+Warning: in line 106: "V(A)" has no match. 
+Warning: .MEASURE statement in line 106 is ignored. 
+0.1% time = 168.012697 ps ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+10.0% time = 20.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 35.517531 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 50.921532 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+40.0% time = 64.559671 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 80.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 98.334365 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 112.625468 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 129.786138 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 144.133883 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+100.0% time = 160.000000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=    failed    (null) 
+pw=  16.3966u      from=  0.000e+000  to=  1.600e-007 
+pdp=    failed    (null) 
+ 
+ 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.61 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 0.0000e+000 
+  Transient Wall time per timestep      = 0.0000e+000 
+  Transient Wall time per timestep-node = 0.0000e+000 
+  Total CPU time                       = 0.6130 
+  Total CPU time per step              = 0.0011 
+ 
+ 
+ 
+
+          ***** job concluded
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 8-bit-fulladder
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :    16
+  Available CPU Count        :    20
+  Actual Threads Count       :    16
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =     875 # elements   =     363
+  # resistors   =       0 # capacitors =       9 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =      18
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =     336 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.03           1          21
+  transient          0.00        1601        1015         576  rev= 8 
+  readin             0.32
+  errchk             0.01
+  setup              0.01
+  output             0.00
+           peak memory used         77.06 megabytes 
+           total cpu time            1.00 seconds
+           total elapsed time        1.03 seconds
+           job started at     14:04:51 07/11/2023
+           job ended   at     14:04:52 07/11/2023
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.02(s)

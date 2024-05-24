@@ -1,0 +1,26 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-2 64-BIT"
+* "format" "HSP"
+* "rundate" "15:29:27 07/06/2023 "
+* "netlist" "half adder.sp "
+* "runtitle" "half adder"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ carry =   1.8000        
++ sum = 101.5380n       
++ vdd =   1.8000        
++ xf1.cout =  95.3470n       
++ xf1.xc1.aout =  23.8367n       
++ xf1.xc1.bout =  23.8367n       
++ xf1.xc1.net1 =   1.8000        
++ xf1.xc1.net2 = 386.6683m       
++ xf1.xc1.net3 =  50.7690n       
++ xf1.xc1.net4 =  50.5910n       
++ xf1.xdl.net =  47.6735n       
+***   END: Saved Operating Point ***                     

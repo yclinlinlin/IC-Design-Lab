@@ -1,0 +1,27 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-2 64-BIT"
+* "format" "HSP"
+* "rundate" "11:03:29 07/06/2023 "
+* "netlist" "pass-transistor 3-input xor.sp "
+* "runtitle" "pass-transistor 3-input xor"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ c =   1.8000        
++ out =   1.8000        
++ vdd =   1.8000        
++ xa1.aout =  15.1308n       
++ xa1.bout =   8.1114n       
++ xa1.cout =  13.9963n       
++ xa1.n =  22.1501n       
++ xa1.nout =   1.8000        
++ xa1.nout1 =   1.8000        
++ xa1.nout2 =   8.1115n       
++ xa1.out1 =   1.5650        
++ xa1.out2 =   3.0326u       
+***   END: Saved Operating Point ***                     

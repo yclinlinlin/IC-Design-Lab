@@ -1,0 +1,129 @@
+ ****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: full-adder.sp                                                     
+  Command line options: -mt 12 -i full-adder.sp -o full-adder.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   User                 HOSTNAME: LAPTOP-HIOSMBNM 
+  lic: HOSTID: "a036bc64ac5e 009337e9bab9 005056c00001 005056c00008 009337e9bab5
+  009337e9bab6" PID:  
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-HIOSMBNM 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-2\meta.cfg
+  **warning** (full-adder.sp:11) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ full-adder
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x1.                             full_adder         1.00 
+        2 x1.xa1.                         xor1               1.00 
+        3 x1.xn1.                         nand1              1.00 
+        4 x1.xn2.                         nand1              1.00 
+        5 x1.xn3.                         nand1              1.00 
+        6 x1.xa2.                         xor1               1.00 
+        7 x1.xa1.xa1.                     inv1               1.00 
+        8 x1.xa1.xb1.                     inv1               1.00 
+        9 x1.xa2.xa1.                     inv1               1.00 
+       10 x1.xa2.xb1.                     inv1               1.00 
+  **info** (full-adder.sp:52) DC voltage reset to initial transient source value              in source        0:va                  new dc=  0.1800D+01
+  **warning** (full-adder.sp:8) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=full-adder.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ full-adder
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a       =   1.8000   0:b       =   1.8000   0:c       =   1.8000 
+ + 0:cout    =   1.8000   0:sum     =   1.8000   0:vdd     =   1.8000 
+ + 1:c1      =  33.1200n  1:c2      =  10.7174n  1:net     =   1.8000 
+ + 2:aout    =   3.7619n  2:bout    =   3.7619n  2:net1    =   1.8000 
+ + 2:net2    = 402.3406m  2:net3    =  16.5600n  2:net4    =  16.3574n
+ + 3:net     =   5.3587n  4:net     =   4.5842n  5:net     =   4.5842n
+ + 6:aout    =   1.8000   6:bout    =   3.7619n  6:net1    =   1.8000 
+ + 6:net2    =   1.8000   6:net3    =   7.0193n  6:net4    =   1.5650 
+
+ ******  
+ full-adder
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn1=  66.7324p  targ=  61.1167n   trig=  61.0500n
+ delayn2= 142.5415p  targ=  81.1925n   trig=  81.0500n
+ pw=   9.1475u  from=   0.          to= 200.0000n
+
+          ***** job concluded
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ full-adder
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :    12
+  Available CPU Count        :    20
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      97 # elements   =      42
+  # resistors   =       0 # capacitors =       2 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      36 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          22
+  transient          0.03        4001         993         341 rev=        27
+  readin             0.01
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         44.24 megabytes
+           total cpu time            0.05 seconds
+           total elapsed time        0.07 seconds
+           job started at     23:08:07 07/07/2023
+           job ended   at     23:08:07 07/07/2023
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.02(s)

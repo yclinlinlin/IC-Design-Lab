@@ -1,0 +1,72 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-2 64-BIT"
+* "format" "HSP"
+* "rundate" "17:53:29 07/07/2023 "
+* "netlist" "dynamic_manchester_adder.sp "
+* "runtitle" "dynamic_manchester_adder"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ a0 =   1.8000        
++ b =   1.8000        
++ b0 =   1.8000        
++ c0 =   3.7619n       
++ c1 =   3.7619n       
++ c2 =   3.7619n       
++ c3 =   3.7619n       
++ c4 =   3.7619n       
++ c5 =   3.7619n       
++ c6 =   3.7619n       
++ c7 =   3.7619n       
++ ci =   0.            
++ clk =   0.            
++ g0 =   1.8000        
++ g01 =  10.7174n       
++ g1 =   1.8000        
++ g11 =  10.7174n       
++ p0 =  33.1200n       
++ p1 =  33.1200n       
++ vdd =   1.8000        
++ xa1.net =   5.3587n       
++ xa2.net =   5.3587n       
++ xo1.aout =   3.7619n       
++ xo1.bout =   3.7619n       
++ xo1.net1 =   1.8000        
++ xo1.net2 = 402.3406m       
++ xo1.net3 =  16.5600n       
++ xo1.net4 =  16.3574n       
++ xo2.aout =   3.7619n       
++ xo2.bout =   3.7619n       
++ xo2.net1 =   1.8000        
++ xo2.net2 = 402.3406m       
++ xo2.net3 =  16.5600n       
++ xo2.net4 =  16.3574n       
++ xm1.cii =   1.8000        
++ xm1.net =   1.5643        
++ xm1.out1 =   1.8000        
++ xm2.cii =   1.8000        
++ xm2.net =   1.5643        
++ xm2.out1 =   1.8000        
++ xm3.cii =   1.8000        
++ xm3.net =   1.5643        
++ xm3.out1 =   1.8000        
++ xm4.cii =   1.8000        
++ xm4.net =   1.5643        
++ xm4.out1 =   1.8000        
++ xm5.cii =   1.8000        
++ xm5.net =   1.5643        
++ xm5.out1 =   1.8000        
++ xm6.cii =   1.8000        
++ xm6.net =   1.5643        
++ xm6.out1 =   1.8000        
++ xm7.cii =   1.8000        
++ xm7.net =   1.5643        
++ xm7.out1 =   1.8000        
++ xm8.cii =   1.8000        
++ xm8.net =   1.5643        
++ xm8.out1 =   1.8000        
+***   END: Saved Operating Point ***                     

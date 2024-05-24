@@ -1,0 +1,8 @@
+$DATA1 SOURCE='HSPICE' VERSION='J-2014.09-2 64-BIT'
+.TITLE '8-bit dynamic manchester carry-generation chain'
+ delayn1          delayn2          delayn3          delayn4         
+ delayn5          delayn6          delayn7          delayn8         
+ pw               pdp              temper           alter#          
+  2.598e-10        6.033e-10        9.391e-10        1.278e-09      
+  1.617e-09        1.953e-09        2.027e-08        2.025e-08      
+  3.602e-04        9.359e-14         25.0000        1               

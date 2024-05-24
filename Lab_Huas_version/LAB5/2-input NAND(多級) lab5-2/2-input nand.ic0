@@ -1,0 +1,35 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-2 64-BIT"
+* "format" "HSP"
+* "rundate" "00:22:39 07/10/2023 "
+* "netlist" "2-input nand.sp "
+* "runtitle" "2-input nand"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ c =   1.8000        
++ ck =   0.            
++ d =   1.8000        
++ e =   1.8000        
++ out1 =   1.8000        
++ out2 =   1.8000        
++ out3 =   1.8000        
++ out4 =   1.8000        
++ vdd =   1.8000        
++ xg1.n1 =   1.5604        
++ xg1.n2 =   1.5397        
++ xh2.n1 =   1.5604        
++ xh2.n2 =   1.5397        
++ xh2.out_ =  10.9565n       
++ xj3.n1 =   1.5604        
++ xj3.n2 =   1.5397        
++ xj3.out_ =  10.9565n       
++ xk4.n1 =   1.5604        
++ xk4.n2 =   1.5397        
++ xk4.out_ =  10.9565n       
+***   END: Saved Operating Point ***                     

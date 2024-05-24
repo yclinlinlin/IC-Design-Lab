@@ -1,0 +1,251 @@
+ ****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: 8bit-full-adder.sp                                                
+  Command line options: -mt 12 -i 8bit-full-adder.sp -o 8bit-full-adder.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   User                 HOSTNAME: LAPTOP-HIOSMBNM 
+  lic: HOSTID: "a036bc64ac5e 009337e9bab9 005056c00001 005056c00008 009337e9bab5
+  009337e9bab6 029337e
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-HIOSMBNM 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-2\meta.cfg
+  **warning** (8bit-full-adder.sp:12) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 8bit-full-adder
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x1.                             full_adder         1.00 
+        2 x2.                             full_adder         1.00 
+        3 x3.                             full_adder         1.00 
+        4 x4.                             full_adder         1.00 
+        5 x5.                             full_adder         1.00 
+        6 x6.                             full_adder         1.00 
+        7 x7.                             full_adder         1.00 
+        8 x8.                             full_adder         1.00 
+        9 x1.xa1.                         xor1               1.00 
+       10 x1.xn1.                         nand1              1.00 
+       11 x1.xn2.                         nand1              1.00 
+       12 x1.xn3.                         nand1              1.00 
+       13 x1.xa2.                         xor1               1.00 
+       14 x2.xa1.                         xor1               1.00 
+       15 x2.xn1.                         nand1              1.00 
+       16 x2.xn2.                         nand1              1.00 
+       17 x2.xn3.                         nand1              1.00 
+       18 x2.xa2.                         xor1               1.00 
+       19 x3.xa1.                         xor1               1.00 
+       20 x3.xn1.                         nand1              1.00 
+       21 x3.xn2.                         nand1              1.00 
+       22 x3.xn3.                         nand1              1.00 
+       23 x3.xa2.                         xor1               1.00 
+       24 x4.xa1.                         xor1               1.00 
+       25 x4.xn1.                         nand1              1.00 
+       26 x4.xn2.                         nand1              1.00 
+       27 x4.xn3.                         nand1              1.00 
+       28 x4.xa2.                         xor1               1.00 
+       29 x5.xa1.                         xor1               1.00 
+       30 x5.xn1.                         nand1              1.00 
+       31 x5.xn2.                         nand1              1.00 
+       32 x5.xn3.                         nand1              1.00 
+       33 x5.xa2.                         xor1               1.00 
+       34 x6.xa1.                         xor1               1.00 
+       35 x6.xn1.                         nand1              1.00 
+       36 x6.xn2.                         nand1              1.00 
+       37 x6.xn3.                         nand1              1.00 
+       38 x6.xa2.                         xor1               1.00 
+       39 x7.xa1.                         xor1               1.00 
+       40 x7.xn1.                         nand1              1.00 
+       41 x7.xn2.                         nand1              1.00 
+       42 x7.xn3.                         nand1              1.00 
+       43 x7.xa2.                         xor1               1.00 
+       44 x8.xa1.                         xor1               1.00 
+       45 x8.xn1.                         nand1              1.00 
+       46 x8.xn2.                         nand1              1.00 
+       47 x8.xn3.                         nand1              1.00 
+       48 x8.xa2.                         xor1               1.00 
+       49 x1.xa1.xa1.                     inv1               1.00 
+       50 x1.xa1.xb1.                     inv1               1.00 
+       51 x1.xa2.xa1.                     inv1               1.00 
+       52 x1.xa2.xb1.                     inv1               1.00 
+       53 x2.xa1.xa1.                     inv1               1.00 
+       54 x2.xa1.xb1.                     inv1               1.00 
+       55 x2.xa2.xa1.                     inv1               1.00 
+       56 x2.xa2.xb1.                     inv1               1.00 
+       57 x3.xa1.xa1.                     inv1               1.00 
+       58 x3.xa1.xb1.                     inv1               1.00 
+       59 x3.xa2.xa1.                     inv1               1.00 
+       60 x3.xa2.xb1.                     inv1               1.00 
+       61 x4.xa1.xa1.                     inv1               1.00 
+       62 x4.xa1.xb1.                     inv1               1.00 
+       63 x4.xa2.xa1.                     inv1               1.00 
+       64 x4.xa2.xb1.                     inv1               1.00 
+       65 x5.xa1.xa1.                     inv1               1.00 
+       66 x5.xa1.xb1.                     inv1               1.00 
+       67 x5.xa2.xa1.                     inv1               1.00 
+       68 x5.xa2.xb1.                     inv1               1.00 
+       69 x6.xa1.xa1.                     inv1               1.00 
+       70 x6.xa1.xb1.                     inv1               1.00 
+       71 x6.xa2.xa1.                     inv1               1.00 
+       72 x6.xa2.xb1.                     inv1               1.00 
+       73 x7.xa1.xa1.                     inv1               1.00 
+       74 x7.xa1.xb1.                     inv1               1.00 
+       75 x7.xa2.xa1.                     inv1               1.00 
+       76 x7.xa2.xb1.                     inv1               1.00 
+       77 x8.xa1.xa1.                     inv1               1.00 
+       78 x8.xa1.xb1.                     inv1               1.00 
+       79 x8.xa2.xa1.                     inv1               1.00 
+       80 x8.xa2.xb1.                     inv1               1.00 
+  **info** (8bit-full-adder.sp:63) DC voltage reset to initial transient source value              in source        0:va                  new dc=  0.1800D+01
+  **warning** (8bit-full-adder.sp:8) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  lic: MT Count(12), require 5 extra license token 
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-HIOSMBNM 
+  lic: Checkout 6 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 6(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM 
+  lic:   
+  Opening plot unit= 79
+ file=8bit-full-adder.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 8bit-full-adder
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a       =   1.8000   0:b       =   1.8000   0:c1      =   1.8000 
+ + 0:c2      =   1.8000   0:c3      =   1.8000   0:c4      =   1.8000 
+ + 0:c5      =   1.8000   0:c6      =   1.8000   0:c7      =   1.8000 
+ + 0:cin     =   1.8000   0:cout    =   1.8000   0:sum0    =   1.8000 
+ + 0:sum1    =   1.8000   0:sum2    =   1.8000   0:sum3    =   1.8000 
+ + 0:sum4    =   1.8000   0:sum5    =   1.8000   0:sum6    =   1.8000 
+ + 0:sum7    =   1.8000   0:vdd     =   1.8000   1:c1      =  33.1200n
+ + 1:c2      =  10.7174n  1:net     =   1.8000   2:c1      =  33.1200n
+ + 2:c2      =  10.7174n  2:net     =   1.8000   3:c1      =  33.1200n
+ + 3:c2      =  10.7174n  3:net     =   1.8000   4:c1      =  33.1200n
+ + 4:c2      =  10.7174n  4:net     =   1.8000   5:c1      =  33.1200n
+ + 5:c2      =  10.7174n  5:net     =   1.8000   6:c1      =  33.1200n
+ + 6:c2      =  10.7174n  6:net     =   1.8000   7:c1      =  33.1200n
+ + 7:c2      =  10.7174n  7:net     =   1.8000   8:c1      =  33.1200n
+ + 8:c2      =  10.7174n  8:net     =   1.8000   9:aout    =   3.7619n
+ + 9:bout    =   3.7619n  9:net1    =   1.8000   9:net2    = 402.3407m
+ + 9:net3    =  16.5600n  9:net4    =  16.3575n 10:net     =   5.3587n
+ +11:net     =   4.5842n 12:net     =   4.5842n 13:aout    =   1.8000 
+ +13:bout    =   3.7619n 13:net1    =   1.8000  13:net2    =   1.8000 
+ +13:net3    =   7.0193n 13:net4    =   1.5650  14:aout    =   3.7619n
+ +14:bout    =   3.7619n 14:net1    =   1.8000  14:net2    = 402.3406m
+ +14:net3    =  16.5600n 14:net4    =  16.3575n 15:net     =   5.3587n
+ +16:net     =   4.5842n 17:net     =   4.5842n 18:aout    =   1.8000 
+ +18:bout    =   3.7619n 18:net1    =   1.8000  18:net2    =   1.8000 
+ +18:net3    =   7.0193n 18:net4    =   1.5650  19:aout    =   3.7619n
+ +19:bout    =   3.7619n 19:net1    =   1.8000  19:net2    = 402.3406m
+ +19:net3    =  16.5600n 19:net4    =  16.3575n 20:net     =   5.3587n
+ +21:net     =   4.5842n 22:net     =   4.5842n 23:aout    =   1.8000 
+ +23:bout    =   3.7619n 23:net1    =   1.8000  23:net2    =   1.8000 
+ +23:net3    =   7.0193n 23:net4    =   1.5650  24:aout    =   3.7619n
+ +24:bout    =   3.7619n 24:net1    =   1.8000  24:net2    = 402.3406m
+ +24:net3    =  16.5600n 24:net4    =  16.3574n 25:net     =   5.3587n
+ +26:net     =   4.5842n 27:net     =   4.5842n 28:aout    =   1.8000 
+ +28:bout    =   3.7619n 28:net1    =   1.8000  28:net2    =   1.8000 
+ +28:net3    =   7.0193n 28:net4    =   1.5650  29:aout    =   3.7619n
+ +29:bout    =   3.7619n 29:net1    =   1.8000  29:net2    = 402.3406m
+ +29:net3    =  16.5600n 29:net4    =  16.3575n 30:net     =   5.3587n
+ +31:net     =   4.5842n 32:net     =   4.5842n 33:aout    =   1.8000 
+ +33:bout    =   3.7619n 33:net1    =   1.8000  33:net2    =   1.8000 
+ +33:net3    =   7.0193n 33:net4    =   1.5650  34:aout    =   3.7619n
+ +34:bout    =   3.7619n 34:net1    =   1.8000  34:net2    = 402.3406m
+ +34:net3    =  16.5600n 34:net4    =  16.3575n 35:net     =   5.3587n
+ +36:net     =   4.5842n 37:net     =   4.5842n 38:aout    =   1.8000 
+ +38:bout    =   3.7619n 38:net1    =   1.8000  38:net2    =   1.8000 
+ +38:net3    =   7.0193n 38:net4    =   1.5650  39:aout    =   3.7619n
+ +39:bout    =   3.7619n 39:net1    =   1.8000  39:net2    = 402.3406m
+ +39:net3    =  16.5600n 39:net4    =  16.3575n 40:net     =   5.3587n
+ +41:net     =   4.5842n 42:net     =   4.5842n 43:aout    =   1.8000 
+ +43:bout    =   3.7619n 43:net1    =   1.8000  43:net2    =   1.8000 
+ +43:net3    =   7.0193n 43:net4    =   1.5650  44:aout    =   3.7619n
+ +44:bout    =   3.7619n 44:net1    =   1.8000  44:net2    = 402.3406m
+ +44:net3    =  16.5600n 44:net4    =  16.3575n 45:net     =   5.3587n
+ +46:net     =   4.5842n 47:net     =   4.5842n 48:aout    =   1.8000 
+ +48:bout    =   3.7619n 48:net1    =   1.8000  48:net2    =   1.8000 
+ +48:net3    =   7.0193n 48:net4    =   1.5650 
+
+ ******  
+ 8bit-full-adder
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ pw=  67.9348u  from=   0.          to= 200.0000n
+
+          ***** job concluded
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 8bit-full-adder
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :    12
+  Available CPU Count        :    20
+  Actual Threads Count       :    12
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =     741 # elements   =     301
+  # resistors   =       0 # capacitors =       9 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =     288 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          22
+  transient          0.25        4001        1960         641 rev=        64
+  readin             0.01
+  errchk             0.01
+  setup              0.01
+  output             0.00
+
+
+           peak memory used         59.81 megabytes
+           total cpu time            0.27 seconds
+           total elapsed time        0.29 seconds
+           job started at     23:18:51 07/07/2023
+           job ended   at     23:18:51 07/07/2023
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.02(s)

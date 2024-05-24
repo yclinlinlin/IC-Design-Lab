@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='J-2014.09-2 64-BIT'
+.TITLE 'pseudo 3-input xor'
+ delayn1          pw               pdp              temper          
+ alter#          
+  3.803e-10        1.538e-04        5.851e-14         25.0000       
+ 1               
