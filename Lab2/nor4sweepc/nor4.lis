@@ -1,0 +1,189 @@
+ ****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: nor4.sp                                                           
+  Command line options: /eda/synopsys/hspice/2017.12/hspice/linux64/hspice -i nor4.sp -o nor4
+ lic:  
+ lic: FLEXlm: SDK_11.6.8.3 
+ lic: USER:   user                 HOSTNAME: centos 
+ lic: HOSTID: 00505631ddcc         PID:      6843 
+ lic: Using FLEXlm license file: 
+ lic: 27000@centos 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2101/2100.2100 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@centos 
+ lic:   
+1****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+ ******  
+ 4-input nor (loading c=0.02p~0.3p)
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xnor4.                          nor                1.00 
+  **info** (nor4.sp:26) DC voltage reset to initial transient source value in source 0:va. new dc=0.1800D+01
+  **warning** (nor4.sp:24) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=nor4.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.000E-14 ***
+
+ ******
+ 4-input nor (loading c=0.02p~0.3p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn= 529.7665p  targ=  20.6798n   trig=  20.1500n
+ pw=   5.9965u  from=   0.             to=  80.0000n
+ pdp=   3.1768f
+
+          ***** job concluded
+ ******
+ 4-input nor (loading c=0.02p~0.3p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =    60.0000f       ***
+  
+ delayn=   1.1389n  targ=  21.2889n   trig=  20.1500n
+ pw=  12.3561u  from=   0.             to=  80.0000n
+ pdp=  14.0717f
+
+          ***** job concluded
+ ******
+ 4-input nor (loading c=0.02p~0.3p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   100.0000f       ***
+  
+ delayn=   1.7591n  targ=  21.9091n   trig=  20.1500n
+ pw=  19.2938u  from=   0.             to=  80.0000n
+ pdp=  33.9391f
+
+          ***** job concluded
+ ******
+ 4-input nor (loading c=0.02p~0.3p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   140.0000f       ***
+  
+ delayn=   2.4317n  targ=  22.5817n   trig=  20.1500n
+ pw=  25.7461u  from=   0.             to=  80.0000n
+ pdp=  62.6063f
+
+          ***** job concluded
+ ******
+ 4-input nor (loading c=0.02p~0.3p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   180.0000f       ***
+  
+ delayn=   2.9877n  targ=  23.1377n   trig=  20.1500n
+ pw=  31.9287u  from=   0.             to=  80.0000n
+ pdp=  95.3930f
+
+          ***** job concluded
+ ******
+ 4-input nor (loading c=0.02p~0.3p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   220.0000f       ***
+  
+ delayn=   3.5720n  targ=  23.7220n   trig=  20.1500n
+ pw=  37.4396u  from=   0.             to=  80.0000n
+ pdp= 133.7343f
+
+          ***** job concluded
+ ******
+ 4-input nor (loading c=0.02p~0.3p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   260.0000f       ***
+  
+ delayn=   4.1923n  targ=  24.3423n   trig=  20.1500n
+ pw=  41.8992u  from=   0.             to=  80.0000n
+ pdp= 175.6525f
+
+          ***** job concluded
+ ******
+ 4-input nor (loading c=0.02p~0.3p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   300.0000f       ***
+  
+ delayn=   4.8839n  targ=  25.0339n   trig=  20.1500n
+ pw=  45.3462u  from=   0.             to=  80.0000n
+ pdp= 221.4686f
+
+          ***** job concluded
+ ******  
+ 4-input nor (loading c=0.02p~0.3p)
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
+ cpu MHz	: 2207.406
+  
+ OS:
+ Linux version 3.10.0-693.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ) #1 SMP Tue Aug 22 21:09:27 UTC 2017
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      26 # elements   =      14
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       5
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       8 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          22
+  transient          0.11        6408        4044        1453 rev=        89
+  readin             0.02
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        310.34 megabytes
+           total cpu time            0.14 seconds
+           total elapsed time        0.09 seconds
+           job started at     11:24:44 03/11/2024
+           job ended   at     11:24:44 03/11/2024
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.01(s)

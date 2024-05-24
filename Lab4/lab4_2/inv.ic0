@@ -1,0 +1,23 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12 linux64"
+* "format" "HSP"
+* "rundate" "02:16:42 03/31/2024 "
+* "netlist" "inv.sp "
+* "runtitle" "lab4-2 n=8 inv (loading inverter)"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in =   1.8000        
++ net1 =  20.0614n       
++ net2 =   1.8000        
++ net3 =  20.0615n       
++ net4 =   1.8000        
++ net5 =  20.0615n       
++ net6 =   1.8000        
++ net7 =  20.0615n       
++ out =   1.8000        
++ vdd =   1.8000        
+***   END: Saved Operating Point ***                     

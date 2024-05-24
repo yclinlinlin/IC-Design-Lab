@@ -1,0 +1,364 @@
+ ****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: xor3.sp                                                           
+  Command line options: /eda/synopsys/hspice/2017.12/hspice/linux64/hspice -i xor3.sp -o xor3
+ lic:  
+ lic: FLEXlm: SDK_11.6.8.3 
+ lic: USER:   user                 HOSTNAME: centos 
+ lic: HOSTID: 00505631ddcc         PID:      14460 
+ lic: Using FLEXlm license file: 
+ lic: 27000@centos 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2101/2100.2100 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@centos 
+ lic:   
+1****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+ ******  
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xxor3.                          xor                1.00 
+        2 xxor3.xinva.                    inv                1.00 
+        3 xxor3.xinvb.                    inv                1.00 
+        4 xxor3.xinvc.                    inv                1.00 
+  **info** (xor3.sp:46) DC voltage reset to initial transient source value in source 0:va. new dc=0.1800D+01
+  **warning** (xor3.sp:44) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=xor3.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    5.000E-14 ***
+
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayf= 133.9519p  targ=   2.2840n   trig=   2.1500n
+ delayr= 228.2990p  targ=   4.3783n   trig=   4.1500n
+ pw=  74.4029u  from=   0.             to=  40.0000n
+ pdp1=   9.9664f
+ pdp2=  16.9861f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   100.0000f       ***
+  
+ delayf= 169.2949p  targ=   2.3193n   trig=   2.1500n
+ delayr= 318.7059p  targ=   4.4687n   trig=   4.1500n
+ pw=  94.5708u  from=   0.             to=  40.0000n
+ pdp1=  16.0104f
+ pdp2=  30.1403f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   150.0000f       ***
+  
+ delayf= 216.3598p  targ=   2.3664n   trig=   2.1500n
+ delayr= 410.5119p  targ=   4.5605n   trig=   4.1500n
+ pw= 115.5037u  from=   0.             to=  40.0000n
+ pdp1=  24.9904f
+ pdp2=  47.4156f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   200.0000f       ***
+  
+ delayf= 262.6538p  targ=   2.4127n   trig=   2.1500n
+ delayr= 503.8560p  targ=   4.6539n   trig=   4.1500n
+ pw= 136.1209u  from=   0.             to=  40.0000n
+ pdp1=  35.7527f
+ pdp2=  68.5853f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   250.0000f       ***
+  
+ delayf= 309.3491p  targ=   2.4593n   trig=   2.1500n
+ delayr= 600.6864p  targ=   4.7507n   trig=   4.1500n
+ pw= 156.0213u  from=   0.             to=  40.0000n
+ pdp1=  48.2651f
+ pdp2=  93.7199f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   300.0000f       ***
+  
+ delayf= 355.3785p  targ=   2.5054n   trig=   2.1500n
+ delayr= 692.8851p  targ=   4.8429n   trig=   4.1500n
+ pw= 175.4751u  from=   0.             to=  40.0000n
+ pdp1=  62.3601f
+ pdp2= 121.5841f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   350.0000f       ***
+  
+ delayf= 401.3511p  targ=   2.5514n   trig=   2.1500n
+ delayr= 794.1975p  targ=   4.9442n   trig=   4.1500n
+ pw= 194.4530u  from=   0.             to=  40.0000n
+ pdp1=  78.0439f
+ pdp2= 154.4341f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   400.0000f       ***
+  
+ delayf= 446.6276p  targ=   2.5966n   trig=   2.1500n
+ delayr= 877.6916p  targ=   5.0277n   trig=   4.1500n
+ pw= 212.1691u  from=   0.             to=  40.0000n
+ pdp1=  94.7606f
+ pdp2= 186.2191f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   450.0000f       ***
+  
+ delayf= 492.3142p  targ=   2.6423n   trig=   2.1500n
+ delayr= 970.5149p  targ=   5.1205n   trig=   4.1500n
+ pw= 229.3420u  from=   0.             to=  40.0000n
+ pdp1= 112.9083f
+ pdp2= 222.5798f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   500.0000f       ***
+  
+ delayf= 538.2275p  targ=   2.6882n   trig=   2.1500n
+ delayr=   1.0600n  targ=   5.2100n   trig=   4.1500n
+ pw= 244.5470u  from=   0.             to=  40.0000n
+ pdp1= 131.6219f
+ pdp2= 259.2209f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   550.0000f       ***
+  
+ delayf= 583.0781p  targ=   2.7331n   trig=   2.1500n
+ delayr=   1.1839n  targ=   5.3339n   trig=   4.1500n
+ pw= 259.9885u  from=   0.             to=  40.0000n
+ pdp1= 151.5936f
+ pdp2= 307.8047f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   600.0000f       ***
+  
+ delayf= 627.7096p  targ=   2.7777n   trig=   2.1500n
+ delayr=   1.2215n  targ=   5.3715n   trig=   4.1500n
+ pw= 273.0723u  from=   0.             to=  40.0000n
+ pdp1= 171.4101f
+ pdp2= 333.5489f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   650.0000f       ***
+  
+ delayf= 672.9330p  targ=   2.8229n   trig=   2.1500n
+ delayr=   1.3308n  targ=   5.4808n   trig=   4.1500n
+ pw= 285.8866u  from=   0.             to=  40.0000n
+ pdp1= 192.3826f
+ pdp2= 380.4542f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   700.0000f       ***
+  
+ delayf= 719.0951p  targ=   2.8691n   trig=   2.1500n
+ delayr=   1.3594n  targ=   5.5094n   trig=   4.1500n
+ pw= 296.7664u  from=   0.             to=  40.0000n
+ pdp1= 213.4033f
+ pdp2= 403.4225f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   750.0000f       ***
+  
+ delayf= 766.4113p  targ=   2.9164n   trig=   2.1500n
+ delayr=   1.4453n  targ=   5.5953n   trig=   4.1500n
+ pw= 307.0341u  from=   0.             to=  40.0000n
+ pdp1= 235.3144f
+ pdp2= 443.7709f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   800.0000f       ***
+  
+ delayf= 809.4773p  targ=   2.9595n   trig=   2.1500n
+ delayr=   1.4682n  targ=   5.6182n   trig=   4.1500n
+ pw= 315.6287u  from=   0.             to=  40.0000n
+ pdp1= 255.4942f
+ pdp2= 463.3997f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   850.0000f       ***
+  
+ delayf= 855.7410p  targ=   3.0057n   trig=   2.1500n
+ delayr=   1.4912n  targ=   5.6412n   trig=   4.1500n
+ pw= 323.2525u  from=   0.             to=  40.0000n
+ pdp1= 276.6204f
+ pdp2= 482.0462f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   900.0000f       ***
+  
+ delayf= 901.3982p  targ=   3.0514n   trig=   2.1500n
+ delayr=   1.5156n  targ=   5.6656n   trig=   4.1500n
+ pw= 329.7024u  from=   0.             to=  40.0000n
+ pdp1= 297.1931f
+ pdp2= 499.7004f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   950.0000f       ***
+  
+ delayf= 946.5058p  targ=   3.0965n   trig=   2.1500n
+ delayr=   1.5408n  targ=   5.6908n   trig=   4.1500n
+ pw= 336.1660u  from=   0.             to=  40.0000n
+ pdp1= 318.1831f
+ pdp2= 517.9773f
+
+          ***** job concluded
+ ******
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =     1.0000p       ***
+  
+ delayf= 991.3107p  targ=   3.1413n   trig=   2.1500n
+ delayr=   1.5324n  targ=   5.6824n   trig=   4.1500n
+ pw= 341.3648u  from=   0.             to=  40.0000n
+ pdp1= 338.3986f
+ pdp2= 523.1239f
+
+          ***** job concluded
+ ******  
+ lab5-1 dynamic 3-input xor (loading c=0.05p~1p)
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
+ cpu MHz	: 2207.305
+  
+ OS:
+ Linux version 3.10.0-693.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ) #1 SMP Tue Aug 22 21:09:27 UTC 2017
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      59 # elements   =      26
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       5
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      20 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          35
+  transient          1.12        8020       22807        7925 rev=       411
+  readin             0.02
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        310.34 megabytes
+           total cpu time            1.15 seconds
+           total elapsed time        0.64 seconds
+           job started at     11:21:46 04/01/2024
+           job ended   at     11:21:46 04/01/2024
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.01(s)

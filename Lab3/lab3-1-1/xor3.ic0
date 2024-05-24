@@ -1,0 +1,37 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12 linux64"
+* "format" "HSP"
+* "rundate" "11:02:02 03/18/2024 "
+* "netlist" "xor3.sp "
+* "runtitle" "3-input xor static cmos (loading c=0.05p~0.5p)"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ c =   1.8000        
++ out =   1.8000        
++ vdd =   1.8000        
++ xxor3.aout =   8.1114n       
++ xxor3.bout =   8.1114n       
++ xxor3.cout =   8.1114n       
++ xxor3.n0 =   8.6239n       
++ xxor3.n1 =   4.3119n       
++ xxor3.n2 =   1.5617        
++ xxor3.n3 =   3.6180n       
++ xxor3.n4 =   1.5590        
++ xxor3.n5 =   1.5378        
++ xxor3.n6 =  78.8476m       
++ xxor3.n7 =  19.0917m       
++ xxor3.net0 =   1.8000        
++ xxor3.net1 =   1.8000        
++ xxor3.net2 =   1.8000        
++ xxor3.net3 =   1.8000        
++ xxor3.net4 =   1.8000        
++ xxor3.net5 =   1.8000        
++ xxor3.net6 =   1.8000        
++ xxor3.net7 =   1.8000        
+***   END: Saved Operating Point ***                     

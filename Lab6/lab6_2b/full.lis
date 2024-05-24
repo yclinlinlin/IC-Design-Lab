@@ -1,0 +1,242 @@
+ ****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: full.sp                                                           
+  Command line options: /eda/synopsys/hspice/2017.12/hspice/linux64/hspice -i full.sp -o full
+ lic:  
+ lic: FLEXlm: SDK_11.6.8.3 
+ lic: USER:   user                 HOSTNAME: centos 
+ lic: HOSTID: 00505631ddcc         PID:      14018 
+ lic: Using FLEXlm license file: 
+ lic: 27000@centos 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2101/2100.2100 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@centos 
+ lic:   
+  **warning** (full.sp:8) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+ ******  
+ lab6-2-b 8-bit full adder (loading c=0.1p)
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x0.                             fulladder          1.00 
+        2 x1.                             fulladder          1.00 
+        3 x2.                             fulladder          1.00 
+        4 x3.                             fulladder          1.00 
+        5 x4.                             fulladder          1.00 
+        6 x5.                             fulladder          1.00 
+        7 x6.                             fulladder          1.00 
+        8 x7.                             fulladder          1.00 
+        9 x0.xinvc.                       inv                1.00 
+       10 x0.xinvs.                       inv                1.00 
+       11 x1.xinvc.                       inv                1.00 
+       12 x1.xinvs.                       inv                1.00 
+       13 x2.xinvc.                       inv                1.00 
+       14 x2.xinvs.                       inv                1.00 
+       15 x3.xinvc.                       inv                1.00 
+       16 x3.xinvs.                       inv                1.00 
+       17 x4.xinvc.                       inv                1.00 
+       18 x4.xinvs.                       inv                1.00 
+       19 x5.xinvc.                       inv                1.00 
+       20 x5.xinvs.                       inv                1.00 
+       21 x6.xinvc.                       inv                1.00 
+       22 x6.xinvs.                       inv                1.00 
+       23 x7.xinvc.                       inv                1.00 
+       24 x7.xinvs.                       inv                1.00 
+  **info** (full.sp:89) DC voltage reset to initial transient source value in source 0:vc. new dc=0.4000D+00
+  **warning** (full.sp:68) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=full.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.000E-01 ***
+
+ ******
+ lab6-2-b 8-bit full adder (loading c=0.1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayr= 939.9575n  targ=   4.7810u   trig=   3.8411u
+ delayf= 786.4340n  targ=   5.9075u   trig=   5.1211u
+ delayr1= 940.1137n  targ=   2.2212u   trig=   1.2811u
+ delayf1= 785.9830n  targ= 787.0330n   trig=   1.0500n
+ pw= 100.3998n  from=   0.             to=   7.6800u
+ pdp1=  94.3715f
+ pdp2=  78.9578f
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    6.000E-01 ***
+
+ ******
+ lab6-2-b 8-bit full adder (loading c=0.1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayr=  31.2464n  targ=   1.9523u   trig=   1.9211u
+ delayf=  28.7499n  targ=   2.5898u   trig=   2.5611u
+ delayr1=  31.2456n  targ= 672.2956n   trig= 641.0500n
+ delayf1=  28.8316n  targ=  29.8816n   trig=   1.0500n
+ pw= 458.2595n  from=   0.             to=   7.6800u
+ pdp1=  14.3190f
+ pdp2=  13.1749f
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    8.000E-01 ***
+
+ ******
+ lab6-2-b 8-bit full adder (loading c=0.1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayr=   6.7134n  targ= 967.7634n   trig= 961.0500n
+ delayf=   6.5165n  targ=   1.2876u   trig=   1.2811u
+ delayr1=   6.7173n  targ= 327.7673n   trig= 321.0500n
+ delayf1=   6.5254n  targ=   7.5754n   trig=   1.0500n
+ pw=   1.6858u  from=   0.             to=   7.6800u
+ pdp1=  11.3175f
+ pdp2=  10.9855f
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.000E+00 ***
+
+ ******
+ lab6-2-b 8-bit full adder (loading c=0.1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayr=   3.4150n  targ= 484.4650n   trig= 481.0500n
+ delayf=   3.3638n  targ= 644.4138n   trig= 641.0500n
+ delayr1=   3.4121n  targ= 164.4621n   trig= 161.0500n
+ delayf1=   3.3860n  targ=   4.4360n   trig=   1.0500n
+ pw=   5.3642u  from=   0.             to=   7.6800u
+ pdp1=  18.3191f
+ pdp2=  18.0442f
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.200E+00 ***
+
+ ******
+ lab6-2-b 8-bit full adder (loading c=0.1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayr=   2.3246n  targ= 243.3746n   trig= 241.0500n
+ delayf=   2.3297n  targ= 323.3797n   trig= 321.0500n
+ delayr1=   2.3237n  targ=  83.3737n   trig=  81.0500n
+ delayf1=   2.3352n  targ=   3.3852n   trig=   1.0500n
+ pw=  15.6583u  from=   0.             to=   7.6800u
+ pdp1=  36.3997f
+ pdp2=  36.4791f
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.400E+00 ***
+
+ ******
+ lab6-2-b 8-bit full adder (loading c=0.1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayr=   1.8037n  targ= 122.8537n   trig= 121.0500n
+ delayf=   1.8298n  targ= 162.8798n   trig= 161.0500n
+ delayr1=   1.8024n  targ=  42.8524n   trig=  41.0500n
+ delayf1=   1.8342n  targ=   2.8842n   trig=   1.0500n
+ pw=  43.1386u  from=   0.             to=   7.6800u
+ pdp1=  77.8096f
+ pdp2=  78.9331f
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.600E+00 ***
+
+ ******
+ lab6-2-b 8-bit full adder (loading c=0.1p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayr=   1.5054n  targ=  62.5554n   trig=  61.0500n
+ delayf=   1.5429n  targ=  82.5929n   trig=  81.0500n
+ delayr1=   1.5043n  targ=  22.5543n   trig=  21.0500n
+ delayf1=   1.5492n  targ=   2.5992n   trig=   1.0500n
+ pw= 114.2969u  from=   0.             to=   7.6800u
+ pdp1= 172.0610f
+ pdp2= 176.3445f
+
+          ***** job concluded
+ ******  
+ lab6-2-b 8-bit full adder (loading c=0.1p)
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
+ cpu MHz	: 2207.272
+  
+ OS:
+ Linux version 3.10.0-693.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ) #1 SMP Tue Aug 22 21:09:27 UTC 2017
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =     579 # elements   =     251
+  # resistors   =       0 # capacitors =       9 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =      18
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =     224 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.04           1         142
+  transient         30.69      537607      201883       61953 rev=       753
+  readin             0.01
+  errchk             0.01
+  setup              0.01
+  output             0.01
+
+
+           peak memory used        312.06 megabytes
+           total cpu time           30.78 seconds
+           total elapsed time       33.35 seconds
+           job started at     17:47:41 04/14/2024
+           job ended   at     17:48:14 04/14/2024
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.01(s)

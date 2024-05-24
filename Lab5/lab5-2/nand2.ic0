@@ -1,0 +1,36 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12 linux64"
+* "format" "HSP"
+* "rundate" "21:42:44 04/07/2024 "
+* "netlist" "nand2.sp "
+* "runtitle" "lab5-2 cascaded dynamic nand (loading c=0.1p)"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ c =   1.8000        
++ clk =   0.            
++ d =   1.8000        
++ e =   1.8000        
++ invout1 =  10.9565n       
++ invout2 =  10.9565n       
++ invout3 =  10.9565n       
++ invout4 =  10.9565n       
++ out1 =   1.8000        
++ out2 =   1.8000        
++ out3 =   1.8000        
++ out4 =   1.8000        
++ vdd =   1.8000        
++ xnand1.net =   1.5604        
++ xnand1.net1 =   1.5397        
++ xnand2.net =   1.5894        
++ xnand2.net1 =  59.3500m       
++ xnand3.net =   1.5894        
++ xnand3.net1 =  59.3500m       
++ xnand4.net =   1.5894        
++ xnand4.net1 =  59.3500m       
+***   END: Saved Operating Point ***                     

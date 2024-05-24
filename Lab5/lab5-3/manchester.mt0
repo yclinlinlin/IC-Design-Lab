@@ -1,0 +1,8 @@
+$DATA1 SOURCE='HSPICE' VERSION='N-2017.12 linux64' PARAM_COUNT=0
+.TITLE 'lab5-3 dynamic manchester carry-generation chain (loading c=0.05p)'
+ delay1           delay2           delay3           delay4          
+ delay6           delay7           delay8           pw              
+ temper           alter#          
+  3.014e-10        2.951e-10        2.896e-10        2.781e-10      
+  2.720e-10        2.658e-10        2.538e-10        4.317e-04      
+   25.0000        1               

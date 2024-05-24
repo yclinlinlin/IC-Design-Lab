@@ -1,0 +1,52 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12 linux64"
+* "format" "HSP"
+* "rundate" "02:12:03 03/10/2024 "
+* "netlist" "xor4.sp "
+* "runtitle" "4-input xor (loading c=0.01p)"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ b =   0.            
++ c =   0.            
++ d =   0.            
++ in =   0.            
++ out = 282.5689n       
++ vdd =   1.8000        
++ xxor4.aout =   1.8000        
++ xxor4.bout =   1.8000        
++ xxor4.cout =   1.8000        
++ xxor4.dout =   1.8000        
++ xxor4.n1 =  70.6422n       
++ xxor4.n10 =  70.0417n       
++ xxor4.n11 =  70.0418n       
++ xxor4.n12 =  28.9657f       
++ xxor4.n13 =  28.8421f       
++ xxor4.n14 =  57.9313f       
++ xxor4.n2 =  70.3407n       
++ xxor4.n3 = 141.2844n       
++ xxor4.n4 = 211.9266n       
++ xxor4.n5 =  29.0068f       
++ xxor4.n6 =  70.1411n       
++ xxor4.n7 =  70.1411n       
++ xxor4.n8 =  28.9657f       
++ xxor4.n9 =  70.0417n       
++ xxor4.net0 =   1.8000        
++ xxor4.net1 =   1.8000        
++ xxor4.net10 = 438.7958m       
++ xxor4.net11 =   1.8000        
++ xxor4.net12 = 464.5962m       
++ xxor4.net13 = 458.2505m       
++ xxor4.net2 =   1.8000        
++ xxor4.net3 =   1.8000        
++ xxor4.net4 =   1.8000        
++ xxor4.net5 =   1.8000        
++ xxor4.net6 =   1.8000        
++ xxor4.net7 =   1.8000        
++ xxor4.net8 =   1.8000        
++ xxor4.net9 =   1.8000        
+***   END: Saved Operating Point ***                     

@@ -1,0 +1,727 @@
+ ****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: inv.sp                                                            
+  Command line options: /eda/synopsys/hspice/2017.12/hspice/linux64/hspice -i inv.sp -o inv
+ lic:  
+ lic: FLEXlm: SDK_11.6.8.3 
+ lic: USER:   user                 HOSTNAME: centos 
+ lic: HOSTID: 00505631ddcc         PID:      20488 
+ lic: Using FLEXlm license file: 
+ lic: 27000@centos 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2101/2100.2100 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@centos 
+ lic:   
+1****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******                        
+ ******  
+ 2-input inv (loading c=0.01p)
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xinv.                           inv                1.00 
+  **info** (inv.sp:22) DC voltage reset to initial transient source value in source 0:va. new dc=0.0000D+00
+  **warning** (inv.sp:18) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+
+  **warning** the following singular supplies were terminated to 1 meg resistor 
+          supply       node1            node2
+(inv.sp:22)va                      0:a                defined in subckt 0                     0:0                defined in subckt 0               
+(inv.sp:23)vb                      0:b                defined in subckt 0                     0:0                defined in subckt 0               
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=inv.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.000E-07 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  11.7816p  targ=   5.0168n   trig=   5.0050n
+ pw=   4.6504u  from=   0.             to=  50.0000n
+ pdp=  54.7889a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.000E-07 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  11.8372p  targ=   5.0168n   trig=   5.0050n
+ pw=   5.0500u  from=   0.             to=  50.0000n
+ pdp=  59.7777a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    5.000E-07 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  11.9204p  targ=   5.0169n   trig=   5.0050n
+ pw=   5.3692u  from=   0.             to=  50.0000n
+ pdp=  64.0029a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    6.000E-07 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  11.9897p  targ=   5.0170n   trig=   5.0050n
+ pw=   5.7658u  from=   0.             to=  50.0000n
+ pdp=  69.1298a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    7.000E-07 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0422p  targ=   5.0170n   trig=   5.0050n
+ pw=   6.1619u  from=   0.             to=  50.0000n
+ pdp=  74.2026a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    8.000E-07 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0803p  targ=   5.0171n   trig=   5.0050n
+ pw=   6.5580u  from=   0.             to=  50.0000n
+ pdp=  79.2226a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    9.000E-07 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1071p  targ=   5.0171n   trig=   5.0050n
+ pw=   6.9925u  from=   0.             to=  50.0000n
+ pdp=  84.6589a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.000E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1253p  targ=   5.0171n   trig=   5.0050n
+ pw=   7.3880u  from=   0.             to=  50.0000n
+ pdp=  89.5823a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.100E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1370p  targ=   5.0171n   trig=   5.0050n
+ pw=   7.7978u  from=   0.             to=  50.0000n
+ pdp=  94.6416a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.200E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1439p  targ=   5.0171n   trig=   5.0050n
+ pw=   8.1994u  from=   0.             to=  50.0000n
+ pdp=  99.5728a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.300E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1472p  targ=   5.0171n   trig=   5.0050n
+ pw=   8.6004u  from=   0.             to=  50.0000n
+ pdp= 104.4716a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.400E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1480p  targ=   5.0171n   trig=   5.0050n
+ pw=   8.9967u  from=   0.             to=  50.0000n
+ pdp= 109.2920a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.500E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1468p  targ=   5.0171n   trig=   5.0050n
+ pw=   9.3879u  from=   0.             to=  50.0000n
+ pdp= 114.0335a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.600E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1443p  targ=   5.0171n   trig=   5.0050n
+ pw=   9.7897u  from=   0.             to=  50.0000n
+ pdp= 118.8886a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.700E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1408p  targ=   5.0171n   trig=   5.0050n
+ pw=  10.1985u  from=   0.             to=  50.0000n
+ pdp= 123.8182a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.800E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1366p  targ=   5.0171n   trig=   5.0050n
+ pw=  10.6346u  from=   0.             to=  50.0000n
+ pdp= 129.0688a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.900E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1321p  targ=   5.0171n   trig=   5.0050n
+ pw=  10.9952u  from=   0.             to=  50.0000n
+ pdp= 133.3940a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.000E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1272p  targ=   5.0171n   trig=   5.0050n
+ pw=  11.3923u  from=   0.             to=  50.0000n
+ pdp= 138.1569a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.100E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1221p  targ=   5.0171n   trig=   5.0050n
+ pw=  11.7890u  from=   0.             to=  50.0000n
+ pdp= 142.9082a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.200E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1170p  targ=   5.0171n   trig=   5.0050n
+ pw=  12.1873u  from=   0.             to=  50.0000n
+ pdp= 147.6739a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.300E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1119p  targ=   5.0171n   trig=   5.0050n
+ pw=  12.5863u  from=   0.             to=  50.0000n
+ pdp= 152.4438a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.400E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1069p  targ=   5.0171n   trig=   5.0050n
+ pw=  12.9845u  from=   0.             to=  50.0000n
+ pdp= 157.2018a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.500E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.1019p  targ=   5.0171n   trig=   5.0050n
+ pw=  13.3829u  from=   0.             to=  50.0000n
+ pdp= 161.9584a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.600E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0970p  targ=   5.0171n   trig=   5.0050n
+ pw=  13.7818u  from=   0.             to=  50.0000n
+ pdp= 166.7184a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.700E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0922p  targ=   5.0171n   trig=   5.0050n
+ pw=  14.1787u  from=   0.             to=  50.0000n
+ pdp= 171.4519a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.800E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0876p  targ=   5.0171n   trig=   5.0050n
+ pw=  14.5756u  from=   0.             to=  50.0000n
+ pdp= 176.1838a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.900E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0831p  targ=   5.0171n   trig=   5.0050n
+ pw=  15.0417u  from=   0.             to=  50.0000n
+ pdp= 181.7502a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.000E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0788p  targ=   5.0171n   trig=   5.0050n
+ pw=  15.3885u  from=   0.             to=  50.0000n
+ pdp= 185.8743a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.100E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0746p  targ=   5.0171n   trig=   5.0050n
+ pw=  15.7820u  from=   0.             to=  50.0000n
+ pdp= 190.5610a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.200E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0705p  targ=   5.0171n   trig=   5.0050n
+ pw=  16.1756u  from=   0.             to=  50.0000n
+ pdp= 195.2483a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.300E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0666p  targ=   5.0171n   trig=   5.0050n
+ pw=  16.5678u  from=   0.             to=  50.0000n
+ pdp= 199.9176a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.400E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0629p  targ=   5.0171n   trig=   5.0050n
+ pw=  16.9676u  from=   0.             to=  50.0000n
+ pdp= 204.6782a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.500E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0593p  targ=   5.0171n   trig=   5.0050n
+ pw=  17.2784u  from=   0.             to=  50.0000n
+ pdp= 208.3650a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.600E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0558p  targ=   5.0171n   trig=   5.0050n
+ pw=  17.6751u  from=   0.             to=  50.0000n
+ pdp= 213.0866a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.700E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0524p  targ=   5.0171n   trig=   5.0050n
+ pw=  18.0717u  from=   0.             to=  50.0000n
+ pdp= 217.8080a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.800E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0492p  targ=   5.0170n   trig=   5.0050n
+ pw=  18.4686u  from=   0.             to=  50.0000n
+ pdp= 222.5318a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.900E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0461p  targ=   5.0170n   trig=   5.0050n
+ pw=  18.8651u  from=   0.             to=  50.0000n
+ pdp= 227.2502a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.000E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0431p  targ=   5.0170n   trig=   5.0050n
+ pw=  19.2618u  from=   0.             to=  50.0000n
+ pdp= 231.9705a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.100E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0402p  targ=   5.0170n   trig=   5.0050n
+ pw=  19.6584u  from=   0.             to=  50.0000n
+ pdp= 236.6911a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.200E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0374p  targ=   5.0170n   trig=   5.0050n
+ pw=  20.0554u  from=   0.             to=  50.0000n
+ pdp= 241.4147a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.300E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0347p  targ=   5.0170n   trig=   5.0050n
+ pw=  20.4722u  from=   0.             to=  50.0000n
+ pdp= 246.3767a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.400E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0321p  targ=   5.0170n   trig=   5.0050n
+ pw=  20.8715u  from=   0.             to=  50.0000n
+ pdp= 251.1274a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.500E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0296p  targ=   5.0170n   trig=   5.0050n
+ pw=  21.2708u  from=   0.             to=  50.0000n
+ pdp= 255.8786a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.600E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0272p  targ=   5.0170n   trig=   5.0050n
+ pw=  21.8045u  from=   0.             to=  50.0000n
+ pdp= 262.2464a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.700E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0248p  targ=   5.0170n   trig=   5.0050n
+ pw=  22.2171u  from=   0.             to=  50.0000n
+ pdp= 267.1572a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.800E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0226p  targ=   5.0170n   trig=   5.0050n
+ pw=  22.5894u  from=   0.             to=  50.0000n
+ pdp= 271.5830a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.900E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0204p  targ=   5.0170n   trig=   5.0050n
+ pw=  22.9851u  from=   0.             to=  50.0000n
+ pdp= 276.2910a
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    5.000E-06 ***
+
+ ******
+ 2-input inv (loading c=0.01p)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn=  12.0183p  targ=   5.0170n   trig=   5.0050n
+ pw=  23.4283u  from=   0.             to=  50.0000n
+ pdp= 281.5688a
+
+          ***** job concluded
+ ******  
+ 2-input inv (loading c=0.01p)
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
+ cpu MHz	: 2207.331
+  
+ OS:
+ Linux version 3.10.0-693.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ) #1 SMP Tue Aug 22 21:09:27 UTC 2017
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      10 # elements   =       8
+  # resistors   =       2 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       2 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.02           1         336
+  transient          0.66       24048       45054       17953 rev=      1305
+  readin             0.00
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        310.34 megabytes
+           total cpu time            0.69 seconds
+           total elapsed time        0.41 seconds
+           job started at     16:53:41 03/10/2024
+           job ended   at     16:53:41 03/10/2024
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.03(s)
