@@ -1,4 +1,4 @@
-# IC設計 IC Design Lab
+# IC設計實驗 IC Design Lab
 ### Design: YC LIN
 ### 選修學期: 112學年第二學期
 ### 授課教師: 魏一勤 教授
