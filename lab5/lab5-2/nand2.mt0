@@ -1,6 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='N-2017.12 linux64' PARAM_COUNT=0
-.TITLE 'lab5-2 cascaded dynamic nand (loading c=0.1p)'
- delaynand1       delaynand2       delaynand3       delaynand4      
- pw               temper           alter#          
-  4.389e-10        8.619e-10        1.283e-09        1.700e-09      
-  2.004e-04         25.0000        1               

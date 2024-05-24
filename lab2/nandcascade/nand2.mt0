@@ -1,6 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='N-2017.12 linux64' PARAM_COUNT=0
-.TITLE '2-input nand cascade(loading c=0.02p)'
- delayn1          delayn2          delayn3          delayn4         
- pw               temper           alter#          
-  8.467e-11        2.353e-10        3.415e-10        4.830e-10      
-  2.002e-05         25.0000        1               

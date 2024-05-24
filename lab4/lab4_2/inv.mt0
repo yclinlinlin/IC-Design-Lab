@@ -1,6 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='N-2017.12 linux64' PARAM_COUNT=0
-.TITLE 'lab4-2 n=8 inv (loading inverter)'
- delayn8f         delayn8r         pw               temper          
- alter#          
-  4.236e-10        4.178e-10          0.2724          25.0000       
-1               

@@ -1,6 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='N-2017.12 linux64' PARAM_COUNT=0
-.TITLE 'lab3-3 pass-transistor 3-input xor (loading c=0.05p)'
- delayn           pw               pdp              temper          
- alter#          
-  1.273e-08        9.329e-06        1.188e-13         25.0000       
-1               
