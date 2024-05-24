@@ -1,6 +1,7 @@
-# 112學年 第二學期 IC Design Lab
-
-Design: YC LIN
+# IC設計 IC Design Lab
+### Design: YC LIN
+### 選修學期: 112學年第二學期
+### 授課教師: 魏一勤 教授
 
 - 2024/05/13 期中考
   - 電路功能正確可得60分
