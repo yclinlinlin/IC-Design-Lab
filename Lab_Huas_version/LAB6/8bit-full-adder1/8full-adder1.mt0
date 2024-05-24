@@ -1,6 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='J-2014.09-2'
-.TITLE '8bit-full-adder1'
- delayn1 delayn2 delayn3 delayn4 delayn5 delayn6 delayn7 delayn8 delayn9 
- pw temper  alter#
-  3.4294e-010	  1.4003e-010	  1.4027e-010	  1.4026e-010	  1.4026e-010	  1.4026e-010	
-  1.4026e-010	  1.4025e-010	  1.0761e-009	  4.2556e-005	     25.000000 1

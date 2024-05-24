@@ -1,4 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='J-2014.09-2 64-BIT'
-.TITLE '8bit-full-adder'
- pw               temper           alter#          
-  6.793e-05         25.0000        1               
