@@ -1,0 +1,258 @@
+ ****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: 4-input xor.sp                                                    
+  Command line options: -hpp -i 4-input xor.sp -o 4-input xor.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   User                 HOSTNAME: LAPTOP-HIOSMBNM 
+  lic: HOSTID: "a036bc64ac5e 009337e9bab9 005056c00001 005056c00008 009337e9bab5
+  009337e9bab6 029337e
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-HIOSMBNM 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-2\meta.cfg
+ 
+ ****** Advanced Analog Library - J-2014.09-2 (Oct 22 2014) ****** 
+  **warning** (4-input xor.sp:11) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 4-input xor
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xa1.                            xor1               1.00 
+        2 xa1.xa1.                        inv1               1.00 
+        3 xa1.xb1.                        inv1               1.00 
+        4 xa1.xc1.                        inv1               1.00 
+        5 xa1.xd1.                        inv1               1.00 
+  **info** (4-input xor.sp:81) DC voltage reset to initial transient source value              in source        0:va                  new dc=  0.1800D+01
+  **warning** (4-input xor.sp:9) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=4-input xor.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.000E-07 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.000E-07 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    5.000E-07 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    6.000E-07 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    7.000E-07 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    8.000E-07 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    9.000E-07 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.000E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.100E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.200E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.300E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.400E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.500E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.600E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.700E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.800E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.900E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.000E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.100E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.200E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.300E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.400E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.500E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.600E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.700E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.800E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.900E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.000E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.100E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.200E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.300E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.400E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.500E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.600E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.700E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.800E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.900E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.000E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.100E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.200E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.300E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.400E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.500E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.600E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.700E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.800E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.900E-06 ***
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    5.000E-06 ***
+
+ 
+Warning: 4 port signals are assumed local to their subcircuits 
+ 
+Port signals that have the same names as global nets: 
+Location  Port name  Subckt   
+          "GND"      "INV1"   
+          "VDD"      "INV1"   
+          "GND"      "XOR1"   
+          "VDD"      "XOR1"   
+ 
+".opt runlvl= 3" sets ".opt sim_accuracy= 1"  
+ 
+Error:  Automatic model selector failed. Cannot select any N_18 model for XA1.MN1 (width = 0, length = 1.8e-007
+ 
+  

@@ -1,0 +1,747 @@
+ ****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: 3-input xor.sp                                                    
+  Command line options: -hpp -i 3-input xor.sp -o 3-input xor.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   User                 HOSTNAME: LAPTOP-HIOSMBNM 
+  lic: HOSTID: "a036bc64ac5e 009337e9bab9 005056c00001 005056c00008 009337e9bab5
+  009337e9bab6 029337e
+  lic: Using FLEXlm license file: 
+  lic: 27000@LAPTOP-HIOSMBNM 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-2\meta.cfg
+ 
+ ****** Advanced Analog Library - J-2014.09-2 (Oct 22 2014) ****** 
+  **warning** (3-input xor.sp:12) Global net name, "vdd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 3-input xor
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xa1.                            xor1               1.00 
+        2 xa1.xa1.                        inv1               1.00 
+        3 xa1.xb1.                        inv1               1.00 
+        4 xa1.xc1.                        inv1               1.00 
+  **info** (3-input xor.sp:53) DC voltage reset to initial transient source value              in source        0:va                  new dc=  0.1800D+01
+  **warning** (3-input xor.sp:9) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=3-input xor.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    5.000E-14 ***
+
+ 
+Warning: 4 port signals are assumed local to their subcircuits 
+ 
+Port signals that have the same names as global nets: 
+Location  Port name  Subckt        
+          "GND"      "XOR1"        
+          "VDD"      "XOR1"        
+          "GND"      "XOR1INV1"   
+          "VDD"      "XOR1INV1"   
+ 
+".opt runlvl= 3" sets ".opt sim_accuracy= 1"  
+ 
+  ******  Summary of Possible Problems in Netlist  *************** 
+  Negative resistor              0   
+  Negative capacitor             0   
+  Negative inductor              0   
+  Unconnected node               0   
+  Dangling terminal              0   
+  Non-rail bulk terminal         0   
+  Floating MOS gate              0   
+  Floating MOS bulk              0   
+  Floating BJT substrate         0   
+  Floating controlled input      0   
+  Floating current source nodes  0   
+  Source loop                    0   
+starting TRAN sweep 
+ 
+ 
+TRAN sweep:  
+0.0% K = 50.000000 f ( etc = 0.0 sec, ett = 0.0 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 1 thread. 
+  
+ 
+License user information 
+FLEXLM    v8.5b             
+USER      User              
+HOSTNAME  LAPTOP-HIOSMBNM   
+HOSTID    029337e9bab5      
+PID       19960             
+ 
+License file: 27000@LAPTOP-HIOSMBNM 
+license  checkout number  expiration date         # in use / total  server                 
+ 
+hspice   1                30-dec-2030/2029.2029  2/99               27000@LAPTOP-HIOSMBNM  
+ 
+0.1% time = 687.108674 ps ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+10.0% time = 70.053966 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 131.060708 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 200.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+40.0% time = 261.470996 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 320.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 389.169104 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 451.305902 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 516.379284 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 577.434299 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+100.0% time = 640.000000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  388.7378p    targ=  160.5387n trig=  160.1500n 
+pw=  4.0784u      from=  0.000e+000  to=  6.400e-007 
+pdp=  1.5854f    param = 1.585e-015 
+ 
+ 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.30 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 0.0000e+000 
+  Transient Wall time per timestep      = 0.0000e+000 
+  Transient Wall time per timestep-node = 0.0000e+000 
+  Total CPU time                       = 0.3020 
+  Total CPU time per step              = 0.0005 
+ 
+ 
+ 
+ 
+ 
+TRAN sweep:  
+10.0% K = 100.000000 f ( etc = 0.0 sec, ett = 0.0 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 1 thread. 
+  
+0.1% time = 681.221284 ps ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+10.0% time = 67.883812 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 132.105279 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 195.155679 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+40.0% time = 261.569404 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 320.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 388.235228 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 452.122128 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 520.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 581.547612 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+100.0% time = 640.000000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  673.3831p    targ=  160.8234n trig=  160.1500n 
+pw=  5.6070u      from=  0.000e+000  to=  6.400e-007 
+pdp=  3.7756f    param = 3.776e-015 
+ 
+ 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.06 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 0.0000e+000 
+  Transient Wall time per timestep      = 0.0000e+000 
+  Transient Wall time per timestep-node = 0.0000e+000 
+  Total CPU time                       = 0.0630 
+  Total CPU time per step              = 0.0001 
+ 
+ 
+ 
+ 
+ 
+TRAN sweep:  
+20.0% K = 150.000000 f ( etc = 0.0 sec, ett = 0.0 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 1 thread. 
+  
+0.1% time = 783.124887 ps ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+10.0% time = 69.154885 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 130.028965 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 195.703797 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+40.0% time = 261.132046 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 320.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 392.051636 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 450.041439 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 520.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 581.046217 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+100.0% time = 640.000000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  965.6392p    targ=  161.1156n trig=  160.1500n 
+pw=  7.1420u      from=  0.000e+000  to=  6.400e-007 
+pdp=  6.8966f    param = 6.897e-015 
+ 
+ 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.07 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 0.0000e+000 
+  Transient Wall time per timestep      = 0.0000e+000 
+  Transient Wall time per timestep-node = 0.0000e+000 
+  Total CPU time                       = 0.0660 
+  Total CPU time per step              = 0.0001 
+ 
+ 
+ 
+ 
+ 
+TRAN sweep:  
+30.0% K = 200.000000 f ( etc = 0.0 sec, ett = 0.0 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 1 thread. 
+  
+0.1% time = 755.523566 ps ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+10.0% time = 66.502850 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 130.835979 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 196.354202 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+40.0% time = 260.684980 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 320.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 385.910307 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 450.837514 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 515.367854 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 580.735114 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+100.0% time = 640.000000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  1.2480n    targ=  161.3980n trig=  160.1500n 
+pw=  8.6880u      from=  0.000e+000  to=  6.400e-007 
+pdp=  10.8423f    param = 1.084e-014 
+ 
+ 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.06 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 0.0000e+000 
+  Transient Wall time per timestep      = 0.0000e+000 
+  Transient Wall time per timestep-node = 0.0000e+000 
+  Total CPU time                       = 0.0600 
+  Total CPU time per step              = 9.6308e-005 
+ 
+ 
+ 
+ 
+ 
+TRAN sweep:  
+40.0% K = 250.000000 f ( etc = 0.0 sec, ett = 0.0 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 1 thread. 
+  
+0.1% time = 993.085728 ps ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+10.0% time = 72.566304 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 129.437742 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 195.811395 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+40.0% time = 261.000022 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 320.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 385.573741 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 449.443093 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 515.447882 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 580.994244 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+100.0% time = 640.000000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  1.5198n    targ=  161.6698n trig=  160.1500n 
+pw=  10.1984u      from=  0.000e+000  to=  6.400e-007 
+pdp=  15.4999f    param = 1.550e-014 
+ 
+ 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.06 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 1.0000 
+  Transient Wall time per timestep      = 0.0016 
+  Transient Wall time per timestep-node = 5.6961e-005 
+  Total CPU time                       = 0.0640 
+  Total CPU time per step              = 0.0001 
+ 
+ 
+ 
+ 
+ 
+TRAN sweep:  
+50.0% K = 300.000000 f ( etc = 0.0 sec, ett = 0.0 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 1 thread. 
+  
+0.1% time = 991.267632 ps ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+10.0% time = 69.315366 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 129.335413 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 194.285724 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+40.0% time = 260.396895 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 320.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 384.521480 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 449.338023 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 515.751057 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 576.793213 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+100.0% time = 640.000000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  1.8245n    targ=  161.9745n trig=  160.1500n 
+pw=  11.7443u      from=  0.000e+000  to=  6.400e-007 
+pdp=  21.4275f    param = 2.143e-014 
+ 
+ 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.07 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 0.0000e+000 
+  Transient Wall time per timestep      = 0.0000e+000 
+  Transient Wall time per timestep-node = 0.0000e+000 
+  Total CPU time                       = 0.0660 
+  Total CPU time per step              = 0.0001 
+ 
+ 
+ 
+ 
+ 
+TRAN sweep:  
+60.0% K = 350.000000 f ( etc = 0.0 sec, ett = 0.0 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 1 thread. 
+  
+0.1% time = 722.723698 ps ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+10.0% time = 65.381670 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 128.848104 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 193.658523 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+40.0% time = 256.372804 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 320.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 386.495635 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 448.849674 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 514.761983 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 580.778961 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+100.0% time = 640.000000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  2.0867n    targ=  162.2367n trig=  160.1500n 
+pw=  13.2697u      from=  0.000e+000  to=  6.400e-007 
+pdp=  27.6902f    param = 2.769e-014 
+ 
+ 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.06 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 0.0000e+000 
+  Transient Wall time per timestep      = 0.0000e+000 
+  Transient Wall time per timestep-node = 0.0000e+000 
+  Total CPU time                       = 0.0590 
+  Total CPU time per step              = 9.2332e-005 
+ 
+ 
+ 
+ 
+ 
+TRAN sweep:  
+70.0% K = 400.000000 f ( etc = 0.0 sec, ett = 0.0 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 1 thread. 
+  
+0.1% time = 993.977463 ps ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+10.0% time = 66.769598 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 129.432284 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 194.212547 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+40.0% time = 256.427487 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 320.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 384.886255 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 449.402195 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 520.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 576.401675 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+100.0% time = 640.000000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  2.3619n    targ=  162.5119n trig=  160.1500n 
+pw=  14.8471u      from=  0.000e+000  to=  6.400e-007 
+pdp=  35.0673f    param = 3.507e-014 
+ 
+ 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.06 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 0.0000e+000 
+  Transient Wall time per timestep      = 0.0000e+000 
+  Transient Wall time per timestep-node = 0.0000e+000 
+  Total CPU time                       = 0.0600 
+  Total CPU time per step              = 9.5847e-005 
+ 
+ 
+ 
+ 
+ 
+TRAN sweep:  
+80.0% K = 450.000000 f ( etc = 0.0 sec, ett = 0.0 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 1 thread. 
+  
+0.1% time = 993.839686 ps ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+10.0% time = 65.449992 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 128.193202 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 194.673246 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+40.0% time = 261.642577 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 320.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 389.577371 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 448.187824 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 520.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 577.551150 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+100.0% time = 640.000000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  2.6544n    targ=  162.8044n trig=  160.1500n 
+pw=  16.3435u      from=  0.000e+000  to=  6.400e-007 
+pdp=  43.3830f    param = 4.338e-014 
+ 
+ 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.06 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 0.0000e+000 
+  Transient Wall time per timestep      = 0.0000e+000 
+  Transient Wall time per timestep-node = 0.0000e+000 
+  Total CPU time                       = 0.0650 
+  Total CPU time per step              = 0.0001 
+ 
+ 
+ 
+ 
+ 
+TRAN sweep:  
+90.0% K = 500.000000 f ( etc = 0.0 sec, ett = 0.0 sec ) 
+ 
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select simulation algortithm 
+.   
+SSolve ...  
+  
+CT 8 
+Running 1 thread. 
+  
+0.1% time = 995.230293 ps ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+10.0% time = 68.075749 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+20.0% time = 129.871701 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+30.0% time = 196.407275 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+40.0% time = 257.547257 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+50.0% time = 320.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+60.0% time = 388.595944 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+70.0% time = 449.878752 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+80.0% time = 520.100000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+90.0% time = 577.514678 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+100.0% time = 640.000000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-1.#IND ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+delayn1=  2.9206n    targ=  163.0706n trig=  160.1500n 
+pw=  17.9348u      from=  0.000e+000  to=  6.400e-007 
+pdp=  52.3809f    param = 5.238e-014 
+ 
+ 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.06 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 0.0000e+000 
+  Transient Wall time per timestep      = 0.0000e+000 
+  Transient Wall time per timestep-node = 0.0000e+000 
+  Total CPU time                       = 0.0630 
+  Total CPU time per step              = 9.7674e-005 
+ 
+ 
+ 
+
+Compressing 
+finished TRAN sweep (0.0 sec) 
+ 
+
+TRAN sweep time = 0.0 sec 
+
+          ***** job concluded
+1****** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******                 
+ ******  
+ 3-input xor
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    20
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      85 # elements   =      35
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      30 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          22
+  transient          1.00       64010       22462        6313  rev= 240 
+  readin             0.07
+  errchk             0.00
+  setup              0.00
+  output             0.00
+           peak memory used         58.38 megabytes 
+           total cpu time            0.97 seconds
+           total elapsed time        0.99 seconds
+           job started at     10:04:37 01/05/2024
+           job ended   at     10:04:38 01/05/2024
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.02(s)

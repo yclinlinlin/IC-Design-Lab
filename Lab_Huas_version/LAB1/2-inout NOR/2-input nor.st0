@@ -1,0 +1,177 @@
+***** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******
+ Input File: 2-input nor.sp
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   User                 HOSTNAME: LAPTOP-HIOSMBNM
+ lic: HOSTID: "a036bc64ac5e 009337e9bab9 005056c00001 005056c00008 009337e9bab5 009337e9bab6 029337e
+ lic: Using FLEXlm license file:
+ lic: 27000@LAPTOP-HIOSMBNM
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM
+ lic:
+ init: begin read circuit files,  cpu clock=  3.10E-02
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\behave\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\behave\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\AD\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\XILINX\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\TLINE\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\TI\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\SIGNET\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\PCI\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\LIN_TECH\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\PET\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\DI0\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\COMLINE\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\BURR_BRM\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\BJT\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\behave\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\AD\
+       option runlvl
+       option post =     2.00
+ init: end read circuit files,  cpu clock=  3.40E-02 peak memory=        55 mb
+ init: begin check errors,  cpu clock=  3.40E-02
+ init: end check errors,  cpu clock=  3.60E-02 peak memory=        58 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  3.60E-02
+       establish matrix -- done,  cpu clock=  3.70E-02 peak memory=        58 mb
+       re-order matrix -- done,  cpu clock=  3.70E-02 peak memory=        58 mb
+ init: end setup matrix,  cpu clock=  3.80E-02 peak memory=        58 mb
+ sweep: parameter       parameter1       begin, #sweeps =  46
+ parameter: k               =    2.50E-07
+ dcop: begin dcop,  cpu clock=  3.80E-02
+ dcop: end dcop,  cpu clock=  3.90E-02 peak memory=        58 mb  tot_iter=      15
+ parameter: k               =    3.00E-07
+ dcop: begin dcop,  cpu clock=  4.00E-02
+ dcop: end dcop,  cpu clock=  4.10E-02 peak memory=        58 mb  tot_iter=      31
+ parameter: k               =    3.50E-07
+ dcop: begin dcop,  cpu clock=  4.10E-02
+ dcop: end dcop,  cpu clock=  4.20E-02 peak memory=        58 mb  tot_iter=      49
+ parameter: k               =    4.00E-07
+ dcop: begin dcop,  cpu clock=  4.30E-02
+ dcop: end dcop,  cpu clock=  4.30E-02 peak memory=        58 mb  tot_iter=      68
+ parameter: k               =    4.50E-07
+ dcop: begin dcop,  cpu clock=  4.30E-02
+ dcop: end dcop,  cpu clock=  4.30E-02 peak memory=        58 mb  tot_iter=      88
+ parameter: k               =    5.00E-07
+ dcop: begin dcop,  cpu clock=  4.40E-02
+ dcop: end dcop,  cpu clock=  4.40E-02 peak memory=        58 mb  tot_iter=     109
+ parameter: k               =    5.50E-07
+ dcop: begin dcop,  cpu clock=  4.50E-02
+ dcop: end dcop,  cpu clock=  4.50E-02 peak memory=        58 mb  tot_iter=     130
+ parameter: k               =    6.00E-07
+ dcop: begin dcop,  cpu clock=  4.50E-02
+ dcop: end dcop,  cpu clock=  4.70E-02 peak memory=        58 mb  tot_iter=     152
+ parameter: k               =    6.50E-07
+ dcop: begin dcop,  cpu clock=  4.70E-02
+ dcop: end dcop,  cpu clock=  4.70E-02 peak memory=        58 mb  tot_iter=     174
+ parameter: k               =    7.00E-07
+ dcop: begin dcop,  cpu clock=  4.70E-02
+ dcop: end dcop,  cpu clock=  4.80E-02 peak memory=        58 mb  tot_iter=     196
+ parameter: k               =    7.50E-07
+ dcop: begin dcop,  cpu clock=  4.80E-02
+ dcop: end dcop,  cpu clock=  4.90E-02 peak memory=        58 mb  tot_iter=     219
+ parameter: k               =    8.00E-07
+ dcop: begin dcop,  cpu clock=  4.90E-02
+ dcop: end dcop,  cpu clock=  5.00E-02 peak memory=        58 mb  tot_iter=     242
+ parameter: k               =    8.50E-07
+ dcop: begin dcop,  cpu clock=  5.00E-02
+ dcop: end dcop,  cpu clock=  5.10E-02 peak memory=        58 mb  tot_iter=     266
+ parameter: k               =    9.00E-07
+ dcop: begin dcop,  cpu clock=  5.10E-02
+ dcop: end dcop,  cpu clock=  5.20E-02 peak memory=        58 mb  tot_iter=     290
+ parameter: k               =    9.50E-07
+ dcop: begin dcop,  cpu clock=  5.20E-02
+ dcop: end dcop,  cpu clock=  5.20E-02 peak memory=        58 mb  tot_iter=     315
+ parameter: k               =    1.00E-06
+ dcop: begin dcop,  cpu clock=  5.30E-02
+ dcop: end dcop,  cpu clock=  5.30E-02 peak memory=        58 mb  tot_iter=     341
+ parameter: k               =    1.05E-06
+ dcop: begin dcop,  cpu clock=  5.30E-02
+ dcop: end dcop,  cpu clock=  5.40E-02 peak memory=        58 mb  tot_iter=     368
+ parameter: k               =    1.10E-06
+ dcop: begin dcop,  cpu clock=  5.40E-02
+ dcop: end dcop,  cpu clock=  5.50E-02 peak memory=        58 mb  tot_iter=     396
+ parameter: k               =    1.15E-06
+ dcop: begin dcop,  cpu clock=  5.50E-02
+ dcop: end dcop,  cpu clock=  5.60E-02 peak memory=        58 mb  tot_iter=     424
+ parameter: k               =    1.20E-06
+ dcop: begin dcop,  cpu clock=  5.60E-02
+ dcop: end dcop,  cpu clock=  5.70E-02 peak memory=        58 mb  tot_iter=     446
+ parameter: k               =    1.25E-06
+ dcop: begin dcop,  cpu clock=  5.70E-02
+ dcop: end dcop,  cpu clock=  5.80E-02 peak memory=        58 mb  tot_iter=     468
+ parameter: k               =    1.30E-06
+ dcop: begin dcop,  cpu clock=  5.80E-02
+ dcop: end dcop,  cpu clock=  5.90E-02 peak memory=        58 mb  tot_iter=     490
+ parameter: k               =    1.35E-06
+ dcop: begin dcop,  cpu clock=  5.90E-02
+ dcop: end dcop,  cpu clock=  6.00E-02 peak memory=        58 mb  tot_iter=     512
+ parameter: k               =    1.40E-06
+ dcop: begin dcop,  cpu clock=  6.00E-02
+ dcop: end dcop,  cpu clock=  6.10E-02 peak memory=        58 mb  tot_iter=     535
+ parameter: k               =    1.45E-06
+ dcop: begin dcop,  cpu clock=  6.20E-02
+ dcop: end dcop,  cpu clock=  6.30E-02 peak memory=        58 mb  tot_iter=     558
+ parameter: k               =    1.50E-06
+ dcop: begin dcop,  cpu clock=  6.30E-02
+ dcop: end dcop,  cpu clock=  6.40E-02 peak memory=        58 mb  tot_iter=     581
+ parameter: k               =    1.55E-06
+ dcop: begin dcop,  cpu clock=  6.40E-02
+ dcop: end dcop,  cpu clock=  6.50E-02 peak memory=        58 mb  tot_iter=     604
+ parameter: k               =    1.60E-06
+ dcop: begin dcop,  cpu clock=  6.50E-02
+ dcop: end dcop,  cpu clock=  6.60E-02 peak memory=        58 mb  tot_iter=     627
+ parameter: k               =    1.65E-06
+ dcop: begin dcop,  cpu clock=  6.60E-02
+ dcop: end dcop,  cpu clock=  6.70E-02 peak memory=        58 mb  tot_iter=     650
+ parameter: k               =    1.70E-06
+ dcop: begin dcop,  cpu clock=  6.70E-02
+ dcop: end dcop,  cpu clock=  6.80E-02 peak memory=        58 mb  tot_iter=     673
+ parameter: k               =    1.75E-06
+ dcop: begin dcop,  cpu clock=  6.80E-02
+ dcop: end dcop,  cpu clock=  6.90E-02 peak memory=        58 mb  tot_iter=     696
+ parameter: k               =    1.80E-06
+ dcop: begin dcop,  cpu clock=  6.90E-02
+ dcop: end dcop,  cpu clock=  7.00E-02 peak memory=        58 mb  tot_iter=     719
+ parameter: k               =    1.85E-06
+ dcop: begin dcop,  cpu clock=  7.00E-02
+ dcop: end dcop,  cpu clock=  7.10E-02 peak memory=        58 mb  tot_iter=     742
+ parameter: k               =    1.90E-06
+ dcop: begin dcop,  cpu clock=  7.10E-02
+ dcop: end dcop,  cpu clock=  7.20E-02 peak memory=        58 mb  tot_iter=     765
+ parameter: k               =    1.95E-06
+ dcop: begin dcop,  cpu clock=  7.20E-02
+ dcop: end dcop,  cpu clock=  7.30E-02 peak memory=        58 mb  tot_iter=     788
+ parameter: k               =    2.00E-06
+ dcop: begin dcop,  cpu clock=  7.40E-02
+ dcop: end dcop,  cpu clock=  7.50E-02 peak memory=        58 mb  tot_iter=     811
+ parameter: k               =    2.05E-06
+ dcop: begin dcop,  cpu clock=  7.50E-02
+ dcop: end dcop,  cpu clock=  7.60E-02 peak memory=        58 mb  tot_iter=     834
+ parameter: k               =    2.10E-06
+ dcop: begin dcop,  cpu clock=  7.60E-02
+ dcop: end dcop,  cpu clock=  7.70E-02 peak memory=        58 mb  tot_iter=     857
+ parameter: k               =    2.15E-06
+ dcop: begin dcop,  cpu clock=  7.80E-02
+ dcop: end dcop,  cpu clock=  7.80E-02 peak memory=        58 mb  tot_iter=     880
+ parameter: k               =    2.20E-06
+ dcop: begin dcop,  cpu clock=  7.90E-02
+ dcop: end dcop,  cpu clock=  8.00E-02 peak memory=        58 mb  tot_iter=     903
+ parameter: k               =    2.25E-06
+ dcop: begin dcop,  cpu clock=  8.00E-02
+ dcop: end dcop,  cpu clock=  8.10E-02 peak memory=        58 mb  tot_iter=     926
+ parameter: k               =    2.30E-06
+ dcop: begin dcop,  cpu clock=  8.10E-02
+ dcop: end dcop,  cpu clock=  8.20E-02 peak memory=        58 mb  tot_iter=     949
+ parameter: k               =    2.35E-06
+ dcop: begin dcop,  cpu clock=  8.20E-02
+ dcop: end dcop,  cpu clock=  8.30E-02 peak memory=        58 mb  tot_iter=     972
+ parameter: k               =    2.40E-06
+ dcop: begin dcop,  cpu clock=  8.40E-02
+ dcop: end dcop,  cpu clock=  8.50E-02 peak memory=        58 mb  tot_iter=     995
+ parameter: k               =    2.45E-06
+ dcop: begin dcop,  cpu clock=  8.50E-02
+ dcop: end dcop,  cpu clock=  8.60E-02 peak memory=        58 mb  tot_iter=    1018
+ parameter: k               =    2.50E-06
+ dcop: begin dcop,  cpu clock=  8.60E-02
+ dcop: end dcop,  cpu clock=  8.70E-02 peak memory=        58 mb  tot_iter=    1041

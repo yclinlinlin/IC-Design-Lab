@@ -1,0 +1,51 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-2 64-BIT"
+* "format" "HSP"
+* "rundate" "15:38:01 01/05/2024 "
+* "netlist" "4-input xor.sp "
+* "runtitle" "4-input xor"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ c =   1.8000        
++ d =   1.8000        
++ out = 282.5678n       
++ vdd =   1.8000        
++ xa1.aout =  16.2452n       
++ xa1.bout =  16.2452n       
++ xa1.cout =  16.2452n       
++ xa1.dout =  16.2452n       
++ xa1.net1 = 438.7957m       
++ xa1.net10 =   1.8000        
++ xa1.net11 =   1.8000        
++ xa1.net12 =   1.8000        
++ xa1.net13 =   1.8000        
++ xa1.net14 =   1.8000        
++ xa1.net15 =  70.0415n       
++ xa1.net16 =  57.9311f       
++ xa1.net17 =  28.8420f       
++ xa1.net18 =  28.9656f       
++ xa1.net19 =  70.0414n       
++ xa1.net2 = 458.2504m       
++ xa1.net20 =  70.0414n       
++ xa1.net21 =  28.9656f       
++ xa1.net22 = 211.9258n       
++ xa1.net23 =  70.1408n       
++ xa1.net24 =  70.1408n       
++ xa1.net25 =  29.0067f       
++ xa1.net26 = 141.2838n       
++ xa1.net27 =  70.3404n       
++ xa1.net28 =  70.6419n       
++ xa1.net3 = 464.5961m       
++ xa1.net4 =   1.8000        
++ xa1.net5 =   1.8000        
++ xa1.net6 =   1.8000        
++ xa1.net7 =   1.8000        
++ xa1.net8 =   1.8000        
++ xa1.net9 =   1.8000        
+***   END: Saved Operating Point ***                     

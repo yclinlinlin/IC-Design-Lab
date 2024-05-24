@@ -1,0 +1,5 @@
+$DATA1 SOURCE='HSPICE' VERSION='J-2014.09-2'
+.TITLE '2-input NAND'
+ delayn1 delayn2 delayn3 delayn4 pw pdp temper  alter#
+  3.3129e-011	  9.6364e-011	  1.3688e-010	  1.8677e-010	  7.1515e-006	  2.3692e-016	
+     25.000000 1
