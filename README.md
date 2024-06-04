@@ -7,7 +7,7 @@
   - Lab1 ~ Lab7
   - Layout
     > 教學影片:
-    - [vlsi教學影片(layout)](https://youtu.be/O0Z1ELxZV1E?si=iOXmvwY4v5d1CpsE)
+    - [vlsi教學影片(layout)](https://youtu.be/O0Z1ELxZV1E?si=DIyf1Ffqva9MIqnu)
     - https://youtu.be/8SgcY9Zqg4U
     - https://youtu.be/wZeZlgJnlkg
     - https://youtu.be/WxVEPZYrUz0
