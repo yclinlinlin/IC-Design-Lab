@@ -1,4 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='J-2014.09-2'
-.TITLE 'eight-bit-comparator'
- delayn1 delayn2 delayn3 pw pdp temper  alter#
-  7.9145e-010	  5.0711e-010	  7.3692e-010	  9.9729e-005	  7.8930e-014	     25.000000 1
