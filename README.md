@@ -6,7 +6,7 @@
 - 實驗內容:
   - Lab1 ~ Lab7
   - Layout
-    - 教學影片:
+  > 教學影片:
     - https://youtu.be/8SgcY9Zqg4U
     - https://youtu.be/wZeZlgJnlkg
     - https://youtu.be/WxVEPZYrUz0
