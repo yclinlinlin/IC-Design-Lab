@@ -1,0 +1,45 @@
+***** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******
+ Input File: four-bit-comparator.sp
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   User                 HOSTNAME: LAPTOP-HIOSMBNM
+ lic: HOSTID: "a036bc64ac5e 009337e9bab9 005056c00001 005056c00008 009337e9bab5 009337e9bab6 029337e
+ lic: Using FLEXlm license file:
+ lic: 27000@LAPTOP-HIOSMBNM
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM
+ lic:
+ init: begin read circuit files,  cpu clock=  4.00E-02
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\behave\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\behave\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\AD\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\XILINX\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\TLINE\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\TI\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\SIGNET\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\PCI\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\LIN_TECH\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\PET\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\DI0\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\COMLINE\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\BURR_BRM\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\BJT\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\behave\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\AD\
+       option runlvl
+       option post =     2.00
+ init: end read circuit files,  cpu clock=  4.40E-02 peak memory=        53 mb
+ init: begin check errors,  cpu clock=  4.40E-02
+ init: end check errors,  cpu clock=  4.90E-02 peak memory=        57 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  4.90E-02
+       establish matrix -- done,  cpu clock=  5.00E-02 peak memory=        57 mb
+       re-order matrix -- done,  cpu clock=  5.00E-02 peak memory=        58 mb
+ init: end setup matrix,  cpu clock=  5.20E-02 peak memory=        58 mb
+ dcop: begin dcop,  cpu clock=  5.20E-02
+ dcop: end dcop,  cpu clock=  5.90E-02 peak memory=        72 mb  tot_iter=      22
+four-bit-comparator.tr0
+ sweep: tran tran0  begin, stop_t= 6.40e-007  #sweeps= 12801 cpu clock= 1.69e+009
+ tran: time= 6.4001e-008 tot_iter=    3504 conv_iter=     952 cpu clock= -9.48e+004
+ tran: time= 1.2802e-007 tot_iter=    6847 conv_iter=    1873 cpu clock= -9.48e+004
+ tran: time= 1.9222e-007 tot_iter=   10315 conv_iter=    2811 cpu clock= -9.48e+004

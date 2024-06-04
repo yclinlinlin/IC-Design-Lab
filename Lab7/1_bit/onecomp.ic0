@@ -1,0 +1,26 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12 linux64"
+* "format" "HSP"
+* "rundate" "15:48:27 04/21/2024 "
+* "netlist" "onecomp.sp "
+* "runtitle" "one-bit comparator (loading c=0.1p)"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ eq =   1.8000        
++ gt =  17.6169n       
++ lt =  17.6169n       
++ vdd =   1.8000        
++ xcomp.inva =  17.6169n       
++ xcomp.invb =  17.6169n       
++ xcomp.out1 =   1.8000        
++ xcomp.out2 =   1.8000        
++ xcomp.xnanda.net =   1.5613        
++ xcomp.xnandb.net =   1.5613        
++ xcomp.xnor.net0 =   1.8000        
+***   END: Saved Operating Point ***                     

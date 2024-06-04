@@ -1,0 +1,54 @@
+***** HSPICE -- J-2014.09-2 64-BIT (Oct 22 2014) win64 ******
+ Input File: eight-bit-comparator.sp
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   User                 HOSTNAME: LAPTOP-HIOSMBNM
+ lic: HOSTID: "a036bc64ac5e 009337e9bab9 005056c00001 005056c00008 009337e9bab5 009337e9bab6 029337e
+ lic: Using FLEXlm license file:
+ lic: 27000@LAPTOP-HIOSMBNM
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 30-dec-2030/2029.2029
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@LAPTOP-HIOSMBNM
+ lic:
+ init: begin read circuit files,  cpu clock=  4.00E-02
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\behave\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\behave\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\AD\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\XILINX\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\TLINE\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\TI\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\SIGNET\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\PCI\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\LIN_TECH\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\PET\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\DI0\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\COMLINE\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\BURR_BRM\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\BJT\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\behave\
+       option search = C:\synopsys\Hspice_J-2014.09-2\parts\AD\
+       option runlvl
+       option post =     2.00
+ init: end read circuit files,  cpu clock=  5.20E-02 peak memory=        53 mb
+ init: begin check errors,  cpu clock=  5.20E-02
+ init: end check errors,  cpu clock=  6.20E-02 peak memory=        59 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  6.20E-02
+       establish matrix -- done,  cpu clock=  6.30E-02 peak memory=        59 mb
+       re-order matrix -- done,  cpu clock=  6.60E-02 peak memory=        60 mb
+ init: end setup matrix,  cpu clock=  6.70E-02 peak memory=        60 mb
+ dcop: begin dcop,  cpu clock=  6.70E-02
+ dcop: end dcop,  cpu clock=  7.40E-02 peak memory=        74 mb  tot_iter=      22
+eight-bit-comparator.tr0
+ sweep: tran tran0  begin, stop_t= 1.64e-004  #sweeps= 3276801 cpu clock= 1.69e+009
+ tran: time= 1.6384e-005 tot_iter=  363610 conv_iter=  241351 cpu clock= -9.80e+004
+ tran: time= 3.2768e-005 tot_iter=  726273 conv_iter=  482764 cpu clock= -9.79e+004
+ tran: time= 4.9153e-005 tot_iter= 1090457 conv_iter=  725164 cpu clock= -9.79e+004
+ tran: time= 6.5536e-005 tot_iter= 1454914 conv_iter=  967409 cpu clock= -9.78e+004
+ tran: time= 8.1920e-005 tot_iter= 1819497 conv_iter= 1209613 cpu clock= -9.77e+004
+ tran: time= 9.8304e-005 tot_iter= 2182547 conv_iter= 1451346 cpu clock= -9.76e+004
+ tran: time= 1.1469e-004 tot_iter= 2545184 conv_iter= 1693083 cpu clock= -9.76e+004
+ tran: time= 1.3107e-004 tot_iter= 2909229 conv_iter= 1935152 cpu clock= -9.75e+004
+ tran: time= 1.4746e-004 tot_iter= 3272629 conv_iter= 2176773 cpu clock= -9.74e+004
+ sweep: tran tran0    end,  cpu clock=  -9.73e+004  peak memory=   72.44 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
