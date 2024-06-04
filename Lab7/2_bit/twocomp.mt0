@@ -1,8 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='N-2017.12 linux64' PARAM_COUNT=0
-.TITLE '2-bit comparator (loading c=0.1p)'
- delayn1          delayn2          delayn3          delayn4         
- delayn5          delayn6          pw               temper          
- alter#          
-  3.345e-10        5.304e-10        4.887e-10        5.802e-10      
-  3.309e-10        5.293e-10        2.690e-04         25.0000       
-1               
