@@ -6,9 +6,11 @@
 - 實驗內容:
   - Lab1 ~ Lab7
   - Layout
+    - 教學影片:
     - https://youtu.be/8SgcY9Zqg4U
     - https://youtu.be/wZeZlgJnlkg
     - https://youtu.be/WxVEPZYrUz0
+    - https://youtu.be/TxKiTj47XFE?si=tNFOTraIo1MVMwsk
 - 期中考練習，共10題，資料夾: MidtermPractice
   - 2024/05/13 期中考
     > 電路功能正確可得100分
