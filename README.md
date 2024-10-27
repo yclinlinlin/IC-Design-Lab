@@ -1,5 +1,5 @@
 # IC設計實驗 IC Design Lab
-## Design: YC LIN
+## Design：YC LIN
 ### 開課單位：電機工程學系
 ### 選修學期：112學年第二學期
 ### 授課教師：魏一勤 副教授
